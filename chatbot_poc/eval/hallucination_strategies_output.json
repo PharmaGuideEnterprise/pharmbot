@@ -1,0 +1,1615 @@
+{
+  "B0_baseline": {
+    "Q1_uti_pregnancy": {
+      "question": "What is the treatment for asymptomatic UTI in a pregnant patient?",
+      "checks": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "answers": [
+        "Asymptomatic bacteriuria in pregnancy should be treated with antimicrobial therapy after confirmation on 2 consecutive urine cultures.\n\nPregnant patients must be screened for asymptomatic bacteriuria early in pregnancy (weeks 12\u201316) [[1]](). If confirmed on 2 consecutive cultures, treatment is indicated because untreated bacteriuria can progress to pyelonephritis and cause adverse fetal effects [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, preterm delivery, and low birth-weight babies [[1]]().\n\n**Safe antimicrobial options in pregnancy include** [[1]]():\n- Amoxicillin (if organism is susceptible)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if organism is susceptible)\n- Nitrofurantoin (avoid near term due to risk of fetal hemolytic anemia, particularly in G6PD deficiency, though this toxicity is rare)\n\n**Agents to avoid** [[1]]():\n- Trimethoprim and sulfamethoxazole/trimethoprim in the first trimester (antifolate teratogenicity risk)\n- Sulfamethoxazole in the last 6 weeks (risk of neonatal hyperbilirubinemia)\n- Fluoroquinolones (though no human data confirms harm, animal studies showed impaired cartilage development)\n\nAfter completing therapy, follow-up urine culture should be performed 1\u20132 weeks later, then monthly until delivery [[1]]().",
+        "Asymptomatic bacteriuria in pregnancy should be treated with antibiotic therapy to prevent pyelonephritis and adverse fetal outcomes.\n\nPregnant patients should be screened for asymptomatic bacteriuria early in pregnancy (weeks 12\u201316) [[1]](), and treatment is indicated if asymptomatic bacteriuria is confirmed on 2 consecutive cultures [[1]](). If left untreated, bacteriuria in pregnancy can progress to pyelonephritis and cause adverse effects to the fetus [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, rate of preterm delivery, and risk of low birth-weight babies [[1]]().\n\n**Safe treatment options for asymptomatic bacteriuria in pregnancy include:** [[1]]()\n\n- Amoxicillin (if organism susceptibility is known)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if organism susceptibility is known) [[2]]()\n- Nitrofurantoin (avoid near term due to risk of hemolytic anemia in fetus/newborn, especially with G6PD deficiency, though this is rare) [[1]]()\n\n**Agents to avoid:**\n- Trimethoprim and sulfamethoxazole/trimethoprim in the first trimester due to antifolate teratogenicity [[1]]()\n- Sulfamethoxazole in the last 6 weeks of pregnancy due to risk of neonatal hyperbilirubinemia [[1]]()\n- Fluoroquinolones (though no human reports of increased major malformations despite animal studies showing impaired cartilage development) [[1]]()\n\nUpon completion of therapy, follow-up with a urine culture 1\u20132 weeks later, and then monthly until delivery [[1]]().",
+        "Asymptomatic bacteriuria in pregnancy should be screened for and treated to prevent progression to pyelonephritis and adverse fetal outcomes.\n\nPregnant patients should be screened for asymptomatic bacteriuria early in pregnancy at weeks 12\u201316 and treatment initiated if bacteriuria is confirmed on 2 consecutive urine cultures [[1]](). If left untreated, bacteriuria in pregnancy can progress to pyelonephritis and cause adverse effects to the fetus [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, rate of preterm delivery and risk of low birth-weight babies [[1]]().\n\nThe following agents are safe and effective for treating asymptomatic bacteriuria in pregnancy [[1]]():\n\n- Amoxicillin (if organism susceptibility is confirmed)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if organism susceptibility is confirmed)\n- Nitrofurantoin (avoid near term due to rare risk of hemolytic anemia in fetus or newborn, particularly in those with G6PD deficiency)\n\nAgents to avoid include trimethoprim and sulfamethoxazole/trimethoprim in the first trimester due to antifolate teratogenicity, and sulfamethoxazole in the last 6 weeks of pregnancy due to risk of neonatal hyperbilirubinemia [[1]]().\n\nUpon completion of therapy, follow-up with a urine culture 1\u20132 weeks later, then monthly until delivery [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q2_uti_avoid": {
+      "question": "Which antibiotics should be avoided when treating UTI during pregnancy and why?",
+      "checks": [
+        "F3"
+      ],
+      "answers": [
+        "Several antibiotics should be avoided during pregnancy when treating UTI due to teratogenic or neonatal risks.\n\n**Trimethoprim and Sulfamethoxazole/Trimethoprim in First Trimester:** These agents should be avoided in the first trimester of pregnancy because they are associated with antifolate teratogenicity [[1]]()[[2]]().\n\n**Sulfamethoxazole in the Last 6 Weeks:** Sulfamethoxazole should be avoided in the last 6 weeks of pregnancy as it may lead to neonatal hyperbilirubinemia [[1]]().\n\n**Fluoroquinolones:** These should be avoided in pregnancy due to potential adverse effects on developing cartilage reported in animal studies, although no reports in humans have demonstrated increased risk of major malformations, musculoskeletal adverse effects, spontaneous abortions, prematurity, intrauterine growth retardation, or postnatal disorders [[1]]().\n\n**Nitrofurantoin Near Term:** While nitrofurantoin is acceptable for treatment of asymptomatic bacteriuria and cystitis in pregnancy, it should be avoided near term because of the risk of inducing hemolytic anemia in the fetus or newborn, particularly in those with G6PD deficiency (though this toxicity is rare) [[1]]().\n\nSafe alternatives in pregnancy include amoxicillin (if the organism is known to be susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy [[1]]().",
+        "Fluoroquinolones, trimethoprim/sulfamethoxazole (TMP-SMX), and nitrofurantoin near term should be avoided during pregnancy due to teratogenic or fetal safety risks. [[1]]()\n\n**Fluoroquinolones** should be avoided in pregnancy because impaired cartilage development has been reported in animal studies. [[1]]() Although there are no confirmed reports in humans of increased risk of major malformations, fetal musculoskeletal adverse effects, spontaneous abortions, prematurity, intrauterine growth retardation, or postnatal disorders, the animal data warrant avoidance. [[1]]()\n\n**Trimethoprim and sulfamethoxazole/trimethoprim (SMX/TMP)** should be avoided in the first trimester of pregnancy due to antifolate teratogenicity. [[1]]() Additionally, sulfamethoxazole should be avoided in the last 6 weeks of pregnancy because it may lead to neonatal hyperbilirubinemia. [[1]]()\n\n**Nitrofurantoin** should be avoided near term because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency, although this toxicity is rare. [[1]]()\n\nIn contrast, amoxicillin, amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if susceptibility is confirmed) are safe options for treating asymptomatic bacteriuria and symptomatic cystitis in pregnancy. [[1]]() For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy. [[1]]()",
+        "Several antibiotics should be avoided during pregnancy when treating UTI due to teratogenic or fetal toxicity concerns.\n\n**Trimethoprim and sulfamethoxazole/trimethoprim (SMX/TMP) should be avoided in the first trimester** because they are associated with antifolate teratogenicity [[1]](). Additionally, sulfamethoxazole should be avoided in the last 6 weeks of pregnancy as it may lead to neonatal hyperbilirubinemia [[1]]().\n\n**Fluoroquinolones should be avoided in pregnancy**, although the rationale is primarily precautionary rather than evidence-based [[1]](). Impaired cartilage development has been reported in animal studies; however, there are no reports in humans suggesting an increased risk of major malformations, adverse effects in the fetal musculoskeletal system, spontaneous abortions, prematurity, intrauterine growth retardation or postnatal disorders [[1]]().\n\n**Nitrofurantoin should be avoided near term** because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency; however, this toxicity is rare and nitrofurantoin is acceptable earlier in pregnancy [[1]]().\n\nSafe alternatives for treating asymptomatic bacteriuria and symptomatic cystitis in pregnancy include amoxicillin (if susceptibility confirmed), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if susceptibility confirmed) [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q3_cephalexin": {
+      "question": "Tell me about cephalexin for treating UTI in a pregnant patient.",
+      "checks": [
+        "F2"
+      ],
+      "answers": [
+        "Cephalexin is a safe and effective second-line option for treating UTI in pregnant patients.\n\nIn pregnancy, cephalexin may be used to treat both asymptomatic bacteriuria and symptomatic cystitis [[1]](). It is listed among the acceptable agents for this indication, alongside amoxicillin (if organism susceptibility is known), amoxicillin/clavulanate, fosfomycin tromethamine (if organism susceptibility is known), and nitrofurantoin (though nitrofurantoin should be avoided near term due to risk of hemolytic anemia in the fetus or newborn, particularly in those with G6PD deficiency) [[1]]().\n\nFor pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy with step-down to oral agents once the patient is stabilized and culture results are available; however, cephalexin may be appropriate for oral step-down therapy in susceptible infections [[1]]().\n\nCephalosporins as a class are effective for UTI treatment and are not as well studied as some alternatives, though they are somewhat less effective for acute cystitis with short courses of therapy and may be associated with a greater likelihood of vulvovaginal candidiasis [[1]](). Common adverse effects include hypersensitivity reactions, rash, nausea, vomiting, pseudomembranous colitis, and renal/hepatic dysfunction [[1]]().\n\nDuring breastfeeding, cephalosporins are considered compatible [[1]]().",
+        "Cephalexin is a safe and effective second-line option for treating uncomplicated UTI in pregnant patients. [[1]]()\n\nFor asymptomatic bacteriuria and symptomatic cystitis in pregnancy, cephalexin may be used as one of several acceptable agents [[1]](). It is listed alongside amoxicillin (if organism is susceptible), amoxicillin/clavulanate, fosfomycin tromethamine (if organism is susceptible), and nitrofurantoin (avoiding near term) [[1]](). \n\nAs a first-generation cephalosporin, cephalexin is effective for UTI treatment generally [[1]](). All cephalosporins, including cephalexin, are well-tolerated options, though they are not as extensively studied as some alternatives and are somewhat less effective for acute cystitis with short courses of therapy [[1]](). Cephalosporins may be associated with a greater likelihood of vulvovaginal candidiasis compared with other agents [[1]]().\n\nFor prophylaxis of recurrent UTI in pregnancy, cephalexin is one of the preferred antimicrobials [[1]]().\n\nIn terms of adverse effects, cephalexin carries risks of hypersensitivity reactions, rash, nausea, vomiting, pseudomembranous colitis, and renal/hepatic dysfunction, though these are generally infrequent [[1]](). It has minimal drug interactions, with potential for increased INR if used with warfarin [[1]]().",
+        "Cephalexin is a safe and effective second-line option for treating UTI in pregnant patients.\n\nFor asymptomatic bacteriuria and symptomatic cystitis in pregnancy, cephalexin may be used as one of the acceptable treatment options [[1]](). As a first-generation cephalosporin, it is effective for UTI treatment [[1]](), and cephalosporins are considered compatible with breastfeeding [[1]]().\n\nFor prophylaxis of recurrent UTI during pregnancy, cephalexin is specifically listed as a preferred agent alongside nitrofurantoin [[1]](). This represents a key role for cephalexin in preventing symptomatic or asymptomatic UTI recurrence in pregnant patients [[1]]().\n\nThe main limitation is that cephalosporins are not as extensively studied as some other agents and are somewhat less effective for acute cystitis, especially with short courses of therapy [[1]](). Additionally, cephalosporins may be associated with a greater likelihood of vulvovaginal candidiasis compared to other agents [[1]]().\n\nCephalexin does not carry the teratogenic concerns of agents like trimethoprim/sulfamethoxazole (associated with antifolate effects in the first trimester) [[1]]() or fluoroquinolones (which are avoided due to theoretical risks of cartilage development, though human data are reassuring) [[1]](). Thus, within the context of pregnancy safety, cephalexin represents a practical oral option when first-line agents cannot be used or are unavailable."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": false,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F2: cephalexin invented elaboration ['well-tolerated']"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": false,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F2: cephalexin invented elaboration ['first-generation cephalosporin']"
+          ]
+        }
+      ]
+    },
+    "Q5_pcn_allergy": {
+      "question": "How do I manage a UTI in a pregnant patient with severe penicillin allergy?",
+      "checks": [
+        "F5"
+      ],
+      "answers": [
+        "In a pregnant patient with severe penicillin allergy, first-line options for UTI treatment include cephalosporins, fosfomycin tromethamine, and nitrofurantoin (with timing considerations).\n\n**For asymptomatic bacteriuria or symptomatic cystitis in pregnancy:**\n\n[[1]]() Acceptable agents include cephalexin and fosfomycin tromethamine (if the organism is known to be susceptible). [[1]]() Nitrofurantoin may be used but should be avoided near term due to the risk of inducing hemolytic anemia in the fetus or newborn, particularly in those with G6PD deficiency (though this toxicity is rare). [[1]]()\n\n**For pyelonephritis in pregnancy:**\n\n[[1]]() Ceftriaxone is the preferred empiric therapy for treating pyelonephritis in pregnancy, with step-down to oral therapy once the patient is stabilized and urine culture results are available. [[1]]()\n\n**Important considerations for penicillin-allergic patients:**\n\nThe cross-allergenicity between penicillins and carbapenems is approximately 1%, [[1]]() so carbapenems may be considered alternatives in severe cases requiring parenteral therapy, though they should be used cautiously given the allergy history.\n\n[[1]]() Avoid trimethoprim and sulfamethoxazole/trimethoprim in the first trimester due to antifolate teratogenicity. [[1]]() Sulfamethoxazole specifically should be avoided in the last 6 weeks of pregnancy due to the risk of neonatal hyperbilirubinemia. [[1]]()\n\n**Key point:** Always obtain a urine culture prior to initiating therapy and tailor treatment based on organism susceptibility and local resistance patterns.",
+        "In a pregnant patient with severe penicillin allergy, first-line options for UTI treatment are cephalosporins or nitrofurantoin, depending on the clinical scenario.\n\nFor asymptomatic bacteriuria and symptomatic cystitis in pregnancy, acceptable alternatives to penicillins include [[1]]():\n- **Cephalexin** (a first-generation cephalosporin)\n- **Fosfomycin tromethamine** (if the organism is known to be susceptible)\n- **Nitrofurantoin** (avoid near term due to risk of hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency, though this toxicity is rare)\n\nFor pyelonephritis in pregnancy, [[1]]() **ceftriaxone is the preferred empiric therapy**. You should step down to oral therapy once the patient is stabilized and urine culture results are available.\n\n**Important cross-reactivity consideration:** The reported incidence of cross-allergenicity between penicillins and carbapenems is about 1% [[1]](), so carbapenems (meropenem, ertapenem) are a potential option if truly necessary for severe infections, though they should be reserved for cases where \u03b2-lactamase resistance is documented (e.g., ESBL-producing organisms).\n\n**Key cautions:** [[1]]() Trimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester due to antifolate teratogenicity, and sulfamethoxazole should be avoided in the last 6 weeks of pregnancy due to risk of neonatal hyperbilirubinemia. Fluoroquinolones should also be avoided in pregnancy.\n\nAlways obtain a urine culture prior to initiating therapy to guide treatment selection based on organism susceptibilities [[1]]().",
+        "In a pregnant patient with severe penicillin allergy, cephalosporins are a safe first-line option because cross-allergenicity with penicillins is low.\n\nFor symptomatic cystitis or asymptomatic bacteriuria in pregnancy with penicillin allergy, [cephalexin is appropriate [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy [[1]](), which can be stepped down to oral cephalexin once the patient stabilizes and culture results are available [[1]]().\n\nThe reported incidence of cross-allergenicity between penicillins and carbapenems is approximately 1% [[1]](), so carbapenems (such as meropenem) can be considered as an alternative if cephalosporins cannot be used, though they are typically reserved for resistant organisms.\n\nFluoroquinolones should be avoided in pregnancy due to potential concerns about cartilage development in animal studies [[1]](). Trimethoprim and sulfamethoxazole/trimethoprim must be avoided in the first trimester due to antifolate teratogenicity [[1]](), and sulfamethoxazole specifically should be avoided in the last 6 weeks of pregnancy due to neonatal hyperbilirubinemia risk [[1]]().\n\nFosfomycin tromethamine may be used if the organism is known to be susceptible [[1]](). Nitrofurantoin can be used but should be avoided near term due to the rare risk of hemolytic anemia in the fetus or newborn, particularly in those with G6PD deficiency [[1]]().\n\nAlways obtain urine culture before initiating therapy in pregnant patients, and follow up with repeat urine culture 1\u20132 weeks after completion, then monthly until delivery [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        }
+      ]
+    },
+    "Q6_offtopic": {
+      "question": "What is the best Italian restaurant in downtown Toronto?",
+      "checks": [
+        "F6"
+      ],
+      "answers": [
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    }
+  },
+  "A_hardened_prompt": {
+    "Q1_uti_pregnancy": {
+      "question": "What is the treatment for asymptomatic UTI in a pregnant patient?",
+      "checks": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "answers": [
+        "Asymptomatic bacteriuria in pregnancy should be treated with oral antibiotics after confirmation on 2 consecutive urine cultures [[1]]().\n\nPregnant patients should be screened for asymptomatic bacteriuria early in pregnancy (weeks 12\u201316) [[1]](). If confirmed on 2 consecutive cultures, treatment is indicated because untreated bacteriuria can progress to pyelonephritis and cause adverse fetal effects [[1]](). Antibiotic treatment reduces the incidence of pyelonephritis, preterm delivery rate, and risk of low birth-weight babies [[1]]().\n\nTreatment options for asymptomatic bacteriuria in pregnancy include [[1]]():\n- Amoxicillin (if organism susceptible)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if organism susceptible)\n- Nitrofurantoin (avoid near term due to risk of hemolytic anemia in fetus/newborn, particularly in G6PD deficiency, though toxicity is rare)\n\nAgents to avoid in pregnancy include trimethoprim and sulfamethoxazole/trimethoprim in the first trimester (antifolate teratogenicity risk) and sulfamethoxazole in the last 6 weeks (neonatal hyperbilirubinemia risk) [[1]](). Fluoroquinolones should be avoided despite lack of human evidence of teratogenicity [[1]]().\n\nAfter completing therapy, follow-up with urine culture at 1\u20132 weeks post-treatment, then monthly until delivery [[1]]().",
+        "Asymptomatic bacteriuria in pregnancy should be screened for early in gestation and treated if confirmed [[1]]().\n\nScreen pregnant patients for asymptomatic bacteriuria between 12\u201316 weeks of gestation [[1]](). If asymptomatic bacteriuria is confirmed on 2 consecutive cultures, treatment is indicated [[1]](). If left untreated, bacteriuria in pregnancy can progress to pyelonephritis and cause adverse fetal effects [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, rate of preterm delivery, and risk of low birth-weight babies [[1]]().\n\n**Treatment options for asymptomatic bacteriuria in pregnancy include** [[1]]():\n- Amoxicillin (if organism susceptibility is known)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if organism susceptibility is known)\n- Nitrofurantoin (avoid near term due to risk of hemolytic anemia in the fetus or newborn, particularly in those with G6PD deficiency, though this is rare)\n\n**Agents to avoid in pregnancy**:\n- Trimethoprim and sulfamethoxazole/trimethoprim in the first trimester (antifolate teratogenicity) [[1]]()\n- Sulfamethoxazole in the last 6 weeks (risk of neonatal hyperbilirubinemia) [[1]]()\n- Fluoroquinolones (though animal data show cartilage effects, human safety data are reassuring) [[1]]()\n\nUpon completion of therapy, follow-up with a urine culture 1\u20132 weeks later, then monthly until delivery [[1]]().",
+        "Asymptomatic bacteriuria in pregnancy should be screened for and treated with oral antibiotics to prevent progression to pyelonephritis and reduce adverse fetal outcomes.\n\n**Screening and Diagnosis:**\nScreen pregnant patients for asymptomatic bacteriuria early in pregnancy (weeks 12\u201316) [[1]](), and treat if asymptomatic bacteriuria is confirmed on 2 consecutive cultures [[1]](). Left untreated, bacteriuria in pregnancy can progress to pyelonephritis and cause adverse effects to the fetus [[1]]().\n\n**Treatment Benefits:**\nAntibiotic treatment has been shown to reduce the incidence of pyelonephritis, rate of preterm delivery and risk of low birth-weight babies [[1]]().\n\n**Safe Antimicrobial Options in Pregnancy:**\nAsymptomatic bacteriuria in pregnancy may be treated with [[1]]():\n- Amoxicillin (if organism susceptibility is known)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if organism susceptibility is known) [[1]]()\n- Nitrofurantoin (avoid near term due to risk of hemolytic anemia in the fetus or newborn, particularly in those with G6PD deficiency; however, this toxicity is rare) [[1]]()\n\n**Agents to Avoid:**\nTrimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester due to antifolate teratogenicity [[1]](). Sulfamethoxazole should be avoided in the last 6 weeks of pregnancy as it may lead to neonatal hyperbilirubinemia [[1]](). Fluoroquinolones should be avoided in pregnancy [[1]]().\n\n**Follow-up:**\nUpon completion of therapy, follow-up with a urine culture 1\u20132 weeks later, and then monthly until delivery [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q2_uti_avoid": {
+      "question": "Which antibiotics should be avoided when treating UTI during pregnancy and why?",
+      "checks": [
+        "F3"
+      ],
+      "answers": [
+        "Certain antibiotics should be avoided during pregnancy due to teratogenic or fetal risks.\n\n[Trimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester of pregnancy because they are associated with antifolate teratogenicity] [[1]](). [Sulfamethoxazole should additionally be avoided in the last 6 weeks of pregnancy, as it may lead to neonatal hyperbilirubinemia] [[1]]().\n\n[Fluoroquinolones should be avoided in pregnancy, as impaired cartilage development has been reported in animal studies] [[1]](). Although there are no human reports suggesting increased risk of major malformations or adverse musculoskeletal effects, the animal data warrant caution.\n\n[Nitrofurantoin should be avoided near term because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency, though this toxicity is rare] [[1]]().\n\nIn contrast, safe first-line options for UTI in pregnancy include [amoxicillin (if the organism is known to be susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine] [[1]](). [For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy] [[1]]().",
+        "Certain antibiotics should be avoided during pregnancy due to teratogenic risks and fetal toxicity concerns.\n\n**First Trimester:**\n[Trimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester of pregnancy, as they are associated with antifolate teratogenicity.] [[1]]()\n\n**Near Term (Last 6 weeks):**\n[Sulfamethoxazole should be avoided in the last 6 weeks of pregnancy, as it may lead to neonatal hyperbilirubinemia.] [[1]]() [Nitrofurantoin should be avoided near term because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency; however, this toxicity is rare.] [[1]]()\n\n**Throughout Pregnancy:**\n[Fluoroquinolones should be avoided in pregnancy, as impaired cartilage development has been reported in animal studies; however, there are no reports in humans suggesting an increased risk of major malformations, adverse effects in the fetal musculoskeletal system, spontaneous abortions, prematurity, intrauterine growth retardation or postnatal disorders.] [[1]]()\n\n**Safe alternatives in pregnancy include:**\n[Amoxicillin (if the organism is known to be susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if the organism is known to be susceptible)] [[1]]() for uncomplicated cystitis and asymptomatic bacteriuria. [For pyelonephritis, ceftriaxone is the preferred empiric therapy.] [[1]]()",
+        "Several antibiotics should be avoided when treating UTI during pregnancy due to teratogenic or fetal safety concerns.\n\n[Trimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester of pregnancy because they are associated with antifolate teratogenicity.] [[1]]() Additionally, [sulfamethoxazole should be avoided in the last 6 weeks of pregnancy as it may lead to neonatal hyperbilirubinemia.] [[1]]()\n\n[Fluoroquinolones should be avoided in pregnancy, as impaired cartilage development has been reported in animal studies;] [[1]]() however, [there are no reports in humans suggesting an increased risk of major malformations, adverse effects in the fetal musculoskeletal system, spontaneous abortions, prematurity, intrauterine growth retardation or postnatal disorders.] [[1]]()\n\n[Nitrofurantoin should be avoided near term because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency; however, this toxicity is rare.] [[1]]()\n\nFor pregnant patients with asymptomatic bacteriuria or symptomatic cystitis, the preferred safe options are [amoxicillin (if the organism is known to be susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if the organism is known to be susceptible).] [[1]]() [For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy.] [[1]]()"
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q3_cephalexin": {
+      "question": "Tell me about cephalexin for treating UTI in a pregnant patient.",
+      "checks": [
+        "F2"
+      ],
+      "answers": [
+        "Cephalexin is a safe and effective second-line option for treating UTI in pregnant patients [[1]]().\n\n**Use in pregnancy:**\nCephalexin may be used to treat asymptomatic bacteriuria and symptomatic cystitis in pregnancy [[1]](). It is also listed as a preferred agent for antimicrobial prophylaxis to prevent recurrent UTIs in pregnant patients [[1]]().\n\n**Dosing and duration:**\nWhen used for uncomplicated UTI, cephalexin is dosed at 500 mg every 6 hours orally [[1]](). For acute uncomplicated cystitis, it is recommended as a second-line therapy for 7 days [[1]]().\n\n**Safety profile:**\nCephalexin is a first-generation cephalosporin with common adverse effects including hypersensitivity reactions, rash, nausea, vomiting, pseudomembranous colitis, and renal and hepatic dysfunction [[1]](). It may increase INR in patients taking warfarin [[1]](). Amoxicillin and cephalosporins are considered compatible with breastfeeding [[1]]().\n\n**Clinical context:**\nCephalexin is not as well studied as sulfamethoxazole/trimethoprim or fluoroquinolones for acute cystitis and is somewhat less effective, particularly with short courses of therapy [[1]](). It may also be associated with a greater likelihood of vulvovaginal candidiasis compared to other agents [[1]]().",
+        "Cephalexin is a safe and effective second-line option for treating UTI in pregnant patients.\n\nIn pregnancy, cephalexin can be used to treat both asymptomatic bacteriuria and symptomatic cystitis [[1]](). It is listed among the acceptable agents for these conditions during pregnancy, alongside amoxicillin, amoxicillin/clavulanate, fosfomycin tromethamine, and nitrofurantoin [[1]]().\n\nFor acute uncomplicated cystitis in non-pregnant patients, cephalexin appears as a second-line agent given orally for 7 days [[1]](). More broadly, all cephalosporins\u2014including cephalexin\u2014are effective for UTI treatment, though they are not as extensively studied as some other agents and are somewhat less effective for acute cystitis with short courses of therapy [[1]](). One potential limitation is that cephalosporins may be associated with a greater likelihood of vulvovaginal candidiasis [[1]]().\n\nIn terms of safety during pregnancy, cephalexin is compatible with breastfeeding, as are other cephalosporins [[1]](). Additionally, for prevention of recurrent UTI in pregnant patients, cephalexin is listed as a preferred agent for antimicrobial prophylaxis [[1]]().\n\nThe standard CPS guidance recommends screening pregnant patients for asymptomatic bacteriuria at 12\u201316 weeks and treating if confirmed on 2 consecutive cultures, since untreated bacteriuria can progress to pyelonephritis with adverse fetal effects [[1]]().",
+        "Cephalexin is a safe and effective second-line option for treating UTI in pregnant patients.\n\nFor asymptomatic bacteriuria and symptomatic cystitis in pregnancy, cephalexin is one of the recommended treatment options [[1]](). All cephalosporins, including cephalexin, are effective for UTI treatment [[1]](). They are not as extensively studied as some alternatives and are somewhat less effective for acute cystitis with short courses, but remain a viable choice [[1]](). Cephalosporins may be associated with a greater likelihood of vulvovaginal candidiasis compared to other agents [[1]]().\n\nFor pregnancy-specific management, cephalexin is also preferred for antimicrobial prophylaxis to prevent recurrent symptomatic or asymptomatic UTIs in pregnant patients [[1]](). The drug is considered compatible with breastfeeding, as cephalosporins are regarded as compatible with breastfeeding by the American Academy of Pediatrics [[1]]().\n\nThe standard dosage for cephalexin is 500 mg every 6 hours orally, with typical adverse effects including hypersensitivity reactions, rash, nausea, vomiting, pseudomembranous colitis, and renal and hepatic dysfunction [[1]](). It may increase INR in patients taking warfarin [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": false,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F2: cephalexin invented elaboration ['first-generation cephalosporin']"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q5_pcn_allergy": {
+      "question": "How do I manage a UTI in a pregnant patient with severe penicillin allergy?",
+      "checks": [
+        "F5"
+      ],
+      "answers": [
+        "For a pregnant patient with severe penicillin allergy, UTI management requires careful antibiotic selection to avoid both penicillin-class agents and sulfonamides in early pregnancy.\n\n**Safe first-line options in pregnancy include:**\n\n[[1]]() Cephalexin is appropriate for treating asymptomatic bacteriuria and symptomatic cystitis during pregnancy. [[1]]() Cephalosporins have low cross-reactivity with penicillins (~1% carbapenem cross-allergenicity reported, and cephalosporins have even lower rates). [[1]]()\n\n[[1]]() Fosfomycin tromethamine (single 3 g dose) may be used if the organism is known to be susceptible. [[1]]()\n\n[[1]]() Nitrofurantoin is an option, though it should be avoided near term due to the risk of hemolytic anemia in the fetus or newborn, particularly in those with G6PD deficiency (though this toxicity is rare). [[1]]()\n\n**For pyelonephritis in pregnancy:**\n\n[[1]]() Ceftriaxone is the preferred empiric therapy for treating pyelonephritis in pregnancy, with step-down to oral therapy once the patient is stabilized and urine culture results are available. [[1]]()\n\n**Key considerations:**\n\nAvoid trimethoprim and sulfamethoxazole/trimethoprim in the first trimester due to antifolate teratogenicity, and avoid sulfamethoxazole in the last 6 weeks of pregnancy due to risk of neonatal hyperbilirubinemia. [[1]]() Since the patient has severe penicillin allergy, these sulfonamide-containing regimens are also relatively contraindicated in this context.\n\nAlways obtain urine culture prior to initiating therapy and tailor empiric therapy based on susceptibility results where known. [[1]]()",
+        "In a pregnant patient with severe penicillin allergy, you can treat UTI safely using cephalosporins or other beta-lactams with low cross-reactivity, depending on the severity and type of infection.\n\n**For asymptomatic bacteriuria or symptomatic cystitis in pregnancy:**\n\nSafe options include [[1]]():\n- **Cephalexin** (a first-generation cephalosporin)\n- **Fosfomycin tromethamine** (if the organism is known to be susceptible)\n- **Nitrofurantoin** (avoid near term due to risk of hemolytic anemia in the fetus or newborn, particularly in those with G6PD deficiency, though this toxicity is rare)\n\n**For pyelonephritis in pregnancy:**\n\n**Ceftriaxone is the preferred empiric therapy** [[1]](). Step down to oral therapy once the patient is stabilized and urine culture results are available.\n\n**Important considerations regarding cross-reactivity:**\n\nThe reported incidence of cross-allergenicity between penicillins and carbapenems is about 1% [[1]](), meaning carbapenems (ertapenem, meropenem) may be considered alternatives in severe cases if other options are unsuitable, though carbapenems are reserved for parenteral therapy of complicated or resistant infections.\n\n**Agents to avoid:**\n- Fluoroquinolones (animal studies show impaired cartilage development, though no human reports of increased teratogenicity) [[1]]()\n- Trimethoprim and sulfamethoxazole/trimethoprim in the first trimester (antifolate teratogenicity) [[1]]()\n- Sulfamethoxazole in the last 6 weeks of pregnancy (risk of neonatal hyperbilirubinemia) [[1]]()\n\nAlways obtain a urine culture prior to initiating therapy and tailor treatment based on culture results [[1]]().",
+        "In pregnant patients with severe penicillin allergy, treatment options are limited due to the need to avoid both penicillins and sulfonamides in certain trimesters.\n\nFor asymptomatic bacteriuria and symptomatic cystitis in pregnancy, the safest alternatives with a documented penicillin allergy are [[1]]():\n\n- **Cephalexin** \u2013 a first-generation cephalosporin suitable for use throughout pregnancy [[1]]()\n- **Fosfomycin tromethamine** \u2013 as a single 3 g dose if the organism is known to be susceptible [[1]]()\n- **Nitrofurantoin** \u2013 effective but should be avoided near term due to risk of hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency (though this toxicity is rare) [[1]]()\n\nFor pyelonephritis in pregnancy, **ceftriaxone is the preferred empiric therapy** [[1]](). The patient can be stepped down to oral therapy once stabilized and urine culture results are available [[1]]().\n\n**Important considerations regarding cross-allergenicity:** The reported incidence of cross-allergenicity between penicillins and carbapenems is about 1% [[1]](), making carbapenems a potential option in severe penicillin allergy if other agents fail, though this should be used cautiously given the documented allergy history.\n\n**Avoid:** Trimethoprim and sulfamethoxazole/trimethoprim in the first trimester due to antifolate teratogenicity [[1]](), and sulfamethoxazole in the last 6 weeks due to risk of neonatal hyperbilirubinemia [[1]]().\n\nConfirm organism susceptibility with urine culture before finalizing therapy, as this guides selection between these limited options."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        }
+      ]
+    },
+    "Q6_offtopic": {
+      "question": "What is the best Italian restaurant in downtown Toronto?",
+      "checks": [
+        "F6"
+      ],
+      "answers": [
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    }
+  },
+  "B_temp0": {
+    "Q1_uti_pregnancy": {
+      "question": "What is the treatment for asymptomatic UTI in a pregnant patient?",
+      "checks": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "answers": [
+        "Asymptomatic bacteriuria in pregnancy should be screened for and treated to prevent progression to pyelonephritis and adverse fetal outcomes.\n\nScreen pregnant patients for asymptomatic bacteriuria early in pregnancy (weeks 12\u201316) [[1]]() and treat if confirmed on 2 consecutive cultures [[1]](). If left untreated, bacteriuria in pregnancy can progress to pyelonephritis and cause adverse effects to the fetus [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, rate of preterm delivery, and risk of low birth-weight babies [[1]]().\n\nFor asymptomatic bacteriuria and symptomatic cystitis in pregnancy, treatment options include [[1]]():\n\n- Amoxicillin (if the organism is known to be susceptible)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if the organism is known to be susceptible)\n- Nitrofurantoin (avoid near term due to risk of hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency, though this toxicity is rare)\n\nAvoid trimethoprim and sulfamethoxazole/trimethoprim in the first trimester due to antifolate teratogenicity [[1]](), and avoid sulfamethoxazole in the last 6 weeks of pregnancy due to risk of neonatal hyperbilirubinemia [[1]]().\n\nUpon completion of therapy, follow-up with a urine culture 1\u20132 weeks later, and then monthly until delivery [[1]]().",
+        "Asymptomatic bacteriuria in pregnancy should be treated if confirmed on 2 consecutive urine cultures [[1]](), as it can progress to pyelonephritis and cause adverse fetal effects if left untreated [[1]]().\n\n**Treatment options for asymptomatic bacteriuria in pregnancy include:** [[1]]()\n\n- Amoxicillin (if organism is susceptible)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if organism is susceptible) [[2]]()\n- Nitrofurantoin (avoid near term due to risk of hemolytic anemia in fetus/newborn, especially with G6PD deficiency, though this toxicity is rare) [[1]]()\n\n**Important considerations:**\n\nTrimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester due to antifolate teratogenicity [[1]](). Sulfamethoxazole should also be avoided in the last 6 weeks of pregnancy due to risk of neonatal hyperbilirubinemia [[1]]().\n\n**Follow-up:** After completing therapy, obtain a urine culture 1-2 weeks later, then monthly until delivery [[1]]().\n\n**Prevention:** For pregnant patients with recurrent UTIs, nitrofurantoin and cephalexin are preferred for antimicrobial prophylaxis [[1]]().",
+        "Asymptomatic bacteriuria in pregnancy must be treated to prevent pyelonephritis and adverse fetal outcomes [[1]]().\n\nPregnant patients should be screened for asymptomatic bacteriuria early in pregnancy (weeks 12\u201316) [[1]](), and treatment is indicated if bacteriuria is confirmed on 2 consecutive cultures [[1]](). If left untreated, bacteriuria can progress to pyelonephritis and cause adverse effects to the fetus [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, preterm delivery rate, and risk of low birth-weight babies [[1]]().\n\nSafe treatment options for asymptomatic bacteriuria in pregnancy include [[1]]():\n- Amoxicillin (if organism is susceptible)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if organism is susceptible)\n- Nitrofurantoin (avoid near term due to risk of hemolytic anemia in fetus/newborn, particularly in G6PD deficiency, though this toxicity is rare)\n\nAgents to avoid in pregnancy include trimethoprim and sulfamethoxazole/trimethoprim in the first trimester (antifolate teratogenicity risk) [[1]](), sulfamethoxazole in the last 6 weeks (neonatal hyperbilirubinemia risk) [[1]](), and fluoroquinolones [[1]]().\n\nUpon completion of therapy, follow-up urine culture should be obtained 1\u20132 weeks later, then monthly until delivery [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q2_uti_avoid": {
+      "question": "Which antibiotics should be avoided when treating UTI during pregnancy and why?",
+      "checks": [
+        "F3"
+      ],
+      "answers": [
+        "Fluoroquinolones and trimethoprim/sulfamethoxazole (particularly in the first trimester) should be avoided during pregnancy due to teratogenic and fetal risks.\n\n**Fluoroquinolones** should be avoided in pregnancy because impaired cartilage development has been reported in animal studies [[1]](). Although there are no confirmed reports in humans of increased risk of major malformations, musculoskeletal effects, spontaneous abortions, prematurity, or intrauterine growth retardation [[1]](), the potential for fetal cartilage toxicity makes them unsuitable in this population.\n\n**Trimethoprim and sulfamethoxazole/trimethoprim (SMX/TMP)** should be avoided in the first trimester of pregnancy due to antifolate teratogenicity [[1]](). Additionally, sulfamethoxazole specifically should be avoided in the last 6 weeks of pregnancy as it may lead to neonatal hyperbilirubinemia [[1]]().\n\n**Nitrofurantoin** should be avoided near term because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency, though this toxicity is rare [[1]]().\n\nSafe alternatives for treating UTI in pregnancy include amoxicillin (if susceptibility confirmed), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy [[1]]().",
+        "Several antibiotics should be avoided when treating UTI during pregnancy due to teratogenic or fetal safety concerns.\n\n**Trimethoprim and sulfamethoxazole/trimethoprim (SMX/TMP)** should be avoided in the first trimester of pregnancy because they are associated with antifolate teratogenicity [[1]](). Additionally, sulfamethoxazole should be avoided in the last 6 weeks of pregnancy as it may lead to neonatal hyperbilirubinemia [[1]]().\n\n**Fluoroquinolones** should be avoided in pregnancy, as impaired cartilage development has been reported in animal studies; however, there are no reports in humans suggesting an increased risk of major malformations, adverse effects in the fetal musculoskeletal system, spontaneous abortions, prematurity, intrauterine growth retardation or postnatal disorders [[1]]().\n\n**Nitrofurantoin** should be avoided near term because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency; however, this toxicity is rare [[1]]().\n\n**Safe alternatives** for treating asymptomatic bacteriuria and symptomatic cystitis in pregnancy include amoxicillin (if the organism is known to be susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if the organism is known to be susceptible) [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy [[1]]().",
+        "Several antibiotics must be avoided when treating UTI during pregnancy due to teratogenic risk or neonatal toxicity.\n\n**Trimethoprim and sulfamethoxazole/trimethoprim (SMX/TMP)** should be avoided in the first trimester of pregnancy because they are associated with antifolate teratogenicity [[1]](). Additionally, sulfamethoxazole should be avoided in the last 6 weeks of pregnancy, as it may lead to neonatal hyperbilirubinemia [[1]]().\n\n**Fluoroquinolones** should be avoided in pregnancy, though notably the evidence base is primarily from animal studies showing impaired cartilage development. There are no reports in humans of increased risk of major malformations, adverse effects in the fetal musculoskeletal system, spontaneous abortions, prematurity, intrauterine growth retardation, or postnatal disorders [[1]]().\n\n**Nitrofurantoin** should be avoided near term because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency, though this toxicity is rare [[1]]().\n\nPreferred safe alternatives for asymptomatic bacteriuria and symptomatic cystitis in pregnancy include amoxicillin (if susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if susceptible). For pyelonephritis, ceftriaxone is the preferred empiric therapy [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q3_cephalexin": {
+      "question": "Tell me about cephalexin for treating UTI in a pregnant patient.",
+      "checks": [
+        "F2"
+      ],
+      "answers": [
+        "Cephalexin is a second-line agent for uncomplicated UTI in pregnancy and can be used for both asymptomatic bacteriuria and symptomatic cystitis during pregnancy [[1]]().\n\n**Safety Profile in Pregnancy:**\nCephalexin is one of the preferred options for antimicrobial prophylaxis to prevent recurrent UTIs in pregnant patients [[1]](). All cephalosporins, including cephalexin, are effective for UTI treatment and are considered compatible with breastfeeding [[1]]().\n\n**Dosing and Efficacy:**\nCephalexin is listed as a second-line therapy for acute uncomplicated UTI (cystitis) at 500 mg every 6 hours for 7 days [[1]](). While cephalosporins are effective for treatment, they are not as well studied as SMX/TMP or fluoroquinolones and are somewhat less effective for acute cystitis, especially with short courses of therapy [[1]](). Cephalosporins may also be associated with a greater likelihood of vulvovaginal candidiasis [[1]]().\n\n**Clinical Context:**\nIn pregnancy, cephalexin can be used for asymptomatic bacteriuria and symptomatic cystitis when first-line agents (nitrofurantoin, amoxicillin, or amoxicillin/clavulanate) are not suitable [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy, with step-down to oral therapy once the patient stabilizes [[1]]().",
+        "Cephalexin is a safe and effective second-line option for treating UTI in pregnant patients.\n\nAccording to the CPS evidence, cephalexin is listed as one of the acceptable agents for treating asymptomatic bacteriuria and symptomatic cystitis during pregnancy [[1]](). All cephalosporins, including cephalexin, are effective for UTI treatment [[1]](). The source notes that cephalosporins are not as well studied as some alternatives and are somewhat less effective for acute cystitis, especially with short courses of therapy, though they may be associated with a greater likelihood of vulvovaginal candidiasis [[1]]().\n\nIn pregnant patients specifically, cephalexin may be considered for asymptomatic bacteriuria or symptomatic cystitis, and it is also preferred for antimicrobial prophylaxis to prevent recurrent UTI in pregnancy [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric agent rather than cephalexin [[1]]().\n\nPregnant patients should be screened for asymptomatic bacteriuria at 12\u201316 weeks and treated if confirmed on 2 consecutive cultures, as untreated bacteriuria can progress to pyelonephritis and cause fetal adverse effects [[1]](). Following completion of therapy, a urine culture should be performed 1\u20132 weeks later, then monthly until delivery [[1]]().",
+        "Cephalexin is an acceptable second-line agent for treating uncomplicated UTI in pregnancy, though it is not preferred empirically.\n\nFor symptomatic cystitis and asymptomatic bacteriuria in pregnancy, cephalexin may be used as a treatment option [[1]](). However, the CPS source indicates that preferred first-line agents for asymptomatic bacteriuria and symptomatic cystitis in pregnancy are amoxicillin (if the organism is susceptible), amoxicillin/clavulanate, fosfomycin tromethamine (if susceptible), and nitrofurantoin (avoiding near term due to risk of hemolytic anemia in the fetus) [[1]]().\n\nFor pyelonephritis in pregnancy specifically, ceftriaxone is the preferred empiric therapy, with step-down to oral therapy once the patient is clinically stable and culture results are available [[1]]().\n\nCephalexin is also listed as a preferred agent for prophylaxis of recurrent UTI in pregnant patients [[1]](). Like all cephalosporins used for UTI, cephalexin is effective but is not as extensively studied as other agents and may be associated with a greater likelihood of vulvovaginal candidiasis [[1]]().\n\nIn terms of safety during breastfeeding, cephalosporins (including cephalexin) are considered compatible with breastfeeding [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q5_pcn_allergy": {
+      "question": "How do I manage a UTI in a pregnant patient with severe penicillin allergy?",
+      "checks": [
+        "F5"
+      ],
+      "answers": [
+        "In pregnant patients with severe penicillin allergy, manage UTI carefully with agents that avoid both penicillins and cross-reactive beta-lactams.\n\n**Safe first-line options for pregnancy include:**\n\n[Cephalexin] [[1]]() is a first-generation cephalosporin suitable for treating asymptomatic bacteriuria and symptomatic cystitis in pregnancy. While cephalosporins are beta-lactams, the reported incidence of cross-allergenicity between penicillins and carbapenems is about 1% [[2]](), and first-generation cephalosporins have even lower cross-reactivity with penicillins in severe allergy.\n\n[Fosfomycin tromethamine (if the organism is known to be susceptible)] [[1]]() is another option for asymptomatic bacteriuria and symptomatic cystitis in pregnancy and does not share structural similarity with penicillins.\n\n**For pyelonephritis in pregnancy:**\n\n[Ceftriaxone is the preferred empiric therapy for treating pyelonephritis in pregnancy] [[1]](), with step-down to oral therapy once the patient is stabilized and urine culture results are available. This third-generation cephalosporin carries minimal cross-reactivity risk in severe penicillin-allergic patients.\n\n**Agents to avoid:**\n\n[Trimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester of pregnancy] [[1]]() due to antifolate teratogenicity, and [sulfamethoxazole should be avoided in the last 6 weeks of pregnancy] [[1]]() due to risk of neonatal hyperbilirubinemia. [Fluoroquinolones should be avoided in pregnancy] [[1]](), and [nitrofurantoin should be avoided near term] [[1]]() due to risk of hemolytic anemia in the fetus.\n\n**Key principle:** Always obtain a urine culture prior to initiating therapy to tailor treatment to the specific uropathogen and guide selection among available safe alternatives.",
+        "In a pregnant patient with severe penicillin allergy, avoid penicillin-based agents and use cephalosporins as safe alternatives, recognizing minimal cross-allergenicity.\n\nFor asymptomatic bacteriuria or symptomatic cystitis in pregnancy, the CPS recommends [[1]]():\n- **Cephalexin** (first-generation cephalosporin) [[1]]()\n- **Fosfomycin tromethamine** (if the organism is known to be susceptible) [[1]]()\n- **Nitrofurantoin** (avoid near term due to risk of hemolytic anemia in the fetus/newborn, especially with G6PD deficiency, though this is rare) [[1]]()\n\nFor pyelonephritis in pregnancy, **ceftriaxone is the preferred empiric therapy**; step down to oral therapy once stabilized and culture results are available [[1]]().\n\n**Key safety considerations for penicillin-allergic patients:**\nThe reported incidence of cross-allergenicity between penicillins and carbapenems is about 1%, and carbapenems may cause allergic reactions in <3% of patients [[1]](). However, carbapenems are parenteral-only agents and are reserved for severe infections with resistant organisms; in pregnancy, cephalosporins remain preferred.\n\n**Important restrictions in pregnancy:**\n- Avoid fluoroquinolones (despite lack of human teratogenicity data, animal studies show potential impaired cartilage development) [[1]]()\n- Avoid trimethoprim and sulfamethoxazole/trimethoprim in the first trimester (antifolate teratogenicity) [[1]]()\n- Avoid sulfamethoxazole in the last 6 weeks (risk of neonatal hyperbilirubinemia) [[1]]()\n\nObtain urine culture before initiating therapy and reculture 1\u20132 weeks post-treatment, then monthly until delivery [[1]]().",
+        "In a pregnant patient with severe penicillin allergy, cephalosporins are safe alternatives for UTI treatment, though cross-allergenicity with penicillins is low [[1]]().\n\n**For asymptomatic bacteriuria or symptomatic cystitis in pregnancy**, the following agents are safe options in penicillin-allergic patients [[1]]():\n- **Cephalexin** (first-generation cephalosporin)\n- **Fosfomycin tromethamine** (if organism is susceptible)\n- **Nitrofurantoin** (avoid near term due to risk of hemolytic anemia in fetus/newborn, especially with G6PD deficiency, though this toxicity is rare)\n\n**For pyelonephritis in pregnancy**, ceftriaxone is the preferred empiric therapy [[1]](). The reported incidence of cross-allergenicity between penicillins and cephalosporins is approximately 1%, and anaphylaxis to carbapenems occurs in <3% of patients [[1]]().\n\n**Agents to avoid in pregnancy:**\n- Fluoroquinolones (avoid despite lack of human evidence for malformations, due to animal data on cartilage development) [[1]]()\n- Trimethoprim and sulfamethoxazole/trimethoprim in the first trimester (antifolate teratogenicity) [[1]]()\n- Sulfamethoxazole in the last 6 weeks (neonatal hyperbilirubinemia risk) [[1]]()\n\n**Key management principle:** Always obtain urine culture prior to initiating therapy and screen for asymptomatic bacteriuria early in pregnancy (weeks 12\u201316) [[1]](). If left untreated, bacteriuria in pregnancy can progress to pyelonephritis with adverse fetal effects [[1]](). Antibiotic treatment reduces pyelonephritis incidence, preterm delivery rates, and low birth-weight risk [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        }
+      ]
+    },
+    "Q6_offtopic": {
+      "question": "What is the best Italian restaurant in downtown Toronto?",
+      "checks": [
+        "F6"
+      ],
+      "answers": [
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.\n\nIs there a pharmacy or clinical question I can help you with instead?",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    }
+  },
+  "C_quote_anchor": {
+    "Q1_uti_pregnancy": {
+      "question": "What is the treatment for asymptomatic UTI in a pregnant patient?",
+      "checks": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "answers": [
+        "Asymptomatic bacteriuria in pregnancy should be treated with antibiotics to prevent progression to pyelonephritis and fetal complications.\n\nPregnant patients should be screened for asymptomatic bacteriuria early in pregnancy at weeks 12\u201316 [[1]](), and treatment is indicated if asymptomatic bacteriuria is confirmed on 2 consecutive cultures [[1]](). If left untreated, bacteriuria in pregnancy can progress to pyelonephritis and cause adverse effects to the fetus [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, rate of preterm delivery, and risk of low birth-weight babies [[1]]().\n\n**Safe treatment options in pregnancy include:** [[1]]()\n- Amoxicillin (if organism susceptibility is known)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if organism susceptibility is known)\n- Nitrofurantoin (avoid near term due to risk of hemolytic anemia in fetus/newborn, especially with G6PD deficiency, though this toxicity is rare)\n\n**Agents to avoid in pregnancy:** [[1]]()\n- Trimethoprim and sulfamethoxazole/trimethoprim in the first trimester (antifolate teratogenicity)\n- Sulfamethoxazole in the last 6 weeks of pregnancy (neonatal hyperbilirubinemia risk)\n- Fluoroquinolones (though no human reports of increased malformations, animal data show potential for cartilage impairment)\n\nUpon completion of therapy, follow-up with a urine culture is recommended 1\u20132 weeks later, then monthly until delivery [[1]]().",
+        "Asymptomatic bacteriuria in pregnancy must be treated with antibiotics to prevent progression to pyelonephritis and adverse fetal outcomes.\n\nPregnant patients should be screened for asymptomatic bacteriuria early in pregnancy (weeks 12\u201316) and treated if confirmed on 2 consecutive urine cultures [[1]](). If left untreated, bacteriuria in pregnancy can progress to pyelonephritis and cause adverse effects to the fetus [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, rate of preterm delivery, and risk of low birth-weight babies [[1]]().\n\n**Treatment options for asymptomatic bacteriuria in pregnancy include:** [[2]]()\n- Amoxicillin (if the organism is known to be susceptible)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if the organism is known to be susceptible)\n- Nitrofurantoin (avoid near term because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency, though this toxicity is rare)\n\n**Agents to avoid in pregnancy:**\n- Trimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester because they are associated with antifolate teratogenicity [[1]]()\n- Sulfamethoxazole should be avoided in the last 6 weeks of pregnancy as it may lead to neonatal hyperbilirubinemia [[2]]()\n- Fluoroquinolones should be avoided in pregnancy [[2]]()\n\nUpon completion of therapy, follow-up with a urine culture 1\u20132 weeks later, and then monthly until delivery [[1]]().",
+        "Asymptomatic bacteriuria in pregnancy should be treated with oral antibiotics after confirmation on 2 consecutive cultures.\n\nScreen pregnant patients for asymptomatic bacteriuria early in pregnancy (weeks 12-16) [[1]]() and treat if confirmed on 2 consecutive cultures [[1]](). If left untreated, bacteriuria in pregnancy can progress to pyelonephritis and cause adverse effects to the fetus [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, rate of preterm delivery and risk of low birth-weight babies [[1]]().\n\nFor asymptomatic bacteriuria and symptomatic cystitis in pregnancy, the following agents may be used [[1]]():\n\n- Amoxicillin (if the organism is known to be susceptible)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if the organism is known to be susceptible) [[1]]()\n- Nitrofurantoin (avoid near term because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency; however, this toxicity is rare) [[1]]()\n\nAgents to avoid in pregnancy include trimethoprim and sulfamethoxazole/trimethoprim in the first trimester due to antifolate teratogenicity [[1]](), and sulfamethoxazole in the last 6 weeks of pregnancy due to risk of neonatal hyperbilirubinemia [[1]]().\n\nUpon completion of therapy, follow-up with a urine culture 1-2 weeks later, and then monthly until delivery [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q2_uti_avoid": {
+      "question": "Which antibiotics should be avoided when treating UTI during pregnancy and why?",
+      "checks": [
+        "F3"
+      ],
+      "answers": [
+        "Several antibiotics should be avoided when treating UTI during pregnancy due to teratogenic or neonatal risks.\n\n**Trimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester** because they are associated with antifolate teratogenicity [[1]]()[[2]](). Additionally, **sulfamethoxazole should be avoided in the last 6 weeks of pregnancy** as it may lead to neonatal hyperbilirubinemia [[1]]().\n\n**Fluoroquinolones (ciprofloxacin, levofloxacin, norfloxacin) should be avoided in pregnancy** [[1]](). While animal studies have reported impaired cartilage development, there are no confirmed reports in humans of increased risk of major malformations, adverse effects in the fetal musculoskeletal system, spontaneous abortions, prematurity, intrauterine growth retardation, or postnatal disorders [[1]]().\n\n**Nitrofurantoin should be avoided near term** because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency, although this toxicity is rare [[1]]().\n\nSafe alternatives for treating asymptomatic bacteriuria and symptomatic cystitis in pregnancy include amoxicillin (if susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if susceptible) [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy [[1]]().",
+        "Several antibiotics should be avoided during pregnancy when treating UTI due to teratogenic or other fetal risks.\n\n**Trimethoprim and sulfamethoxazole/trimethoprim (SMX/TMP)** should be avoided in the first trimester of pregnancy because they are associated with antifolate teratogenicity [[1]](). Additionally, sulfamethoxazole should be avoided in the last 6 weeks of pregnancy as it may lead to neonatal hyperbilirubinemia [[1]]().\n\n**Fluoroquinolones** (ciprofloxacin, levofloxacin, norfloxacin) should be avoided in pregnancy due to potential adverse effects on developing cartilage reported in animal studies [[1]](). While there are no reports in humans of increased risk of major malformations or adverse effects on the fetal musculoskeletal system, the animal data warrant avoidance as a precaution [[1]]().\n\n**Nitrofurantoin** should be avoided near term because of the risk of inducing hemolytic anemia in the fetus or newborn, particularly in those with G6PD deficiency, although this toxicity is rare [[1]]().\n\nIn contrast, safe options during pregnancy include amoxicillin (if the organism is susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if the organism is susceptible) [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy [[1]]().",
+        "Several antibiotics should be avoided when treating UTI during pregnancy due to teratogenic and fetal safety concerns.\n\n**Trimethoprim and sulfamethoxazole/trimethoprim (SMX/TMP) should be avoided in the first trimester** because they are associated with antifolate teratogenicity [[1]]()[[2]]().\n\n**Sulfamethoxazole should be avoided in the last 6 weeks of pregnancy** because it may lead to neonatal hyperbilirubinemia [[1]]().\n\n**Fluoroquinolones should be avoided in pregnancy.** Although animal studies have reported impaired cartilage development, there are no human reports suggesting increased risk of major malformations, adverse effects in the fetal musculoskeletal system, spontaneous abortions, prematurity, intrauterine growth retardation, or postnatal disorders [[1]]().\n\n**Nitrofurantoin should be avoided near term** because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with glucose-6-phosphate dehydrogenase (G6PD) deficiency; however, this toxicity is rare [[1]](). Nitrofurantoin is acceptable earlier in pregnancy for uncomplicated UTI.\n\n**Safe alternatives in pregnancy** include amoxicillin (if organism is susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if organism is susceptible) [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q3_cephalexin": {
+      "question": "Tell me about cephalexin for treating UTI in a pregnant patient.",
+      "checks": [
+        "F2"
+      ],
+      "answers": [
+        "Cephalexin is a safe and effective second-line option for treating UTI in pregnant patients.\n\nFor asymptomatic bacteriuria and symptomatic cystitis in pregnancy, cephalexin may be used as one of several acceptable agents [[1]](). It is listed alongside amoxicillin, amoxicillin/clavulanate, fosfomycin tromethamine, and nitrofurantoin as safe alternatives for pregnant patients [[1]]().\n\nFor pyelonephritis in pregnancy, ceftriaxone (a third-generation cephalosporin) is the preferred empiric therapy; patients should then step down to oral therapy once stabilized and culture results are available [[1]]().\n\nCephalosporins as a drug class are effective for UTI treatment and are not as well studied as some other agents, with somewhat lower effectiveness for acute cystitis with short courses of therapy [[1]](). Cephalosporins may be associated with a greater likelihood of vulvovaginal candidiasis compared to other agents [[1]]().\n\nFor prevention of recurrent UTI during pregnancy, cephalexin is listed as a preferred agent for antimicrobial prophylaxis [[1]]().",
+        "Cephalexin is a safe and effective second-line option for treating UTI in pregnant patients.\n\nFor asymptomatic bacteriuria and symptomatic cystitis in pregnancy, cephalexin may be used as one of several acceptable agents [[1]](). All cephalosporins, including cephalexin, are effective for UTI treatment [[1]](). They are not as well studied as some alternatives and are somewhat less effective for acute cystitis with short courses of therapy, but cephalosporins may be associated with a greater likelihood of vulvovaginal candidiasis [[1]]().\n\nIn pregnancy specifically, cephalexin is listed among the agents safe for treating asymptomatic bacteriuria and symptomatic cystitis [[1]](). For pyelonephritis in pregnancy, ceftriaxone is preferred as empiric therapy, with step-down to oral agents once the patient is stabilized and culture results are available [[1]]().\n\nFor prevention of recurrent UTI during pregnancy, cephalexin is one of the preferred prophylactic agents [[1]](). The dosing in the drug table lists cephalexin as 500 mg every 6 hours orally, with adverse effects including hypersensitivity reactions, rash, nausea, vomiting, pseudomembranous colitis, and renal and hepatic dysfunction; it can increase INR with warfarin [[1]]().",
+        "Cephalexin is a safe and effective second-line option for treating UTI in pregnancy.\n\nFor asymptomatic bacteriuria and symptomatic cystitis in pregnancy, cephalexin may be used as an oral treatment [[1]](). It is listed among the acceptable agents alongside amoxicillin (if susceptible), amoxicillin/clavulanate, and fosfomycin tromethamine [[1]](). \n\nCephalexin is also a preferred agent for antimicrobial prophylaxis to prevent recurrent symptomatic or asymptomatic UTIs in pregnant patients, alongside nitrofurantoin [[1]](). As a first-generation cephalosporin, it is effective for treatment of UTI and is not associated with the antifolate teratogenicity concerns that affect trimethoprim and sulfamethoxazole/trimethoprim in the first trimester [[1]]().\n\nThe typical dosing for cephalexin in UTI is 500 mg every 6 hours orally [[1]](). Common adverse effects include hypersensitivity reactions, rash, nausea, vomiting, pseudomembranous colitis, and renal or hepatic dysfunction; it may also increase the INR in patients taking warfarin [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": false,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F2: cephalexin invented elaboration ['first-generation cephalosporin']"
+          ]
+        }
+      ]
+    },
+    "Q5_pcn_allergy": {
+      "question": "How do I manage a UTI in a pregnant patient with severe penicillin allergy?",
+      "checks": [
+        "F5"
+      ],
+      "answers": [
+        "In a pregnant patient with severe penicillin allergy, avoid both penicillins and first-generation cephalosporins due to cross-reactivity risk, and use cephalexin, fosfomycin tromethamine, or ceftriaxone (for pyelonephritis) depending on organism susceptibility.\n\nFor uncomplicated cystitis or asymptomatic bacteriuria in pregnancy, safe options include [[1]]():\n- **Cephalexin** (a first-generation cephalosporin) [[1]]()\n- **Fosfomycin tromethamine** (if organism susceptibility confirmed) [[1]]()\n- **Nitrofurantoin** (though avoid near term due to risk of hemolytic anemia in the fetus or newborn, especially with G6PD deficiency) [[1]]()\n\nFor pyelonephritis in pregnancy, [[1]]()**ceftriaxone is the preferred empiric therapy**. Step down to oral therapy once the patient is stabilized and urine culture results are available [[1]]().\n\n**Critical allergy considerations**: While the reported incidence of cross-allergenicity between penicillins and carbapenems is about 1%, carbapenems can cause allergic reactions in <3% of patients overall [[1]](). Given a *severe* penicillin allergy history, carbapenems should be used with caution and only if no other suitable agent is available. Cephalosporins carry a small cross-reactivity risk with penicillins but are generally considered acceptable alternatives in pregnancy when truly indicated [[1]]().\n\n**Always obtain urine culture prior to initiating empiric therapy** to tailor treatment based on organism susceptibility and avoid unnecessary broad-spectrum exposure in pregnancy [[1]]().",
+        "In a pregnant patient with severe penicillin allergy, UTI management depends on the type and severity of infection, with careful antibiotic selection to avoid cross-reactivity.\n\n## Safe Options for Cystitis/Asymptomatic Bacteriuria\n\nFor uncomplicated cystitis or asymptomatic bacteriuria in pregnancy, you may use [[1]]():\n- **Fosfomycin tromethamine** (if the organism is known to be susceptible) [[1]]()\n- **Nitrofurantoin** (avoid near term due to risk of hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency, though this toxicity is rare) [[1]]()\n\nBoth avoid beta-lactams entirely. Trimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester due to antifolate teratogenicity, and sulfamethoxazole should be avoided in the last 6 weeks due to risk of neonatal hyperbilirubinemia [[1]]().\n\n## For Pyelonephritis\n\n**Ceftriaxone is the preferred empiric therapy for treating pyelonephritis in pregnancy**, with step down to oral therapy once the patient is stabilized and urine culture results are available [[1]]().\n\nRegarding carbapenem use in penicillin-allergic patients: **The reported incidence of cross-allergenicity between penicillins and carbapenems is about 1%** [[1]](). This very low cross-reactivity risk makes carbapenems a potential option if cephalosporins cannot be used, though cephalosporins are structurally distinct and generally considered safer first-line alternatives to carbapenems in the penicillin-allergic population.\n\n**Always obtain a urine culture prior to initiating therapy** to guide organism-specific selection, particularly in pregnancy where treatment is mandatory to prevent progression to pyelonephritis and fetal complications [[1]]().",
+        "In a pregnant patient with severe penicillin allergy, UTI management requires careful agent selection since first-line options are limited.\n\nFor **asymptomatic bacteriuria or symptomatic cystitis in pregnancy**, safe alternatives to penicillins include [[1]]():\n- **Fosfomycin tromethamine** (single 3 g dose, if the organism is known to be susceptible) [[1]]()\n- **Nitrofurantoin** (though avoid near term due to risk of fetal hemolytic anemia, especially with G6PD deficiency) [[1]]()\n- **Cephalosporins** are generally considered safe; however, cross-reactivity with penicillins exists but is rare [[1]]()\n\n**Important cross-reactivity note:** The reported incidence of cross-allergenicity between penicillins and carbapenems is about 1% [[1]](), so carbapenems are an option if cephalosporins cannot be used, though they carry a <3% risk of allergic reactions overall [[1]]().\n\nFor **pyelonephritis in pregnancy**, cephalosporins remain preferred empiric therapy [[1]](). If cephalosporin allergy is also confirmed, **carbapenems** (ertapenem or meropenem) are beta-lactam alternatives useful for severe infection and can be considered despite the small cross-reactivity risk [[1]]().\n\n**Key management principles:**\n- Screen for asymptomatic bacteriuria at 12\u201316 weeks and treat if confirmed on 2 consecutive cultures [[1]]()\n- Perform urine culture before initiating therapy to guide organism-specific treatment [[1]]()\n- Follow up with urine culture 1\u20132 weeks after completion, then monthly until delivery [[1]]()\n\nThe CPS knowledge base I can access does not contain detailed information on the assessment of true penicillin allergy severity or desensitization protocols in pregnancy. Consult primary sources or infectious disease specialists for risk stratification."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q6_offtopic": {
+      "question": "What is the best Italian restaurant in downtown Toronto?",
+      "checks": [
+        "F6"
+      ],
+      "answers": [
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    }
+  },
+  "D_hardened_temp0": {
+    "Q1_uti_pregnancy": {
+      "question": "What is the treatment for asymptomatic UTI in a pregnant patient?",
+      "checks": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "answers": [
+        "Asymptomatic bacteriuria in pregnancy should be treated with antibiotics after confirmation on 2 consecutive cultures, as untreated bacteriuria can progress to pyelonephritis and cause adverse fetal effects.\n\nScreen pregnant patients for asymptomatic bacteriuria early in pregnancy (weeks 12\u201316) [[1]](). If asymptomatic bacteriuria is confirmed on 2 consecutive cultures, treatment is indicated [[1]](). If left untreated, bacteriuria in pregnancy can progress to pyelonephritis and cause adverse effects to the fetus [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, rate of preterm delivery and risk of low birth-weight babies [[1]]().\n\nFor asymptomatic bacteriuria and symptomatic cystitis in pregnancy, approved agents include [[1]]():\n- Amoxicillin (if the organism is known to be susceptible)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if the organism is known to be susceptible)\n- Nitrofurantoin (avoid near term due to risk of hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency, though this toxicity is rare)\n\nAgents to avoid in pregnancy include trimethoprim and sulfamethoxazole/trimethoprim in the first trimester due to antifolate teratogenicity, and sulfamethoxazole in the last 6 weeks due to risk of neonatal hyperbilirubinemia [[1]]().\n\nUpon completion of therapy, follow-up with a urine culture 1\u20132 weeks later, and then monthly until delivery [[1]]().",
+        "Asymptomatic bacteriuria in pregnancy should be screened for and treated to prevent progression to pyelonephritis and adverse fetal outcomes.\n\nScreen pregnant patients for asymptomatic bacteriuria early in pregnancy (weeks 12\u201316) [[1]]() and treat if the bacteriuria is confirmed on 2 consecutive cultures [[1]](). If left untreated, bacteriuria in pregnancy can progress to pyelonephritis and cause adverse effects to the fetus [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, rate of preterm delivery, and risk of low birth-weight babies [[1]]().\n\n**Treatment options for asymptomatic bacteriuria in pregnancy include:** [[1]]()\n- Amoxicillin (if the organism is known to be susceptible)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if the organism is known to be susceptible)\n- Nitrofurantoin (avoid near term because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency; however, this toxicity is rare)\n\n**Agents to avoid in pregnancy:** [[1]]()\n- Trimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester because they are associated with antifolate teratogenicity\n- Sulfamethoxazole should be avoided in the last 6 weeks of pregnancy as it may lead to neonatal hyperbilirubinemia\n- Fluoroquinolones should be avoided, although there are no reports in humans suggesting an increased risk of major malformations or adverse fetal effects\n\nUpon completion of therapy, follow up with a urine culture 1\u20132 weeks later, and then monthly until the baby is born [[1]]().",
+        "Asymptomatic bacteriuria in pregnancy must be treated with antibiotics to prevent progression to pyelonephritis and fetal complications.\n\nPregnant patients should be screened for asymptomatic bacteriuria early in pregnancy (weeks 12\u201316) and treated if confirmed on 2 consecutive cultures [[1]](). If left untreated, bacteriuria in pregnancy can progress to pyelonephritis and cause adverse effects to the fetus [[1]](). Antibiotic treatment has been shown to reduce the incidence of pyelonephritis, rate of preterm delivery, and risk of low birth-weight babies [[1]]().\n\n**Safe treatment options in pregnancy include:** [[1]]()\n- Amoxicillin (if organism is known to be susceptible)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if organism is known to be susceptible)\n- Nitrofurantoin (avoid near term due to risk of hemolytic anemia in fetus or newborn, especially in those with G6PD deficiency, though this toxicity is rare)\n\n**Agents to avoid:** [[1]]()\n- Trimethoprim and sulfamethoxazole/trimethoprim in the first trimester (antifolate teratogenicity)\n- Sulfamethoxazole in the last 6 weeks of pregnancy (neonatal hyperbilirubinemia risk)\n- Fluoroquinolones (avoid due to animal data showing impaired cartilage development, though human safety data are reassuring)\n\nUpon completion of therapy, follow-up with a urine culture 1\u20132 weeks later, then monthly until delivery [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q2_uti_avoid": {
+      "question": "Which antibiotics should be avoided when treating UTI during pregnancy and why?",
+      "checks": [
+        "F3"
+      ],
+      "answers": [
+        "Several antibiotics should be avoided during pregnancy when treating UTI due to teratogenic or fetal safety concerns.\n\n**Trimethoprim and sulfamethoxazole/trimethoprim should be avoided in the first trimester** because they are associated with antifolate teratogenicity [[1]](). Additionally, **sulfamethoxazole should be avoided in the last 6 weeks of pregnancy** as it may lead to neonatal hyperbilirubinemia [[1]]().\n\n**Fluoroquinolones should be avoided in pregnancy**, as impaired cartilage development has been reported in animal studies [[1]](). Although there are no reports in humans of increased risk of major malformations, adverse effects in the fetal musculoskeletal system, spontaneous abortions, prematurity, intrauterine growth retardation, or postnatal disorders, avoidance remains the prudent approach [[1]]().\n\n**Nitrofurantoin should be avoided near term** because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency, although this toxicity is rare [[1]]().\n\nSafe alternatives for treating UTI in pregnancy include amoxicillin (if the organism is known susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if susceptible) [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy [[1]]().",
+        "Several antibiotics should be avoided during pregnancy when treating UTIs due to teratogenic or fetal safety concerns.\n\n**Trimethoprim and sulfamethoxazole/trimethoprim (SMX/TMP) should be avoided in the first trimester** because they are associated with antifolate teratogenicity [[1]](). Additionally, **sulfamethoxazole should be avoided in the last 6 weeks of pregnancy** because it may lead to neonatal hyperbilirubinemia [[1]]().\n\n**Fluoroquinolones should be avoided in pregnancy**, as impaired cartilage development has been reported in animal studies. However, there are no reports in humans suggesting an increased risk of major malformations, adverse effects in the fetal musculoskeletal system, spontaneous abortions, prematurity, intrauterine growth retardation or postnatal disorders [[1]]().\n\n**Nitrofurantoin should be avoided near term** because of the risk of inducing hemolytic anemia in the fetus or newborn, especially in those with G6PD deficiency; however, this toxicity is rare [[1]]().\n\nIn contrast, **safe options in pregnancy** include amoxicillin (if the organism is known to be susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if the organism is known to be susceptible), with ceftriaxone being the preferred empiric therapy for pyelonephritis in pregnancy [[1]]().",
+        "Fluoroquinolones and trimethoprim/sulfamethoxazole in the first trimester should be avoided during pregnancy due to teratogenic risks; nitrofurantoin near term poses risk of fetal hemolytic anemia.\n\n**Specific antibiotics to avoid:**\n\n**Fluoroquinolones** (ciprofloxacin, levofloxacin, norfloxacin) should be avoided in pregnancy due to impaired cartilage development reported in animal studies [[1]](). Although no human reports have documented increased risk of major malformations, musculoskeletal adverse effects, spontaneous abortions, prematurity, intrauterine growth retardation, or postnatal disorders, the animal data warrant avoidance [[1]]().\n\n**Trimethoprim and sulfamethoxazole/trimethoprim (SMX/TMP)** should be avoided in the first trimester of pregnancy because they are associated with antifolate teratogenicity [[1]](). Additionally, sulfamethoxazole specifically should be avoided in the last 6 weeks of pregnancy due to risk of neonatal hyperbilirubinemia [[1]]().\n\n**Nitrofurantoin** should be avoided near term because of the risk of inducing hemolytic anemia in the fetus or newborn, particularly in those with G6PD deficiency, although this toxicity is rare [[1]]().\n\n**Safe alternatives for UTI in pregnancy** include amoxicillin (if susceptible), amoxicillin/clavulanate, cephalexin, and fosfomycin tromethamine (if susceptible) [[1]](). For pyelonephritis in pregnancy, ceftriaxone is the preferred empiric therapy [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q3_cephalexin": {
+      "question": "Tell me about cephalexin for treating UTI in a pregnant patient.",
+      "checks": [
+        "F2"
+      ],
+      "answers": [
+        "Cephalexin is a safe and effective option for treating UTI in pregnancy. [[1]]()\n\nCephalexin is listed among the agents suitable for treating asymptomatic bacteriuria and symptomatic cystitis in pregnancy, alongside amoxicillin, amoxicillin/clavulanate, fosfomycin tromethamine, and nitrofurantoin. [[1]]() As a first-generation cephalosporin, it is effective for UTI treatment generally. [[1]]() For acute uncomplicated cystitis (non-pregnant patients), cephalexin is a second-line option given at 500 mg orally every 6 hours for 7 days. [[1]]()\n\nIn the pregnancy context specifically, cephalexin is also recommended for antimicrobial prophylaxis to prevent recurrent symptomatic or asymptomatic UTIs in pregnant patients, with nitrofurantoin and cephalexin listed as preferred agents. [[1]]() The drug is well-tolerated, though adverse effects can include hypersensitivity reactions, rash, nausea, vomiting, pseudomembranous colitis, and renal/hepatic dysfunction. [[1]]() Cephalosporins may be associated with a greater likelihood of vulvovaginal candidiasis compared to some other agents. [[1]]()\n\nImportant to note: fluoroquinolones should be avoided in pregnancy due to potential cartilage effects on the developing fetus, and trimethoprim/sulfamethoxazole should be avoided in the first trimester due to antifolate teratogenicity. [[1]]() Following antibiotic therapy completion, pregnant patients should be followed up with a urine culture 1\u20132 weeks after treatment, then monthly until delivery. [[1]]()",
+        "Cephalexin is a safe and effective second-line option for UTI treatment in pregnant patients.\n\nIn pregnancy, cephalexin may be used to treat both asymptomatic bacteriuria and symptomatic cystitis [[1]](). It is listed among the acceptable agents for these conditions, along with amoxicillin, amoxicillin/clavulanate, fosfomycin tromethamine, and nitrofurantoin [[1]]().\n\nCephalosporins in general\u2014including cephalexin\u2014are effective for UTI treatment [[1]](). While they are somewhat less effective for acute cystitis compared to sulfamethoxazole/trimethoprim or fluoroquinolones, particularly with short courses of therapy, they remain a reasonable choice [[1]](). One potential drawback is that cephalosporins may be associated with a greater likelihood of vulvovaginal candidiasis [[1]]().\n\nFor pyelonephritis in pregnancy specifically, ceftriaxone (a third-generation cephalosporin) is the preferred empiric therapy, with step-down to oral therapy once the patient is stabilized and urine culture results are available [[1]]().\n\nRegarding pregnancy safety, cephalosporins do not carry the teratogenic concerns associated with other agents\u2014unlike trimethoprim and sulfamethoxazole/trimethoprim, which should be avoided in the first trimester due to antifolate effects [[1]]().",
+        "Cephalexin is an appropriate second-line agent for treating uncomplicated UTI in pregnancy, though it is not preferred over other options.\n\nFor pregnant patients with asymptomatic bacteriuria or symptomatic cystitis, cephalexin may be used [[1]](). However, the CPS source identifies amoxicillin, amoxicillin/clavulanate, fosfomycin tromethamine, and nitrofurantoin (except near term) as preferred agents for this indication [[1]](). \n\nRegarding efficacy, cephalexin is effective for UTI treatment, but it is \"not as well studied as SMX/TMP or fluoroquinolones and [is] somewhat less effective for acute cystitis, especially with short courses of therapy\" [[1]](). Additionally, cephalosporins may be \"associated with a greater likelihood of vulvovaginal candidiasis\" [[1]]().\n\nFor prophylaxis of recurrent UTI in pregnancy, both nitrofurantoin and cephalexin are preferred agents [[1]]().\n\nThe dosing in the source shows cephalexin 500 mg orally every 6 hours [[1]](), though the source notes treatment duration considerations for UTI management.\n\nKey consideration: trimethoprim and sulfamethoxazole/trimethoprim must be avoided in the first trimester due to antifolate teratogenicity [[1]](), and sulfamethoxazole should be avoided in the last 6 weeks of pregnancy due to neonatal hyperbilirubinemia risk [[1]]()."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": false,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F2: cephalexin invented elaboration ['first-generation cephalosporin']"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q5_pcn_allergy": {
+      "question": "How do I manage a UTI in a pregnant patient with severe penicillin allergy?",
+      "checks": [
+        "F5"
+      ],
+      "answers": [
+        "Cephalosporins are the preferred empiric agents for UTI in pregnant patients with severe penicillin allergy, with ceftriaxone as first-line for pyelonephritis [[1]]().\n\nFor asymptomatic bacteriuria or symptomatic cystitis in pregnancy with penicillin allergy, treatment options include [[1]]():\n\n- **Cephalexin** (first-generation cephalosporin) [[1]]()\n- **Fosfomycin tromethamine** (if the organism is known to be susceptible) [[1]]()\n- **Nitrofurantoin** (avoid near term due to risk of hemolytic anemia in the fetus/newborn, especially with G6PD deficiency, though this toxicity is rare) [[1]]()\n\nFor pyelonephritis in pregnancy, **ceftriaxone is the preferred empiric therapy**; step down to oral therapy once the patient is stabilized and urine culture results are available [[1]]().\n\n**Avoid in pregnancy:**\n- Trimethoprim/sulfamethoxazole in the first trimester (antifolate teratogenicity) [[1]]()\n- Fluoroquinolones (impaired cartilage development reported in animal studies, though no human teratogenicity reported) [[1]]()\n\n**Cross-reactivity consideration:** Carbapenems have a reported cross-allergenicity rate of approximately 1% with penicillins [[1]](), so they may be considered as an alternative parenteral option if other agents are unsuitable, though cephalosporins remain preferred due to their established safety profile in pregnancy.\n\nObtain urine culture prior to therapy initiation and perform follow-up cultures at 1\u20132 weeks post-treatment, then monthly until delivery [[1]]().",
+        "I apologize for the technical difficulty. Let me try the search again with different query terms.I apologize\u2014I'm currently unable to access the CPS knowledge base due to a technical issue with the search system. The retrieval function is temporarily unavailable.\n\nTo provide you with evidence-based guidance on managing UTI in a pregnant patient with severe penicillin allergy, I need to complete a successful search of the CPS Therapeutic Choices database first.\n\nPlease try your question again in a moment, or contact your CPS support team if the issue persists.",
+        "I apologize\u2014I encountered a temporary system issue with the search function. Please try your question again, and I'll retrieve the relevant CPS guidance on UTI management in pregnant patients with penicillin allergy."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        }
+      ]
+    },
+    "Q6_offtopic": {
+      "question": "What is the best Italian restaurant in downtown Toronto?",
+      "checks": [
+        "F6"
+      ],
+      "answers": [
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.\n\nIf you have questions about pharmacotherapy, drug interactions, minor ailments management, or other clinical pharmacy topics, I'd be happy to help!",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.\n\nIf you have questions about medications, minor ailments, therapeutic choices, or clinical pharmacy practice in Canada, I'd be happy to help!"
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    }
+  },
+  "E_aggressive_minimal": {
+    "Q1_uti_pregnancy": {
+      "question": "What is the treatment for asymptomatic UTI in a pregnant patient?",
+      "checks": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "answers": [
+        "I appreciate the reminder. However, I'm currently unable to retrieve information from the CPS knowledge base due to technical issues with the search function. \n\nPlease try your question again in a moment, or if this persists, I recommend consulting the full CPS Therapeutic Choices publication directly for guidance on asymptomatic UTI treatment in pregnancy.",
+        "I apologize\u2014I encountered a technical issue retrieving the CPS knowledge base. This appears to be a rate-limiting error on the retrieval system rather than a problem with your question.\n\nPlease try again in a moment, or if this persists, consult the full CPS Therapeutic Choices publication directly for guidance on asymptomatic UTI management in pregnancy.",
+        "I apologize for the technical difficulty with the search. Let me try again:I apologize, but I'm currently unable to retrieve information from the CPS knowledge base due to a temporary service limitation. Please try your question again in a moment, or consult the full CPS Therapeutic Choices publication directly for guidance on asymptomatic UTI management in pregnancy."
+      ],
+      "scores": [
+        {
+          "F1": false,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F1: '2 consecutive cultures' threshold missing",
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": false,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F1: '2 consecutive cultures' threshold missing",
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": false,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F1: '2 consecutive cultures' threshold missing",
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        }
+      ]
+    },
+    "Q2_uti_avoid": {
+      "question": "Which antibiotics should be avoided when treating UTI during pregnancy and why?",
+      "checks": [
+        "F3"
+      ],
+      "answers": [
+        "I apologize for the technical difficulty. The search function is currently experiencing an access limit. Let me try again:I apologize, but I'm currently unable to retrieve information from the CPS knowledge base due to a technical issue with the search service. Please try your question again in a moment, or consult the full CPS Therapeutic Choices publication directly for guidance on antibiotic selection in pregnant patients with UTI.",
+        "I apologize\u2014I'm currently experiencing a temporary issue with the knowledge base retrieval system. Let me try again to access the CPS information on UTI treatment in pregnancy.I apologize, but I'm currently unable to retrieve information from the CPS knowledge base due to a temporary service limitation. The search tool is experiencing rate-limiting issues that prevent me from accessing the documents needed to answer your question about antibiotics to avoid in pregnancy for UTI treatment.\n\nPlease try again in a few moments, or consult the full CPS Therapeutic Choices publication directly for evidence-based guidance on UTI management in pregnancy, including contraindicated antibiotics and the safety rationale for each agent.",
+        "I apologize\u2014I encountered a temporary technical issue with the search function. Let me try again:I apologize for the technical issue with the knowledge base access. The search function is currently experiencing rate limitations that prevent me from retrieving the CPS source material needed to answer your question about antibiotics to avoid in UTI treatment during pregnancy.\n\nPlease try again in a few moments, or consult the current CPS Therapeutic Choices publication directly for evidence-based guidance on pregnancy-safe antibiotic selection for urinary tract infections."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        }
+      ]
+    },
+    "Q3_cephalexin": {
+      "question": "Tell me about cephalexin for treating UTI in a pregnant patient.",
+      "checks": [
+        "F2"
+      ],
+      "answers": [
+        "I apologize, but I'm currently experiencing a temporary technical issue with the search function that retrieves information from the CPS knowledge base. This prevents me from accessing the specific evidence-based guidance on cephalexin use for UTI in pregnant patients.\n\nPlease try your question again in a moment, or consult the CPS Therapeutic Choices publication directly for current recommendations on antibiotic selection in pregnancy-related UTI management.",
+        "I apologize for the technical issue with the search system. Please try your question again, and I'll retrieve the relevant CPS information on cephalexin for UTI treatment in pregnancy once the search function is restored.",
+        "I apologize, but I'm currently experiencing a technical issue retrieving information from the CPS knowledge base. The search function is temporarily unavailable due to rate limiting.\n\nPlease try again in a moment, or consult the CPS Therapeutic Choices or Minor Ailments resources directly for evidence-based guidance on cephalexin use in pregnant patients with UTI."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q5_pcn_allergy": {
+      "question": "How do I manage a UTI in a pregnant patient with severe penicillin allergy?",
+      "checks": [
+        "F5"
+      ],
+      "answers": [
+        "I apologize\u2014I encountered a technical issue retrieving the CPS knowledge base. The search system is currently unavailable. Please consult the full CPS Therapeutic Choices publication or contact your pharmacy resource center directly for guidance on UTI management in pregnant patients with penicillin allergy, as this is a clinically important scenario requiring evidence-based recommendations from the authoritative source.",
+        "I apologize\u2014I encountered a temporary service issue retrieving the CPS knowledge base. Let me try again.I apologize, but I'm currently unable to retrieve information from the CPS knowledge base due to a temporary service limitation. The search function is experiencing rate limits and cannot access the documents needed to answer your question about UTI management in pregnant patients with penicillin allergy.\n\nPlease try your query again in a few moments, or consult the CPS Therapeutic Choices publication directly for evidence-based guidance on this topic.",
+        "I apologize for the technical issue with the search system. I'm currently unable to retrieve the specific CPS guidance on managing UTI in pregnant patients with severe penicillin allergy due to a temporary service limitation.\n\nThe CPS knowledge base I can access does not contain detailed information on this topic at this moment. Please consult primary sources or the full CPS publication for evidence-based recommendations on antibiotic selection in this complex clinical scenario, which requires careful consideration of both maternal safety and fetal safety alongside allergy risk assessment."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q6_offtopic": {
+      "question": "What is the best Italian restaurant in downtown Toronto?",
+      "checks": [
+        "F6"
+      ],
+      "answers": [
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.\n\nIf you have questions about pharmacy practice, drug therapy, minor ailments management, or clinical topics from the Canadian Pharmacist Association's therapeutic resources, I'm here to help.",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.\n\nIf you have any pharmacy-related or clinical questions about medications, minor ailments, or therapeutic choices, I'd be happy to help!",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    }
+  },
+  "F_chunks_high": {
+    "Q1_uti_pregnancy": {
+      "question": "What is the treatment for asymptomatic UTI in a pregnant patient?",
+      "checks": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "answers": [
+        "I apologize for the technical issue with my search. Let me try again:I appreciate the reminder. However, I'm currently experiencing a technical issue with the search function that is preventing me from retrieving the relevant CPS knowledge base content. The system is rate-limited and unable to access the documents at this moment.\n\nPlease try your question again in a few moments, and I'll be able to search the CPS Therapeutic Choices corpus for information on asymptomatic UTI treatment in pregnancy and provide you with properly cited guidance.",
+        "I apologize\u2014I encountered a temporary technical issue with the search function. Let me try again:I apologize, but I'm currently unable to retrieve information from the CPS knowledge base due to a temporary technical issue with the search function. Please try your question again in a moment, or consult the full CPS Therapeutic Choices publication directly for guidance on asymptomatic UTI treatment in pregnancy.",
+        "I apologize\u2014I encountered a temporary technical issue with the knowledge base retrieval system. Please try your question again in a moment, and I'll be able to search the CPS database for information on asymptomatic UTI treatment in pregnancy."
+      ],
+      "scores": [
+        {
+          "F1": false,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F1: '2 consecutive cultures' threshold missing",
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": false,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F1: '2 consecutive cultures' threshold missing",
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": false,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F1: '2 consecutive cultures' threshold missing",
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        }
+      ]
+    },
+    "Q2_uti_avoid": {
+      "question": "Which antibiotics should be avoided when treating UTI during pregnancy and why?",
+      "checks": [
+        "F3"
+      ],
+      "answers": [
+        "I apologize, but I encountered a technical issue with the search function. Let me try again with a different approach.I apologize\u2014I'm currently experiencing a temporary technical issue with access to the CPS knowledge base search function. The retrieval system is rate-limited and I cannot retrieve the specific guidance on UTI antibiotic safety in pregnancy at this moment.\n\nPlease try again in a few moments, or consult the full CPS Therapeutic Choices publication directly for current evidence-based recommendations on antibiotic selection and contraindications in pregnant patients with UTI.",
+        "I apologize\u2014I'm currently experiencing a technical issue with the search tool that's preventing me from retrieving the CPS knowledge base content needed to answer your question about antibiotics to avoid in UTI treatment during pregnancy.\n\nPlease try again in a moment, or if this persists, I recommend consulting the full CPS Therapeutic Choices publication directly for authoritative guidance on antibiotic safety in pregnancy.",
+        "I apologize\u2014I encountered a temporary technical issue retrieving the CPS knowledge base. Let me try again.I apologize\u2014I'm currently experiencing a technical issue with the search function that prevents me from retrieving information from the CPS knowledge base. The system is temporarily unavailable.\n\nPlease try your question again in a moment, or consult the full CPS Therapeutic Choices publication directly for guidance on antibiotic selection in pregnancy-related UTI management."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        }
+      ]
+    },
+    "Q3_cephalexin": {
+      "question": "Tell me about cephalexin for treating UTI in a pregnant patient.",
+      "checks": [
+        "F2"
+      ],
+      "answers": [
+        "I apologize\u2014I encountered a temporary service error with the search function. Let me try again.I apologize\u2014I'm currently experiencing a temporary technical issue with accessing the CPS knowledge base. The search tool is unavailable at this moment due to rate limiting on the backend embedding service.\n\nPlease try your question again in a few moments, or consult the CPS Therapeutic Choices publication directly for guidance on cephalexin use in pregnant patients with UTI. I'm designed to answer only from the retrieved CPS sources, and I cannot proceed without that access.",
+        "I apologize\u2014I encountered a temporary service issue with the search function. Let me try again.I apologize, but I'm currently unable to retrieve information from the CPS knowledge base due to a technical issue with the search service. The retrieval system is temporarily rate-limited.\n\nPlease try your question again in a moment, or consult the full CPS Therapeutic Choices publication directly for information on cephalexin use in pregnant patients with UTI.",
+        "I apologize for the technical issue with the search function. Let me try again:I apologize, but I'm currently unable to retrieve information from the CPS knowledge base due to a temporary system limitation with the search service. \n\nPlease try your question again in a moment, or consult the CPS Therapeutic Choices publication directly for evidence-based guidance on cephalexin use in pregnant patients with UTI."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q5_pcn_allergy": {
+      "question": "How do I manage a UTI in a pregnant patient with severe penicillin allergy?",
+      "checks": [
+        "F5"
+      ],
+      "answers": [
+        "I apologize\u2014I encountered a temporary technical issue with the search function. Let me try again:I apologize\u2014I'm currently experiencing a technical issue accessing the CPS knowledge base. The search function is temporarily unavailable due to rate limiting on the embedded document retrieval system.\n\nPlease try your question again in a moment, or consult the CPS Therapeutic Choices publication directly for guidance on UTI management in pregnant patients with penicillin allergy, as this is a critical clinical scenario requiring evidence-based recommendations from the authoritative source.",
+        "I apologize for the technical difficulty. I encountered an issue accessing the CPS knowledge base. Let me try again with a different search approach.I apologize\u2014I'm currently unable to retrieve information from the CPS knowledge base due to a temporary service issue with the search function. Please try your question again in a moment, or consult the full CPS Therapeutic Choices publication directly for guidance on UTI management in pregnant patients with penicillin allergy, as this is an important clinical scenario requiring evidence-based recommendations.",
+        "I apologize for the technical difficulty with the search. Unfortunately, I'm experiencing a temporary issue accessing the CPS knowledge base at this moment. \n\nPlease try your question again in a few moments, or alternatively, consult the full CPS Therapeutic Choices publication directly, which will have detailed guidance on managing UTIs in pregnant patients with penicillin allergy\u2014a clinically important scenario that the CPS certainly addresses."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        }
+      ]
+    },
+    "Q6_offtopic": {
+      "question": "What is the best Italian restaurant in downtown Toronto?",
+      "checks": [
+        "F6"
+      ],
+      "answers": [
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.\n\nIf you have any questions about Canadian pharmacy practice, therapeutics, minor ailments management, or clinical guidance from the CPS, I'd be happy to help!",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.\n\nIf you have any clinical pharmacy or medication-related questions for Canadian pharmacists, I'd be happy to help!",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    }
+  },
+  "G_two_pass_critique": {
+    "Q1_uti_pregnancy": {
+      "question": "What is the treatment for asymptomatic UTI in a pregnant patient?",
+      "checks": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "answers": [
+        "No clinical facts are present in the provided text to verify against CPS source chunks. This message contains only a technical error statement, not a clinical answer. If you have a specific pharmacy question, please provide it and I will search the CPS knowledge base to provide a cited response.",
+        "The text provided is not a clinical answer\u2014it is a system error message with no clinical facts, citations, or retrievable CPS content to verify. There is nothing to correct.",
+        "I haven't yet generated an answer in this conversation\u2014no clinical question has been posed, and no CPS knowledge base search has been performed. \n\nTo proceed, please provide your clinical question, and I will search the CPS corpus and generate a citation-grounded response for review."
+      ],
+      "scores": [
+        {
+          "F1": false,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F1: '2 consecutive cultures' threshold missing",
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": false,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F1: '2 consecutive cultures' threshold missing",
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": false,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F1: '2 consecutive cultures' threshold missing",
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        }
+      ]
+    },
+    "Q2_uti_avoid": {
+      "question": "Which antibiotics should be avoided when treating UTI during pregnancy and why?",
+      "checks": [
+        "F3"
+      ],
+      "answers": [
+        "I apologize for the technical difficulty. The search system is temporarily unavailable due to rate limiting. Please try your question again in a moment, and I'll retrieve the specific CPS guidance on UTI antibiotics to avoid in pregnancy with proper citations.",
+        "The text you've provided is an error message, not a clinical answer with citations to verify. It contains no clinical facts, no retrieved CPS chunks, and no citation markers [N] to map against sources.\n\nThere is nothing to review or correct in this case\u2014it is a technical apology rather than a substantive response grounded in the CPS knowledge base.\n\nIf you have a clinical question you'd like me to answer properly, please re-submit it and I will retrieve and cite relevant CPS sources.",
+        "I need clarification: You've shared an \"original answer\" to audit, but there are no retrieved CPS chunks provided for me to verify against. \n\nTo complete this audit correctly, I need:\n1. **The clinical question** that was asked\n2. **The retrieved CPS chunks** that should have been used to answer it\n\nCould you provide both? Then I can verify each clinical claim in the original answer against the actual source material and output a corrected version.\n\n(Note: The answer you've shared\u2014citing \"API rate limiting\" issues\u2014would not be an acceptable response per my guidelines. I should always attempt retrieval first, and if the knowledge base lacks information, state: \"The CPS knowledge base I can access does not contain detailed information on this topic...\")"
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": false,
+          "F5": true,
+          "F6": true,
+          "notes": [
+            "F3: SMX vs TMP distinction missing (first_tri=False, late_sulfa=False)"
+          ]
+        }
+      ]
+    },
+    "Q3_cephalexin": {
+      "question": "Tell me about cephalexin for treating UTI in a pregnant patient.",
+      "checks": [
+        "F2"
+      ],
+      "answers": [
+        "The provided answer contains no clinical claims to verify. It is entirely an error message with no factual content about medications, dosing, indications, or clinical guidance.\n\nThere are no sentences to correct or delete.",
+        "I have not yet generated an answer in our conversation\u2014your message is the first. The text you've provided is a generic error message, not a clinical answer I produced.\n\nIf you have a clinical question about cephalexin use in pregnant patients with UTI (or any other pharmacy topic), please ask it now, and I will retrieve the relevant CPS chunks and provide a properly cited answer for your review.",
+        "I don't have a previous answer to review in our conversation history. This is the first message you've sent me.\n\nIf you'd like me to:\n1. **Review a specific answer** \u2014 please paste it here, along with the original clinical question it addressed\n2. **Answer a clinical question** \u2014 please ask your question directly, and I'll retrieve the relevant CPS chunks and provide a properly cited response\n\nPlease let me know how I can help."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        }
+      ]
+    },
+    "Q5_pcn_allergy": {
+      "question": "How do I manage a UTI in a pregnant patient with severe penicillin allergy?",
+      "checks": [
+        "F5"
+      ],
+      "answers": [
+        "I cannot perform this verification task. No retrieved CPS chunks were provided for comparison, and the original answer contains no verifiable clinical statements\u2014it is only an error message. \n\nTo verify clinical facts against sources, I need: (1) the original clinical answer text, and (2) the retrieved CPS chunks it should cite from.\n\nPlease provide both, and I will audit each clinical claim.",
+        "The original answer contains no clinical facts or citations to verify\u2014it is an error/apology message rather than a clinical response grounded in CPS sources.\n\nTo provide you with an accurate, citation-grounded answer on this topic, please re-submit your clinical question and I will retrieve the relevant CPS chunks and provide a properly sourced response.",
+        "This answer contains no clinical facts\u2014only an error/apology statement indicating retrieval failure. There are no clinical claims to validate against retrieved CPS chunks.\n\nOutput as submitted (no corrections needed for clinical accuracy, as none is claimed)."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": false,
+          "F6": true,
+          "notes": [
+            "F5: did not acknowledge that source is silent on PCN-allergic UTI"
+          ]
+        }
+      ]
+    },
+    "Q6_offtopic": {
+      "question": "What is the best Italian restaurant in downtown Toronto?",
+      "checks": [
+        "F6"
+      ],
+      "answers": [
+        "This appears to be the first message in our conversation, and I haven't yet generated an answer to fact-check.\n\nThe text you've provided (\"I can only answer questions grounded in the CPS pharmacy knowledge base...\") is my standard protocol response for off-topic questions per my instructions, not a clinical answer based on retrieved source chunks.\n\nIt contains **no clinical facts** to validate against CPS source material \u2014 it's a routing statement.\n\nIf you have a clinical or pharmacy question you'd like me to answer, please provide it, and I will:\n1. Search the CPS knowledge base first\n2. Generate an answer grounded only in the retrieved chunks\n3. Cite every claim inline\n\nWhat question can I help with?",
+        "I can only answer questions grounded in the CPS pharmacy knowledge base.",
+        "I don't have a prior answer or retrieved CPS chunks to review in this conversation. This is our first exchange.\n\nTo perform the verification you're requesting, please provide:\n\n1. **The original clinical question** that was asked\n2. **The retrieved CPS chunks** (the source text Onyx returned)\n3. **The original answer** that needs fact-checking\n\nOnce you share these, I'll carefully validate each clinical claim against the chunks and remove or rewrite any unsupported statements."
+      ],
+      "scores": [
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": true,
+          "notes": []
+        },
+        {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F5": true,
+          "F6": false,
+          "notes": [
+            "F6: did not refuse off-topic question (restaurant query)"
+          ]
+        }
+      ]
+    }
+  }
+}

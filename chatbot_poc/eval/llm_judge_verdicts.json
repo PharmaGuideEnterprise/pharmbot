@@ -1,0 +1,1254 @@
+[
+  {
+    "id": "CF-1",
+    "source": "customer-feedback.csv",
+    "showstopper": true,
+    "question": "Treatment for asymptomatic UTI in a pregnant patient",
+    "expected": "Treat after 2 cultures, nitrofurantoic, fosfomycin, cephalexin, amoxicillin",
+    "positive": "The correct information was a component of the provided repsonse.",
+    "negative": "The response didn't clarify to treat asymptomatic only after 2 consecutive positive cultures. The response included information that doesn't appear in the content (\" Cephalexin: Usage: A commonly used cephalosporin for treating asymptomatic bacteriuria in pregnancy.\"**where did this come from??) The response didn't distinguish between SMX and TMP as single entities versus combination product.",
+    "chapters": [
+      "acute_otitis_media_in_childhood",
+      "urinary_tract_infection"
+    ],
+    "answer": "Asymptomatic bacteriuria in pregnancy should be treated if confirmed on 2 consecutive urine cultures [doc1].\n\nUnlike nonpregnant patients, pregnant women with asymptomatic bacteriuria require antibiotic treatment because untreated bacteriuria can progress to pyelonephritis and cause adverse fetal effects [doc1]. Antibiotic treatment reduces the incidence of pyelonephritis, preterm delivery rates, and risk of low birth-weight babies [doc1].\n\n**Treatment options for asymptomatic bacteriuria in pregnancy include** [doc1]:\n- Amoxicillin (if organism is susceptible)\n- Amoxicillin/clavulanate\n- Cephalexin\n- Fosfomycin tromethamine (if organism is susceptible)\n- Nitrofurantoin (avoid near term due to risk of hemolytic anemia in fetus or newborn, particularly in those with G6PD deficiency, though this toxicity is rare)\n\n**Agents to avoid** [doc1]:\n- Trimethoprim and sulfamethoxazole/trimethoprim in the first trimester (antifolate teratogenicity)\n- Sulfamethoxazole in the last 6 weeks of pregnancy (neonatal hyperbilirubinemia risk)\n- Fluoroquinolones (though animal data show impaired cartilage development, no human reports of major malformations)\n\n**Follow-up:** After completing therapy, obtain a urine culture 1\u20132 weeks later, then monthly until delivery [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) All expected clinical content is present: treatment after 2 consecutive cultures confirmed, and all four drugs listed (nitrofurantoin, fosfomycin, cephalexin, amoxicillin). (b) The answer avoids the specific mistakes: it clearly states '2 consecutive urine cultures' (not vague), lists drugs without invented descriptive claims (plain bullet format), and crucially distinguishes trimethoprim and SMX/TMP in first trimester separately from sulfamethoxazole alone in last 6 weeks\u2014exactly the separa",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-2",
+    "source": "customer-feedback.csv",
+    "showstopper": true,
+    "question": "When should antibiotics be used in diverticular disease",
+    "expected": "Would expect a clarification that antibiotics are no longer first-line as DVD inflammatory process, a confirmation that guidelines do not support routine use, a list of cases in which they would be used (immunosuppressed, comorbidity, etc.)",
+    "positive": "None",
+    "negative": "The repsonse is blatantly wrong:  \"Antibiotics are used in the management of diverticular disease primarily for acute diverticulitis, and their use depends on the classification of the condition as either uncomplicated or complicated.\"This information does not appear in CPS. There is a lot of information provided in the response that seems to have been pulled from outside CPS.",
+    "chapters": [
+      "diverticular_disease",
+      "urinary_tract_infection"
+    ],
+    "answer": "Antibiotics should be used selectively rather than routinely in acute diverticulitis, reserved primarily for systemically unwell patients or those with significant comorbidities.\n\nThe evidence for routine antibiotic use in acute uncomplicated diverticulitis is weak. Multiple large randomized controlled trials found no significant differences between antibiotic and non-antibiotic strategies: the 2012 AVOD trial (623 patients) showed no differences in time to recovery, hospital stay, complications, or recurrences at 12 months [doc1], with 11-year follow-up confirming no difference in complications, recurrences, surgeries, or colorectal cancer rates [doc1]. The 2017 DIABOLO trial (528 patients) similarly found no differences at 6 months or 24 months in recovery time, readmission, complicated diverticulitis, resection, or mortality [doc1]. Two 2019 meta-analyses combining these trials with observational studies concluded there were no significant differences in treatment failure, readmission, surgical intervention need, recurrence, or complications [doc1].\n\n**Antibiotic therapy is appropriate for patients who are:**\n- Systemically unwell (fever, severe left lower quadrant pain, peritonitis on exam, elevated white blood cell count)\n- Immunosuppressed\n- Have significant comorbidity [doc1]\n\nWhen antibiotics are selected, they must cover gram-negative rods and anaerobes (particularly *Escherichia coli* and *Bacteroides fragilis*) [doc1]. Typical regimens include:\n- Fluoroquinolone and metronidazole\n- Sulfamethoxazole/trimethoprim and metronidazole\n- Amoxicillin/clavulanate [doc1]\n\nOutpatient treatment typically consists of oral antibiotics for 7\u201310 days, with clinical reassessment at 2\u20133 days and weekly thereafter [doc1]. Acute complicated diverticulitis (with perforation, abscess, obstruction, or fistulization) requires inpatient admission [doc1].",
+    "mode": "free",
+    "passed": false,
+    "failures": [
+      "none of these phrases found: ['not first-line', 'not first line', 'no longer first-line', 'not routinely', 'without antibiotic', 'selective use']..."
+    ],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer contains all expected clinical content: clarification that antibiotics are no longer first-line (\"selectively rather than routinely\"), confirmation that guidelines do not support routine use (supported by AVOD and DIABOLO trial evidence), and a list of cases where antibiotics are used (systemically unwell, immunosuppressed, significant comorbidities). (b) The answer does not commit the specific error flagged in negative feedback\u2014it does not claim antibiotics are \"primarily for acu",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-3",
+    "source": "customer-feedback.csv",
+    "showstopper": true,
+    "question": "What is the dosage of oxybutynin to treat stress incontinence in an 85 yo female?",
+    "expected": "Oxybutynin is not a recommended therapy for stress incontinence.",
+    "positive": "None",
+    "negative": "The response is wrong. The information supplied is for urgency incontinence. And IF the question had been regarding urgency incontinence, key information about the risk of dementia was omitted.",
+    "chapters": [
+      "urinary_incontinence_in_adults"
+    ],
+    "answer": "Oxybutynin is not recommended for stress incontinence; it is indicated for urgency incontinence and should be used cautiously in an 85-year-old patient.\n\nFor stress incontinence specifically, the CPS source addresses different therapeutic options. Oxybutynin (immediate-release) is listed in the drug table for urgency incontinence with a dosage of 2.5\u20135 mg daily to four times daily (QID) PO [doc1][doc2]. However, stress incontinence treatment typically focuses on other agents: vaginal estrogens for postmenopausal urogenital atrophy, or duloxetine (though duloxetine is not approved for stress UI in Canada) [doc1].\n\nImportantly, for older adults like your 85-year-old patient, the CPS guidance states: \"In older adults, prescribe the lowest recommended starting dose\" for oxybutynin [doc1][doc2]. Additionally, anticholinergic effects are \"of greater concern in older adults and often lead to early discontinuation of therapy,\" and there are safety concerns regarding increased risk of dementia with cumulative anticholinergic exposure, \"particularly in older adults\" [doc1][doc2]. Given these concerns, alternative agents (darifenacin, solifenacin, or trospium) show \"reduced side effects compared with traditional anticholinergic therapy\" [doc1][doc2].\n\nIf urgency incontinence were the target symptom instead, mirabegron might be considered as it is \"better tolerated than antimuscarinic therapy\" in this population [doc2].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer correctly states that oxybutynin is not recommended for stress incontinence, which is the core expected result. (b) The answer avoids the specific negative feedback error: it does not provide dosing as if oxybutynin were appropriate for stress incontinence; instead, it clearly distinguishes stress from urgency incontinence and includes the dementia risk warning that was flagged as missing in the negative feedback.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-4",
+    "source": "customer-feedback.csv",
+    "showstopper": true,
+    "question": "Is Diclectin recommended for nausea in pregnancy?",
+    "expected": "Would expect the lack of efficacy and controvery around ongoing use to be mentioned so clinicians can make informed decisions.",
+    "positive": "The info is accurate as per manufacturer's PM.",
+    "negative": "The information in the NVP content was not included, there are questions around the efficcay and use of Diclectin that were not acknowledged, the alternative to use pyridoxine alone was not included.",
+    "chapters": [
+      "nausea_vomiting_pregnancy"
+    ],
+    "answer": "Diclectin's use for pregnancy nausea is controversial and its efficacy is questionable, though it remains recommended as a first-line option in Canadian guidelines.\n\nDiclectin (doxylamine/pyridoxine) has been used in Canada for nausea and vomiting of pregnancy (NVP) since 1957 [doc1], and it is the only Health Canada-approved medication specifically indicated for this condition [doc1]. Canadian and American guidelines recommend it as a first-line option [doc1]. Over 33 million pregnant patients worldwide have taken this combination, and it has not been found to increase the risk of major malformations [doc1].\n\nHowever, recent evidence has raised concerns about its actual benefit. A re-analysis of the original trial data found no clinically important benefit over placebo for those with mild-to-moderate symptoms [doc1]. A 2018 re-evaluation including previously unpublished data concluded there was no benefit of doxylamine-pyridoxine versus placebo [doc2]. Despite these findings, a Health Canada safety review concluded that no changes to safety information were warranted and that benefits continued to outweigh risks [doc1].\n\nGiven the lack of demonstrated clinical efficacy of the combination, a trial of single-entity pyridoxine (vitamin B6) is considered a reasonable evidence-based approach to NVP prior to considering Diclectin [doc2].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer includes all expected clinical content: lack of efficacy (re-analysis showing no clinically important benefit, 2018 re-evaluation finding no benefit vs placebo), controversy (recent evidence raising concerns despite Health Canada approval), and the alternative of pyridoxine alone as a reasonable first-line approach. (b) The answer does not commit the negative feedback error\u2014it explicitly acknowledges questions around efficacy and use, includes NVP content context, and prominently ",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-5",
+    "source": "customer-feedback.csv",
+    "showstopper": true,
+    "question": "Q1: When should chemoprophylaxis be used in potential bacterial meningitis cases?",
+    "expected": "Close contacts (same household [based on age and vaccination status], daycare, dorm, military unit)",
+    "positive": "It answered the actual question correctly; however, provided extra information, which was incorrect (and dangerous)",
+    "negative": "Rifampin should not be used in pregnancy according to the chapter.  Only used in pregnancy if no other options (e.g., in TB); however, in this case, the chapter specifically says to use ceftriaxone if pt is pregnant",
+    "chapters": [
+      "bacterial_meningitis"
+    ],
+    "answer": "Chemoprophylaxis is recommended for close contacts of individuals with invasive meningococcal disease or *Haemophilus influenzae* type b meningitis who are at substantially increased risk of infection [doc1].\n\n**For *H. influenzae* type b:**\nChemoprophylaxis (initiated as soon as possible) is recommended for all household members in situations where there is [doc1]:\n- A child <4 years of age who is not or incompletely immunized\n- A child <12 months with incomplete primary immunization\n- An immunocompromised child\n\nFor school or childcare contacts, local public health guidance should be consulted [doc1].\n\n**For *N. meningitidis* and *H. influenzae* (including type b):**\nPostexposure prophylaxis is recommended for close contacts (household members, persons in the same daycare, dormitory, or military unit, and those directly exposed to a patient's oral secretions within 7 days of symptom onset) because these individuals face up to a 100-fold increased risk of developing infection [doc1]. Prophylaxis should be initiated within 24 hours of identification of the index case [doc1].\n\n**For index cases:**\nIndex cases of meningitis caused by *N. meningitidis* or *H. influenzae* where ceftriaxone or cefotaxime was *not* used as empiric therapy should also receive prophylaxis prior to discharge to eradicate bacterial carriage [doc1]. Patients should remain on droplet contact precautions for 24 hours after starting therapy [doc1].\n\n**Note:** For *Streptococcus pneumoniae* meningitis, no postexposure prophylaxis is required [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer comprehensively covers the expected clinical content: close contacts are identified with specific categories (household, daycare, dorm, military unit) and age/vaccination-status applicability is explicitly stated for H. influenzae prophylaxis. (b) The answer does not violate the negative feedback\u2014it does not mention rifampin use in pregnancy or any inappropriate rifampin guidance; it correctly notes ceftriaxone/cefotaxime use without triggering the pregnancy-rifampin error.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-6",
+    "source": "customer-feedback.csv",
+    "showstopper": true,
+    "question": "Q2: What agent to use in chemoprophylaxis for potential bacterial meningitis in pregnant woman?",
+    "expected": "See Table 3 and 4. Ceftriaxone is standard of care in meningitis PEP for pregnant patients, unless cause is S. pneumo (then no prophylaxis)",
+    "positive": "Correct that no prophylaxis is needed if S. pneumo.",
+    "negative": "Rifampin  and ciprofloxacin should be avoided in pregnancy",
+    "chapters": [
+      "bacterial_meningitis"
+    ],
+    "answer": "For meningitis postexposure chemoprophylaxis in a pregnant woman, the recommended agent depends on the causative pathogen [doc1].\n\nFor **Haemophilus influenzae type b** exposure, ceftriaxone is the agent of choice in pregnancy [doc1]. For **Neisseria meningitidis** exposure, ceftriaxone is also recommended [doc1]. For **Streptococcus pneumoniae**, no prophylaxis is required [doc1].\n\nThe CPS source specifies that ceftriaxone is the drug of choice in pregnancy for both H. influenzae type b and N. meningitidis exposures, as alternatives like rifampin and ciprofloxacin are avoided or contraindicated in pregnancy [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer correctly identifies ceftriaxone as standard of care for meningitis PEP in pregnant patients and specifies no prophylaxis for S. pneumoniae, matching the expected result. (b) The answer explicitly states that rifampin and ciprofloxacin are 'avoided or contraindicated in pregnancy,' directly addressing and NOT making the negative feedback mistake of recommending these agents.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-7",
+    "source": "customer-feedback.csv",
+    "showstopper": true,
+    "question": "Q3: What is the first line treatment in rhinosinusitis?",
+    "expected": "INCS or watchful waiting if <7 days of symptoms. + symptom mgmt (NSAIDs, acetaminophen)",
+    "positive": "Correct antibiotics (taken from Table 2, I assume)",
+    "negative": "Implies that antibiotics should always be used. No mention of allergy testing",
+    "chapters": [
+      "multiple_sclerosis",
+      "sinusitis"
+    ],
+    "answer": "Symptom management only is the preferred initial strategy for patients presenting with uncomplicated acute rhinosinusitis [doc1][doc2].\n\nFor uncomplicated cases, treatment focuses on nonpharmacologic measures and symptom relief rather than antimicrobial therapy. [doc1] Saline nasal irrigation can help thin mucus, clear inflammatory mediators, and improve mucociliary function [doc1]. Comfort measures such as adequate rest, hydration, warm facial compresses, and head elevation while sleeping may provide symptomatic relief [doc1].\n\nPharmacologic symptom management includes analgesics/antipyretics (acetaminophen or NSAIDs) for pain and fever control [doc1]. Intranasal corticosteroids (INCS) may provide modest benefit\u2014in a meta-analysis of 4 randomized controlled trials, 73% of INCS-treated patients versus 66% of placebo-treated patients experienced resolution or marked improvement, meaning only 7 additional patients per 100 treated achieved complete or marked relief [doc1]. High-dose regimens (equivalent to mometasone 400 mcg/day) should be used, as lower doses are no better than placebo [doc1].\n\nThis conservative approach is justified because approximately 70% of acute rhinosinusitis cases resolve within 2 weeks without antibiotics [doc1], and NNT/NNH data show that 19 patients must be treated with antimicrobials for 1 to benefit, while only 8 need antibiotics for 1 to experience adverse effects [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer covers all expected content: INCS (with dosing detail), symptom management (NSAIDs, acetaminophen), and watchful waiting/conservative approach for uncomplicated cases. (b) The answer does NOT imply antibiotics should always be used\u2014it explicitly states symptom management is preferred and provides NNT/NNH data showing antibiotics are not routinely indicated. No allergy testing is mentioned, but the negative feedback only prohibits implying antibiotics should always be used and ment",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-8",
+    "source": "customer-feedback.csv",
+    "showstopper": true,
+    "question": "Q2 What is Duavive dose for 55 year old woman experiencing vasomotor symptoms with recent hysterectomy",
+    "expected": "not recommended for patients with a  hysterectomy as contains SERM (similar to progesterone )",
+    "positive": "",
+    "negative": "should have not given dose, identified product not recommended in patients with history of hysterectomy.",
+    "chapters": [
+      "menopause",
+      "multiple_sclerosis"
+    ],
+    "answer": "The recommended dose of Duavive for vasomotor symptoms is [doc1][doc2] **1 tablet daily orally, with each tablet containing 0.45 mg conjugated estrogen and 20 mg bazedoxifene acetate.**\n\nDuavive is a Tissue Selective Estrogen Complex (TSEC) indicated for [doc1][doc2] moderate to severe vasomotor symptoms in postmenopausal patients with an intact uterus. It is particularly useful as [doc1][doc2] an alternative for patients wishing to avoid progestogen, since bazedoxifene (a selective estrogen receptor modulator) provides endometrial protection when combined with estrogen, eliminating the need for additional progestogen therapy.\n\nHowever, your patient has had a recent hysterectomy. This is a critical consideration: Duavive is [doc1][doc2] designed for patients with an intact uterus. Since your patient no longer has a uterus, she would not require endometrial protection and would be a candidate for estrogen therapy (ET) alone instead. The CPS knowledge base I can access does not contain detailed information on dosing recommendations specific to post-hysterectomy patients, but estrogen monotherapy is the standard approach in this population for vasomotor symptom management.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer violates the NEGATIVE FEEDBACK requirement by providing the Duavive dose (1 tablet daily with specific mg amounts) before identifying that the product is not recommended in this patient. The answer should have led with the contraindication rather than dosing information. While the answer does eventually acknowledge the hysterectomy is a 'critical consideration' and notes Duavive is 'designed for patients with an intact uterus,' it still presents the dose prominently upfront, which is ",
+      "missing_expected": [],
+      "violated_negative": [
+        "Provided Duavive dosing information before identifying that the product is not recommended for patients with a hysterectomy",
+        "Did not clearly state upfront that Duavive should not be used in this patient due to hysterectomy status"
+      ]
+    }
+  },
+  {
+    "id": "CF-9",
+    "source": "customer-feedback.csv",
+    "showstopper": true,
+    "question": "Q3 What are pharmacologic therapy options for Infant Colic in 6 month old baby",
+    "expected": "child should be assessed - red flag to have symptoms >5 months of age",
+    "positive": "",
+    "negative": "did not flag for age to be warning sign and suggest urgent assessment of baby",
+    "chapters": [
+      "infant_colic",
+      "multiple_sclerosis"
+    ],
+    "answer": "Pharmacologic therapy options for infant colic are limited in efficacy, with weak evidence and strong placebo effects across all agents. [doc1]\n\nThe primary pharmacologic options include:\n\n**Probiotics (Lactobacillus reuteri DSM17398)**  \nThis is a reasonable first-line choice if pharmacologic therapy is attempted. [doc1] Meta-analyses of 4 double-blind RCTs involving 345 infants showed that L. reuteri DSM17398 at 100 million colony-forming units (5 drops) orally once daily significantly reduced crying time compared to placebo, with infants in the probiotic group crying approximately 25 minutes less per day after 3 weeks of treatment. [doc1] However, efficacy was demonstrated primarily in breastfed infants; benefit in formula-fed infants is unknown due to limited trial data. [doc1] No adverse effects have been demonstrated in clinical trials. [doc1] L. reuteri is contraindicated in short-gut syndrome, pancreatitis, and immunocompromising conditions including corticosteroid use. [doc1]\n\n**Sucrose**  \nSucrose is a reasonable second-line alternative to L. reuteri. [doc1] A 12% solution (2 mL orally as needed, maximum 10 doses/24 h) or 24% solution (1 mL orally as needed) can be used, with titration to 24% if ineffective after 7 days. [doc1] Studies using 12% solutions showed marginal benefit over placebo, though 24% solutions have demonstrated effectiveness in procedural pain management in neonates and infants. [doc1] The short duration of action (1\u20135 minutes) may limit its usefulness in treating colic. [doc1]\n\n**Simethicone**  \nSimethicone (0.5\u20131 mL or 20\u201340 mg with each feed, maximum 6 mL/24 h) is the only drug product licensed by Health Canada for infant colic. [doc1] Systematic reviews show no additional benefit over placebo, though safety is well-established since it is not systemically absorbed. [doc1] It may be a safe option for those seeking an approved product regardless of efficacy. [doc1]\n\n**Agents not recommended:**  \nDicyclomine is not recommended as it can cause apnea in neonates and young infants. [doc1] Fennel products, lactase, and herbal agents lack sufficient safety data and standardized dosing and should not be recommended. [doc1]",
+    "mode": "free",
+    "passed": false,
+    "failures": [
+      "none of these phrases found: ['red flag', 'red-flag', 'warning sign', 'urgent', 'needs assessment', 'should be assessed']..."
+    ],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer fails criterion (b) by not flaging the critical age-related red flag. The clinical professional explicitly stated that symptoms >5 months of age should trigger urgent assessment, and the negative feedback emphasized that the chatbot must flag this age as a warning sign. A 6-month-old with colic symptoms is outside the typical colic window (usually resolves by 3-4 months) and requires investigation for underlying pathology before considering pharmacologic therapy. The answer provides d",
+      "missing_expected": [
+        "Red flag assessment: symptoms persisting beyond 5 months of age warrant urgent evaluation to rule out underlying pathology",
+        "Recommendation that this 6-month-old should be assessed before pharmacologic therapy is considered"
+      ],
+      "violated_negative": [
+        "Did not flag age (6 months) as a warning sign requiring urgent assessment",
+        "Did not suggest that colic symptoms at this age are atypical and warrant investigation for other causes"
+      ]
+    }
+  },
+  {
+    "id": "CF-10",
+    "source": "customer-feedback.csv",
+    "showstopper": true,
+    "question": "Medications and dosages to treat constipation in a 7-month old",
+    "expected": "PEG 1\u20131.5 g/kg/day PO \u00d7 3\u20136 days",
+    "positive": "The correct information was a component of the provided repsonse.",
+    "negative": "PEG maintenance therapy is referred to but the dosage is not provided. Constipation in adults content is cited and should not be--incorrect dosage of glycerin suppository provided--a 7 mo infant should not be administered an adult suppository! The Non-Pharmacologic recommendations were not relevent to an infant.",
+    "chapters": [
+      "constipation_in_children"
+    ],
+    "answer": "For a 7-month-old with constipation, polyethylene glycol 3350 (PEG 3350) is the primary osmotic laxative choice, with glycerin suppositories available for immediate relief.\n\n**First-line pharmacologic therapy:**\n\n[PEG 3350 is the primary choice for most children and can be used for both clean-out therapy and maintenance] [doc1]. For a child under 1 year, the dosing is:\n- **Bowel evacuation (clean-out):** 4\u201317 g daily for 3\u20136 days [doc1]\n- **Maintenance:** 4\u20138.5 g daily [doc1]\n\nThe powder should be dissolved in 250 mL of liquid per 17 g of PEG 3350 [doc1]. At 7 months, the lower end of the dosing range would typically be used.\n\n**Alternative for immediate relief:**\n\n[Glycerin suppositories are often used for immediate relief, particularly in infants] [doc1]. For a child under 6 years, use 1 infant suppository (1.5 g) rectally [doc1].\n\n**Important considerations:**\n\n[Mineral oil should not be used in children <1 year of age or those at increased risk of aspiration] [doc1]. \n\nAt this age, nonpharmacologic measures should also be emphasized, particularly [ensuring adequate fluid intake and considering osmotic juices such as pear, prune, or apple for mild constipation] [doc1]. [If the infant is having difficulty with introduction of semi-solid foods or has switched from breast milk to formula, these may be risk factors for constipation that warrant dietary review] [doc1].\n\nGiven the infant's age and the need for individualized dosing, consultation with the child's pediatrician is essential before initiating therapy.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer includes the expected PEG dosing for a 7-month-old (4\u201317 g daily for 3\u20136 days clean-out, 4\u20138.5 g daily maintenance), which aligns with the expected 1\u20131.5 g/kg/day range. (b) The answer avoids the specific negative feedback errors: it provides PEG maintenance dosage (not just referring to it without numbers), specifies infant suppository dosing (1.5 g, not adult dosing), and appropriately contextualizes non-pharmacologic measures as relevant to infants (fluid intake, osmotic juices",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-11",
+    "source": "customer-feedback.csv",
+    "showstopper": false,
+    "question": "Q4: When should antibiotics be used in rhinosinusitis?",
+    "expected": "After 10 days of symptoms with no improvement or if any worsening",
+    "positive": "Correct",
+    "negative": "None",
+    "chapters": [
+      "multiple_sclerosis",
+      "sinusitis"
+    ],
+    "answer": "Antibiotics should be reserved for patients with symptoms of acute bacterial rhinosinusitis that persist without improvement for >10 days or worsen after initial improvement, and preferably only after symptom-sparing strategies have been attempted.\n\n**Diagnosis of bacterial involvement:** Since most acute rhinosinusitis is viral, accurate identification of bacterial infection is crucial. [doc1] Acute bacterial rhinosinusitis should be diagnosed when symptoms persist without improvement for >10 days after URTI onset or when symptoms worsen within 10 days after initial improvement (double sickening). [doc1] No individual symptom\u2014including fever or purulent discharge\u2014reliably predicts bacterial involvement. [doc1]\n\n**Initial management approach:** Symptom management alone is the preferred initial strategy for uncomplicated acute rhinosinusitis. [doc2] Approximately 70% of cases resolve within 2 weeks without antibiotics. [doc2] The number needed to treat is 19 to benefit one patient, while the number needed to harm is 8, making antibiotic use a poor risk-benefit proposition in most cases. [doc2] Furthermore, antibiotics do not prevent serious complications, which remain rare even without treatment. [doc2]\n\n**Antibiotic-sparing strategies:** Before prescribing antibiotics in suspected bacterial rhinosinusitis, consider: (1) a 72-hour trial of intranasal corticosteroid spray for mild-to-moderate symptoms, which may avoid antibiotics entirely, or (2) watchful waiting\u2014deferring antibiotics for up to 7 days with symptomatic management and reassessment. [doc2] A delayed-prescribing strategy with a rescue prescription is also effective. [doc2]\n\n**When antibiotics are indicated:** Antibiotic therapy should be considered for patients meeting bacterial rhinosinusitis criteria and experiencing significant symptom burden affecting quality of life (e.g., interfering with activity or sleep). [doc2] Shared decision-making is essential, weighing the self-limiting nature of illness against risks of antimicrobial resistance, adverse effects, and *Clostridioides difficile* infection. [doc2]\n\n**Special populations:** Patients with signs of complicated disease (altered mental status, periorbital edema, exophthalmos, severe headache, neck stiffness, or systemic toxicity) require further evaluation and likely antimicrobial therapy. [doc1]",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "The answer contains the core expected clinical content: antibiotics should be used after 10 days of symptoms without improvement or if worsening occurs. The answer goes substantially beyond the minimum by providing context on diagnosis, risk-benefit analysis, antibiotic-sparing strategies, and special populations\u2014all clinically appropriate and source-grounded. No negative feedback was specified, and the answer makes no identifiable safety-critical errors.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-12",
+    "source": "customer-feedback.csv",
+    "showstopper": false,
+    "question": "Q5: What is the duration of antibiotic therapy in rhinosinusitis?",
+    "expected": "See Table 2: First-line: Adults: 5-7 days; Children: 10 days. Failure of Tx: adults: 5-10 days; children: 10 days",
+    "positive": "Mostly correct response",
+    "negative": "Risk that a child who failed 1st line Tx would only receive 5 days of Abx",
+    "chapters": [
+      "sinusitis"
+    ],
+    "answer": "Antibiotic therapy duration in rhinosinusitis differs between adults and children, with shorter courses now supported by evidence in adults.\n\n**In adults with uncomplicated acute rhinosinusitis**, a shorter treatment duration of 5\u20137 days is recommended [doc1]. This approach has advantages in terms of lower potential for development of resistance, better adherence, fewer adverse events, and lower costs [doc1]. A meta-analysis of 12 randomized controlled trials comparing short-course (3\u20137 days) therapy to longer courses (6\u201310 days) found no differences in clinical success, microbiologic efficacy, relapses, adverse events, or withdrawals [doc1]. In a subanalysis comparing 5-day with 10-day regimens, clinical success was similar but adverse events were fewer with the 5-day course [doc1].\n\n**If first-line therapy has failed** (no improvement after 7 days, clinical deterioration, or recurrence within 3 months), choose a different antibiotic and treat for 5\u201310 days with the new agent [doc1].\n\n**In children**, data on shorter durations of therapy are lacking; therefore, it is still recommended to treat for 10 days [doc1].\n\nTraditionally, 7\u201314 days of therapy has been recommended [doc1], and some prescribers continue antibiotic therapy until the patient is symptom-free and then for an additional 7 days; however, short-course optimal-dose therapy has been shown to be effective [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer fails check (b) by creating a safety risk for children who fail first-line therapy. The expected result specifies that children failing first-line treatment should receive 10 days of the new antibiotic, but the answer states 'treat for 5\u201310 days' without clarifying that children specifically require the 10-day duration, not the 5-day option. This mirrors the negative feedback risk: a clinician could interpret the 5\u201310 day range as permitting 5 days in a child, which is incorrect.",
+      "missing_expected": [],
+      "violated_negative": [
+        "The answer does not clearly distinguish that children who fail first-line therapy must receive 10 days (not 5 days) of the new antibiotic. By stating '5\u201310 days' without child-specific guidance, it creates the exact risk flagged in negative feedback: a child failing first-line could be prescribed only 5 days instead of the required 10 days."
+      ]
+    }
+  },
+  {
+    "id": "CF-13",
+    "source": "customer-feedback.csv",
+    "showstopper": false,
+    "question": "Q1: How do I treat hypertension in a black person",
+    "expected": "Expecting a review of appropriate treatment options with some mention of the potential use of ACE/ARB agents",
+    "positive": "Good general overview. Noted the issue of med choice in black patients",
+    "negative": "",
+    "chapters": [
+      "heart_failure",
+      "hypertension"
+    ],
+    "answer": "Thiazide diuretics are particularly effective first-line therapy for Black patients with hypertension. [doc1][doc2]\n\nLow-dose thiazide or related diuretics (e.g., indapamide) have proven antihypertensive effectiveness in Black patients and should generally be selected as initial therapy for uncomplicated hypertension unless there are specific indications for other agents. [doc1][doc2] The CPS sources note that Hypertension Canada guidelines suggest avoiding ACE inhibitors or ARBs as first-line agents in Black patients; however, the supporting data is not robust, and these agents may still be appropriate as second- or third-line therapy depending on concurrent risk factors and disease states. [doc1]\n\nWhen selecting antihypertensive therapy, consider all concurrent risk factors and disease states regardless of race. [doc1] For Black patients with heart failure, hydralazine/isosorbide dinitrate combinations are specifically recommended as an option when ACE inhibitors and ARBs are contraindicated or not tolerated. [doc1]\n\nThe general principle that cardiovascular risk reduction depends more on the extent of blood pressure lowering than on the specific medication chosen applies to all patients, including Black patients. [doc1] Dose titration should occur approximately every 4 weeks to achieve target blood pressure, with combination therapy often required (about 50% of patients need more than one agent). [doc1]",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer covers first-line thiazide diuretics for Black patients with hypertension AND explicitly mentions ACE/ARB agents (noting they are not first-line but may be appropriate as second/third-line depending on comorbidities), satisfying the expected content. (b) No negative feedback was provided, so there is no specific mistake to avoid. The answer is clinically sound and appropriately nuanced.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-14",
+    "source": "customer-feedback.csv",
+    "showstopper": false,
+    "question": "Q2: How do I manage medications that prolong QT",
+    "expected": "Expecting list of risk factors to consider, perhaps treatment options",
+    "positive": "Good review",
+    "negative": "External link that provides list of drugs at risk of QT prolongation not included",
+    "chapters": [
+      "ventricular_tachyarrhythmias"
+    ],
+    "answer": "To manage medications that prolong QT interval, a systematic stepwise approach is required, particularly for high-risk patients.\n\n## Initial Assessment and Risk Stratification\n\nFirst, verify whether the medication is on a QT-prolonging drug list and associated with torsades de pointes (TdP) [doc1]. Clarify any personal or family history of ventricular arrhythmias, congenital long QT syndrome, syncope, or sudden death; patients with congenital LQT syndrome should avoid QT-prolonging drugs entirely [doc1].\n\nIdentify patient risk factors for TdP, which include age >67 years, female sex, bradycardia (heart rate <45 beats/min), electrolyte disturbances (hypokalemia, hypomagnesemia, hypocalcemia), heart failure with reduced ejection fraction, and acute cardiac events within 7 days [doc1]. Review concomitant medications for other QT-prolonging agents and any factors affecting drug metabolism, such as renal or liver failure [doc1].\n\n## Dosing and Baseline ECG Monitoring\n\nIf a high-risk patient requires QT-prolonging medication after careful assessment, start with the lowest effective dose and adjust according to clinical need [doc1]. Some authorities recommend obtaining a baseline ECG; if baseline QT is prolonged, repeat ECG monitoring after 5 half-lives of the prescribed drug or after any dosage adjustment [doc1]. There are no data supporting routine surveillance ECGs if baseline QTc is normal [doc1].\n\n## Ongoing Monitoring and Patient Education\n\nA QTc interval >500 milliseconds or QTc prolongation >60 milliseconds from baseline warrants careful reassessment [doc1]. Monitor serum potassium and magnesium in patients on multiple QT-prolonging therapies [doc1]. Instruct patients to report new symptoms (palpitations, dyspnea, dizziness) and conditions that could cause hypokalemia, such as gastroenteritis or diuretic use [doc1].\n\n## Combination Therapy\n\nUsing two or more QT-prolonging medications does not necessarily cause additional QT prolongation or arrhythmias [doc1]. In a large study of 3,442 patients on QT-prolonging antibiotics, 38.7% were also taking other TdP-inducing drugs, 14% used more than three QT-prolonging medications, and despite 15.9% having hypokalemia, no cases of TdP occurred [doc1]. Therefore, necessary medications should not be withheld solely based on QT-prolongation concerns [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer fails criterion (b): it does not include an external link or reference to a comprehensive QT-prolonging drug list resource, which the negative feedback explicitly states must be avoided being omitted. The clinical professional expected the answer to either provide or reference such a list (e.g., CredibleMeds, Arizona CERT, or similar authoritative database), and the absence of this is the specific mistake the negative feedback warns against.",
+      "missing_expected": [
+        "External link or reference to a QT-prolonging drug list resource (e.g., CredibleMeds, Arizona CERT, or similar authoritative database)"
+      ],
+      "violated_negative": [
+        "Did not include external link that provides list of drugs at risk of QT prolongation"
+      ]
+    }
+  },
+  {
+    "id": "CF-15",
+    "source": "customer-feedback.csv",
+    "showstopper": false,
+    "question": "Q3: How do I treat heart failure in a black patient",
+    "expected": "Expecting a review of appropriate treatment options with some mention of the potential use of ACE/ARB agents and hydralazine/isosorbide dinitrate",
+    "positive": "Reasonable summary",
+    "negative": "",
+    "chapters": [
+      "heart_failure",
+      "hypertension"
+    ],
+    "answer": "Heart failure treatment in Black patients follows the same foundational quadruple therapy approach as in other populations, with an important race-specific addition for enhanced mortality benefit.\n\nFor heart failure with reduced ejection fraction (HFrEF), the core regimen includes [doc1]:\n- ACE inhibitor or angiotensin II receptor blocker (ARB)\n- Beta-blocker\n- Mineralocorticoid receptor antagonist (MRA)\n- SGLT2 inhibitor\n\nHowever, Black patients warrant special consideration. **The combination of isosorbide dinitrate plus hydralazine should be added as adjunctive therapy** [doc1]. This combination was specifically studied in a randomized controlled trial enrolling self-identified Black patients with NYHA class III\u2013IV HF who were already receiving standard therapy (ACE inhibitor, beta-blocker with or without MRA), and demonstrated a reduction in morbidity and mortality [doc1]. The relative risk reduction for death with this add-on approach is 39%, with an absolute risk reduction of 4% (NNT = 25) [doc1].\n\nAdditionally, be aware that Black patients have a higher incidence of ACE inhibitor\u2013induced angioedema (OR 2.88) compared to other populations, occurring more frequently in the first 3 months of therapy [doc1]. This is thought to reflect racial differences in sensitivity to bradykinin. If angioedema develops, an ARB is an alternative, though ARB-induced angioedema has also been reported [doc1].\n\nAll other aspects of HF management\u2014diuretics for volume status, monitoring of renal function and potassium, and uptitration goals\u2014apply uniformly regardless of race.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer comprehensively covers the expected content: foundational quadruple therapy (ACE/ARB, beta-blocker, MRA, SGLT2i), explicit mention of hydralazine/isosorbide dinitrate as race-specific adjunctive therapy with mortality benefit data, and appropriate clinical context. (b) No negative feedback was provided, so there is no specific mistake to avoid. The answer is clinically sound and well-sourced.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-16",
+    "source": "customer-feedback.csv",
+    "showstopper": false,
+    "question": "Q1: Are probiotics useful in MS?",
+    "expected": "Y",
+    "positive": "",
+    "negative": "",
+    "chapters": [
+      "multiple_sclerosis"
+    ],
+    "answer": "I understand. I will use inline citations in the format [doc1], [doc2], etc. based on the document field numbers from the retrieved chunks.\n\nLet me search again for more specific information on probiotics in MS:The CPS knowledge base I can access does not contain detailed information on this topic. Please consult primary sources or the full CPS publication.\n\nThe retrieved multiple sclerosis document discusses disease-modifying therapies, corticosteroid treatment, rehabilitation, vitamin D supplementation, and various immunosuppressive agents, but does not address the role of probiotics in MS management.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "(a) FAILED: The expected result is 'Y' (yes, probiotics are useful in MS), but the answer declines to answer and states the knowledge base lacks information. The answer provides no clinical content addressing whether probiotics have utility in MS. This is a substantive absence of the required clinical position.",
+      "missing_expected": [
+        "A 'yes' answer or affirmative statement that probiotics are useful/have a role in MS",
+        "Any clinical reasoning, evidence, or mechanism supporting probiotic utility in MS"
+      ],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-17",
+    "source": "customer-feedback.csv",
+    "showstopper": false,
+    "question": "Q2: Is cladribine indicated for SPMS",
+    "expected": "Y",
+    "positive": "",
+    "negative": "",
+    "chapters": [
+      "multiple_sclerosis"
+    ],
+    "answer": "No, cladribine is not indicated for SPMS based on the CPS knowledge base.\n\nCladribine is an oral short-course cyclic purine analog that gradually and temporarily depletes B and T lymphocytes, and has been shown to be effective for reducing relapse rates, the risk of disability progression and MRI measures of disease activity [doc1]. However, cladribine should be considered only in patients with MS who are unable to tolerate or have inadequate response to 1 or more therapies for MS [doc1]\u2014with no specific indication for secondary progressive disease stated.\n\nBy contrast, siponimod (an S1P modulator) is the agent explicitly approved for active SPMS [doc1]. It should be used only in SPMS patients with active MS flares, as identified by gadolinium-enhancing lesions, and other SPMS patients without active disease may not achieve the same clinical benefits [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer states 'No, cladribine is not indicated for SPMS' but the expected result is 'Y' (yes, it is indicated). The answer acknowledges cladribine's mechanism and efficacy but incorrectly concludes there is 'no specific indication for secondary progressive disease stated,' directly contradicting the clinical professional's expected answer that cladribine IS indicated for SPMS.",
+      "missing_expected": [
+        "Affirmation that cladribine IS indicated for SPMS",
+        "Clinical evidence or approval status supporting cladribine use in SPMS"
+      ],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CF-18",
+    "source": "customer-feedback.csv",
+    "showstopper": false,
+    "question": "Q1 What is amox dose for 50kg child for otitis media",
+    "expected": "standard dose/high dose, with max 4g/day",
+    "positive": "showed ranges for both standard and high dose, calculations correct",
+    "negative": "did not consider max dose in calculation, repeat of references added (2 of 3 references same)",
+    "chapters": [
+      "acute_otitis_media_in_childhood"
+    ],
+    "answer": "For a 50 kg child with otitis media, standard-dose amoxicillin is 40\u201350 mg/kg/day, which equals **2000\u20132500 mg/day**, or high-dose is 75\u201390 mg/kg/day, which equals **3750\u20134500 mg/day** (capped at 4 g/day maximum) [doc1].\n\nThe choice between standard and high-dose depends on risk factors [doc1]. Standard-dose amoxicillin is a reasonable first-line option for children without risk factors for drug-resistant organisms (no recent antibiotics <3 months, no daycare, no prior AOM episode) [doc1]. High-dose amoxicillin is recommended for children with risk factors or in regions with higher pneumococcal resistance [doc1].\n\nThe standard dose should be divided three times daily (TID), while high-dose is divided twice daily (BID) [doc1]. Duration is 10 days if the child is <2 years old, or 5 days if \u22652 years old [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "(a) PASS: Expected content present\u2014standard dose (40\u201350 mg/kg/day = 2000\u20132500 mg/day), high dose (75\u201390 mg/kg/day = 3750\u20134500 mg/day), and max 4 g/day cap are all stated. (b) FAIL: The answer violates the negative feedback by citing [doc1] six times in a single response, which constitutes repetitive referencing of the same source. The negative explicitly flagged 'repeat of references added (2 of 3 references same)' as an error to avoid.",
+      "missing_expected": [],
+      "violated_negative": [
+        "Repetitive citation of the same reference ([doc1] cited 6 times in one answer), violating the instruction to avoid repeat references"
+      ]
+    }
+  },
+  {
+    "id": "SQ-1",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "Patient: RT is an obese 56-year-old male.\nMedical Conditions: Gout x 3 years\nAllergies: None known\nMedications:\n\nAllopurinol 300 mg daily\nIndomethacin 50 mg TID as needed for gout flare-ups (approximately every 6 months)\nLifestyle: Leads a sedentary lifestyle\nPresentation:\nRT has just come from his annual physical and reports his blood pressure to be 150/98. RT is concerned that his physician has not prescribed any medication since he has a family history of high blood pressure and heart disease.\n\nWhat is the most appropriate information regarding high blood pressure for the pharmacist to give to RT to address his concerns?\n\nA) Family history is of little importance in the risk of developing high blood pressure.\nB) The diagnosis of hypertension is made after several elevated blood pressure readings.\nC) The elevation of his blood pressure is due to his use of allopurinol.\nGive me the answer - a, b, c",
+    "expected": "Answer: B",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "hypertension",
+    "is_mcq": true,
+    "mcq_answer": "b",
+    "chapters": [
+      "gout_and_hyperuricemia",
+      "hypertension"
+    ],
+    "answer": "**The answer is B.**\n\nThe diagnosis of hypertension is made after several elevated blood pressure readings [doc1]. According to the CPS guidance, the diagnostic process in nonurgent cases requires mandatory elements including \"strictly following recommended techniques, using the mean of multiple readings for clinical decision-making, and using out-of-office measurement to rule in or rule out the diagnosis\" [doc1]. While RT's single office reading of 150/98 is elevated, this single measurement alone does not constitute a hypertension diagnosis\u2014further assessment with multiple readings and out-of-office measurement (such as a home blood pressure series) is necessary to confirm the diagnosis [doc1].\n\nRegarding the other options: Family history is actually important\u2014it is explicitly listed as a cardiovascular risk factor influencing treatment decisions [doc1]. Additionally, NSAIDs (including indomethacin) are recognized as drugs that can induce or aggravate hypertension [doc1], not allopurinol, making option C incorrect.",
+    "mode": "mcq",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer correctly identifies B as the answer and explains that hypertension diagnosis requires multiple elevated readings, not a single measurement. (b) No negative feedback was provided, so there is no specific mistake to avoid. The answer appropriately addresses why A and C are incorrect with clinically sound reasoning.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-2",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "Patient: RT is an obese 56-year-old male.\nMedical Conditions: Gout x 3 years\nAllergies: None known\nMedications:\n\nAllopurinol 300 mg daily\nIndomethacin 50 mg TID as needed for gout flare-ups (approximately every 6 months)\nLifestyle: Leads a sedentary lifestyle\nPresentation:\nRT has just come from his annual physical and reports his blood pressure to be 150/98. RT is concerned that his physician has not prescribed any medication since he has a family history of high blood pressure and heart disease.\n\nTwo months later, RT's blood pressure is still elevated. The MOST appropriate initial drug therapy for RT would be:\n\nA) Hydrochlorothiazide 50 mg daily.\nB) Terazosin 1 mg daily.\nC) Amlodipine 5 mg daily.\nGive me the answer - a, b, c",
+    "expected": "Answer: C",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "hypertension",
+    "is_mcq": true,
+    "mcq_answer": "c",
+    "chapters": [
+      "gout_and_hyperuricemia",
+      "hypertension"
+    ],
+    "answer": "**The answer is C) Amlodipine 5 mg daily.**\n\nRT has gout and is taking allopurinol, which makes hydrochlorothiazide inappropriate as initial therapy. [doc1] Thiazide diuretics \"can exacerbate gout and diabetes,\" and the CPS explicitly states the ACR recommends \"switching hydrochlorothiazide to an alternate antihypertensive when feasible for patients with gout, regardless of disease activity.\" [doc4]\n\nTerazosin is an alpha-1-adrenergic antagonist and is explicitly marked \"not for initial therapy\" in the CPS hypertension section. [doc1]\n\nAmlodipine, a calcium channel blocker, is an appropriate first-line agent for hypertension [doc1] and does not carry the contraindication in gout that thiazides do. It avoids the gout exacerbation risk that would make option A problematic for this patient with existing gout requiring allopurinol management.",
+    "mode": "mcq",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer correctly identifies C as the answer and provides the key clinical reasoning: hydrochlorothiazide is contraindicated in gout (exacerbates gout), terazosin is not first-line, and amlodipine is appropriate first-line therapy without gout contraindications. (b) No specific mistakes from negative feedback are present (none was provided). The answer appropriately cites source documents and applies patient-specific factors (gout history) to the drug selection.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-3",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "RT is an obese 56-year-old male.\nMedical Conditions: Gout x 3 years\nAllergies: None known\nMedications:\n\nAllopurinol 300 mg daily\nIndomethacin 50 mg TID as needed for gout flare-ups (approximately every 6 months)\nLifestyle: Leads a sedentary lifestyle\nPresentation:\nRT has just come from his annual physical and reports his blood pressure to be 150/98. RT is concerned that his physician has not prescribed any medication since he has a family history of high blood pressure and heart disease.\n\nRT develops angina. Transdermal nitroglycerin is added to his antihypertensive therapy. RT is at risk for which of the following adverse reactions?\n\nA) Decreased renal function\nB) Gout flare-up\nC) Orthostatic hypotension\nGive me the answer - a, b, c",
+    "expected": "Answer: C",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "Gout",
+    "is_mcq": true,
+    "mcq_answer": "c",
+    "chapters": [
+      "gout_and_hyperuricemia"
+    ],
+    "answer": "**Answer: C) Orthostatic hypotension**\n\nTransdermal nitroglycerin carries a risk of orthostatic hypotension and related adverse effects. The CPS notes that nitroglycerin adverse effects include \"hypotension, syncope (rare), dizziness, flushing\" [doc1], and that nitrates \"potentiate the hypotensive effects of vasodilators\" [doc1]. When added to antihypertensive therapy that RT may already be receiving for his elevated blood pressure (150/98), the additive hypotensive effects significantly increase the risk of orthostatic hypotension and syncope.\n\nOptions A (decreased renal function) and B (gout flare-up) are not documented adverse effects of nitroglycerin in the CPS source material.",
+    "mode": "mcq",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "The answer correctly identifies C (orthostatic hypotension) as the expected answer and provides sound clinical reasoning: nitroglycerin causes hypotension and dizziness, and when combined with antihypertensive therapy, the additive hypotensive effects increase orthostatic hypotension risk. The answer appropriately rules out options A and B with reference to source material. No negative feedback was provided to violate.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-4",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "Patient: CS is a 13-month-old female, weighing 12 kg.\nMedical Conditions: Unremarkable\nAllergies: Penicillin (anaphylaxis)\nMedication:\nLifestyle: None\nPresentation: Unremarkable\n\nCS has had a productive cough, nasal congestion, and fever (39\u00b0C) for 2 days. CS's mother has been giving her acetaminophen 120 mg every 4 hours, which reduces her temperature for only 3 hours.\n\nWhich recommendation is most appropriate to treat CS's fever?\n\nA) Give an alcohol sponge bath every 4 hours.\nB) Switch to acetylsalicylic acid 80 mg every 6 hours.\nC) Give acetaminophen 160 mg every 4 hours.\nGive me the answer - a, b, c",
+    "expected": "Answer: C",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "Otitis Media",
+    "is_mcq": true,
+    "mcq_answer": "c",
+    "chapters": [
+      "acute_otitis_media_in_childhood"
+    ],
+    "answer": "**Answer: C**\n\nThe most appropriate recommendation is to increase acetaminophen to 160 mg every 4 hours.\n\nFor a 12 kg child, the CPS dose for acetaminophen is 10\u201315 mg/kg per dose every 4\u20136 hours, with a maximum of 75 mg/kg/day [doc1]. At 12 kg, this yields a dose range of 120\u2013180 mg per dose. The current dose of 120 mg is at the lower end of this range and may explain the inadequate fever control (only 3 hours duration). Increasing to 160 mg every 4 hours (13.3 mg/kg) remains within the recommended therapeutic range and should provide better fever management [doc1].\n\n**Why the other options are inappropriate:**\n\n**A) Alcohol sponge baths are not recommended.** Sponging with alcohol is contraindicated because alcohol may be absorbed through the skin, inhaled, or accidentally ingested, and has been associated with hypoglycemia, intoxication, and coma [doc1].\n\n**B) Acetylsalicylic acid (ASA) is contraindicated in children.** ASA is not recommended in children or adolescents because of the potentially increased risk of Reye syndrome [doc1].",
+    "mode": "mcq",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "The answer correctly identifies option C as the most appropriate recommendation with sound clinical reasoning based on weight-based dosing (10\u201315 mg/kg per dose for acetaminophen in a 12 kg child). The answer appropriately explains why options A and B are contraindicated (alcohol sponging risks and ASA/Reye syndrome risk in children), and no negative feedback was provided to contradict the approach taken.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-6",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "CS has had a productive cough, nasal congestion, and fever (39\u00b0C) for 2 days. What information regarding azithromycin would you provide to CS's mother?\n\nA) It must be taken with food.\nB) It causes sedation.\nC) It may be stored at room temperature.\nGive me the answer - a, b, c",
+    "expected": "Answer: C",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "Otitis Media",
+    "is_mcq": true,
+    "mcq_answer": "c",
+    "chapters": [
+      "acute_otitis_media_in_childhood"
+    ],
+    "answer": "The correct answer is **C) It may be stored at room temperature.**\n\nBased on the retrieved CPS sources, azithromycin's key adverse effects are GI upset, nausea, vomiting, diarrhea, and rash, with rare QTc interval prolongation [doc2][doc3][doc6]. The sources do not indicate that azithromycin must be taken with food or causes sedation.\n\nRegarding storage, while the CPS sources provided do not explicitly detail azithromycin storage conditions, the documented adverse effects and administration guidance focus on GI tolerability rather than food requirements for absorption. Option A (must be taken with food) is not supported by the retrieved information. Option B (causes sedation) is not listed among azithromycin's known adverse effects in any of the CPS documents retrieved.",
+    "mode": "mcq",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer correctly identifies C as the correct answer with appropriate clinical reasoning about azithromycin's adverse effects and storage. (b) No specific mistakes from negative feedback were identified to avoid, and the answer does not commit any safety-critical errors regarding patient-specific applicability, dosing, or contraindications.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-7",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "Patient: SA\nMedical Conditions:\nFamily History:\n\nM3 is a 35-year-old male, BMI 22 kg/m\u00b2 (N 18.5-24.9)\nStable angina (infrequent)\nFather died of myocardial infarction (MI) at age 40\nBrother had MI 2 years ago at age 38\nAllergies: None known\nMedications: Nitroglycerin spray PRN\nLifestyle: Smokes 1/2 pack of cigarettes daily, Aerobic exercise\nPresentation: M3's physician has ordered a lipid screen. Results are pending.\n\nWhich is a risk factor for coronary heart disease for M3?\n\nA) Family history\nB) Sedentary lifestyle\nC) Obesity\nGive me the answer - a, b, c",
+    "expected": "Answer: A",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "Stable Angina",
+    "is_mcq": true,
+    "mcq_answer": "a",
+    "chapters": [
+      "stable_angina"
+    ],
+    "answer": "**Answer: A) Family history**\n\nFamily history is a risk factor for coronary heart disease for M3. [doc1] Specifically, M3 has a significant family history of premature cardiovascular disease: his father died of MI at age 40 and his brother had MI at age 38. The CPS source identifies \"family history of premature cardiovascular disease (first-degree relative; males <45 and females <55)\" as a nonmodifiable major risk factor for CVD. [doc1]\n\nOption B (sedentary lifestyle) is not a risk factor for M3, as his medical history documents that he engages in aerobic exercise.\n\nOption C (obesity) is also not a risk factor for M3, as his BMI of 22 kg/m\u00b2 falls within the normal range (18.5\u201324.9).",
+    "mode": "mcq",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer correctly identifies A) Family history as the answer and provides the clinical rationale: M3's father died of MI at age 40 and brother at age 38, both meeting the criterion of premature CVD in first-degree males <45. (b) No negative feedback was provided, so there is no specific mistake to avoid. The answer also appropriately eliminates B and C by noting M3 exercises regularly and has normal BMI.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-8",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "Patient: SA\nMedical Conditions:\nFamily History:\n\nM3 is a 35-year-old male, BMI 22 kg/m\u00b2 (N 18.5-24.9)\nStable angina (infrequent)\nFather died of myocardial infarction (MI) at age 40\nBrother had MI 2 years ago at age 38\nAllergies: None known\nMedications: Nitroglycerin spray PRN\nLifestyle: Smokes 1/2 pack of cigarettes daily, Aerobic exercise\nPresentation: M3's physician has ordered a lipid screen. Results are pending.\n\nRealistic goals of therapy for stable angina include all the following, EXCEPT:\n\nA) Stimulate coronary artery revascularization.\nB) Improve exercise tolerance.\nC) Slow disease progression.\nGive me the answer - a, b, c",
+    "expected": "Answer: A",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "Stable Angina",
+    "is_mcq": true,
+    "mcq_answer": "a",
+    "chapters": [
+      "stable_angina"
+    ],
+    "answer": "Based on the CPS stable angina resource, the correct answer is **A) Stimulate coronary artery revascularization**.\n\nThe three established goals of therapy for stable angina are: [doc1] (1) Improve quality of life by decreasing or preventing angina and improving exercise tolerance, (2) Minimize the risk of cardiovascular death and nonfatal MI, and (3) Treat the modifiable risk factors that promote the development and progression of CAD.\n\nOptions B and C align directly with these goals. However, revascularization is not a primary *therapeutic goal*\u2014rather, it is a *therapeutic intervention* indicated in specific circumstances. [doc2] Revascularization is indicated to improve quality of life in medically refractory patients and to improve longer-term prognosis in patients with high-risk coronary anatomy. In other words, revascularization is a means to achieve the goal of improving quality of life or preventing cardiovascular events, not a goal in itself.\n\n**Answer: A**",
+    "mode": "mcq",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer correctly identifies A as the answer and provides the three established therapeutic goals (improve quality of life/exercise tolerance, minimize CV death/MI risk, treat modifiable risk factors), which align with options B and C. (b) No negative feedback was provided, so there is no specific mistake to avoid. The answer appropriately distinguishes revascularization as an intervention/means rather than a primary therapeutic goal, which is clinically sound.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-9",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "Patient: SA\nMedical Conditions:\nFamily History:\n\nM3 is a 35-year-old male, BMI 22 kg/m\u00b2 (N 18.5-24.9)\nStable angina (infrequent)\nFather died of myocardial infarction (MI) at age 40\nBrother had MI 2 years ago at age 38\nAllergies: None known\nMedications: Nitroglycerin spray PRN\nLifestyle: Smokes 1/2 pack of cigarettes daily, Aerobic exercise\nPresentation: M3's physician has ordered a lipid screen. Results are pending.\n\nAt this time, additional therapy that would be beneficial for M3 is:\n\nA) Metoprolol and atorvastatin.\nB) Warfarin and amlodipine.\nC) Acetylsalicylic acid and ramipril.\nGive me the answer - a, b, c",
+    "expected": "Answer: C",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "Stable Angina",
+    "is_mcq": true,
+    "mcq_answer": "c",
+    "chapters": [
+      "stable_angina",
+      "venous_thromboembolism"
+    ],
+    "answer": "**Answer: C) Acetylsalicylic acid and ramipril.**\n\nM3 is a 35-year-old with stable angina and very high cardiovascular risk (early MI in father at age 40 and brother at age 38, plus active smoking). For secondary prevention in stable coronary artery disease, the evidence-based foundation includes antiplatelet therapy and ACE inhibitors.\n\n[Antiplatelet agents decrease the relative risk of cardiovascular death, nonfatal MI or nonfatal stroke by 30% compared with placebo, and are recommended for all patients unless contraindicated.] [doc1] ASA at 80\u2013160 mg daily is as effective as higher doses. [doc1]\n\n[In the HOPE trial, ramipril 10 mg/day decreased the relative risk of cardiovascular death, nonfatal MI or nonfatal stroke by 20% compared with placebo in the subgroup of patients with angina.] [doc1] [ACE inhibitors have been shown to prevent major cardiovascular events in patients with stable angina who do not have heart failure or left ventricular systolic dysfunction.] [doc1]\n\nOption A (metoprolol and atorvastatin) omits the antiplatelet and ACE inhibitor agents critical for secondary prevention. Option B (warfarin and amlodipine) uses an anticoagulant without clear indication in stable angina and lacks antiplatelet and ACE inhibitor protection. Option C directly addresses plaque stabilization through both antithrombotic and RAAS-inhibiting mechanisms aligned with CPS guidance for high-risk patients.",
+    "mode": "mcq",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "The answer correctly identifies option C and provides clinically sound reasoning grounded in evidence (HOPE trial, antiplatelet efficacy data, ACE inhibitor benefits in stable angina). The explanation appropriately addresses M3's high cardiovascular risk profile (early familial MI, smoking, stable angina) and explains why C is superior to A and B. No specific clinical errors or omissions are present.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-10",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "Patient: PE is a 38-year-old male transport truck driver with a BMI of 30 kg/m\u00b2\nMedical Conditions: New onset type 2 diabetes\nAllergies: None known\nMedications: None\nLifestyle: Smokes 1/2 a pack per day, sedentary lifestyle, social alcohol consumption, poor diet\nPresentation: PE presents a prescription for metformin 500 mg po TID.\n\nAs part of initial counseling, which common side effect should PE be warned against?\n\nA) Hypoglycemia\nB) Lactic acidosis\nC) Upset stomach\nGive me the answer - a, b, c",
+    "expected": "Answer: C",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "diabetes",
+    "is_mcq": true,
+    "mcq_answer": "c",
+    "chapters": [
+      "diabetes_mellitus"
+    ],
+    "answer": "**C) Upset stomach**\n\nMetformin's most common side effects that warrant patient counseling are gastrointestinal in nature. The CPS notes that metformin causes [doc1] \"nausea, diarrhea, abdominal discomfort, anorexia, metallic taste\" and specifically recommends to \"start low and go slow to minimize gastrointestinal side effects\" [doc1]. These GI effects are the primary reason for gradual dose titration during initiation.\n\nWhile lactic acidosis is listed as a potential adverse effect, it occurs specifically \"if hepatic or renal disease\" [doc1] is present\u2014PE has no documented renal or hepatic impairment. Hypoglycemia is not a concern with metformin monotherapy, as metformin has \"low risk of hypoglycemia\" when used alone [doc1].",
+    "mode": "mcq",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "The answer correctly identifies C (upset stomach) as the answer and provides appropriate clinical justification. It accurately distinguishes between common GI side effects (nausea, diarrhea, abdominal discomfort) that warrant counseling versus lactic acidosis (which requires hepatic/renal impairment not present here) and hypoglycemia (low risk with monotherapy). All expected clinical content is present with proper source attribution.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-11",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "PE's risk factor for developing type 2 diabetes includes:\n\nA) Alcohol consumption\nB) Obesity\nC) Age\nGive me the answer - a, b, c",
+    "expected": "Answer: B",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "diabetes",
+    "is_mcq": true,
+    "mcq_answer": "b",
+    "chapters": [
+      "diabetes_mellitus"
+    ],
+    "answer": "Based on the CPS knowledge base, the answer is **B and C** (obesity and age).\n\nAccording to the Risk Factors for Type 2 Diabetes Mellitus table in the CPS Therapeutic Choices, [doc1] the documented risk factors include:\n\n- **Age \u226540 years** [doc1]\n- **Presence of vascular risk factors: abdominal obesity and being overweight** [doc1]\n\nAlcohol consumption is **not** listed as a risk factor for type 2 diabetes in the CPS source material retrieved.\n\nTherefore:\n- A) Alcohol consumption \u2014 **Not supported** by CPS source\n- B) Obesity \u2014 **Yes** [doc1]\n- C) Age \u2014 **Yes** [doc1]",
+    "mode": "mcq",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer fails criterion (a): the expected result clearly states the answer is B only, but the chatbot provided B and C. While the chatbot correctly identified obesity as a risk factor and appropriately excluded alcohol, it incorrectly included age as a standalone answer when the clinical professional's expected answer is B alone. The chatbot's citation of age \u226540 years as a documented risk factor contradicts the expected single answer.",
+      "missing_expected": [
+        "The answer should be B only; the chatbot incorrectly added C (age) as a correct answer"
+      ],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-12",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "Patient: PE is a 38-year-old male transport truck driver with a BMI of 30 kg/m\u00b2\nMedical Conditions: New onset type 2 diabetes\nAllergies: None known\nMedications: None\nLifestyle: Smokes 1/2 a pack per day, sedentary lifestyle, social alcohol consumption, poor diet\nPresentation: PE's blood pressure is higher than the desired range. His GP wants to start an antihypertensive. The drug of choice is:\n\nA) Hydrochlorothiazide\nB) Metoprolol\nC) Ramipril\nGive me the answer - a, b, c",
+    "expected": "Answer: C",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "hypertension",
+    "is_mcq": true,
+    "mcq_answer": "c",
+    "chapters": [
+      "diabetes_mellitus",
+      "hypertension"
+    ],
+    "answer": "**Answer: C) Ramipril**\n\nFor a 38-year-old male with newly diagnosed type 2 diabetes presenting with hypertension, an ACE inhibitor (ramipril) is the preferred first-line agent. [doc1][doc2]\n\nAccording to CPS guidance, ACE inhibitors are specifically recommended as initial therapy for patients with diabetes mellitus, regardless of whether albuminuria or other cardiovascular complications are present. [doc1][doc2] This represents a compelling indication for ACE inhibitor use beyond simple uncomplicated hypertension.\n\nHydrochlorothiazide (thiazide diuretic) is generally a first-line agent for uncomplicated hypertension, but diuretics may worsen dysglycemia\u2014a particular concern in a newly diabetic patient. [doc1] While cardiovascular outcomes in diabetic patients treated with diuretics are similar to those on ACE inhibitors, the metabolic effects argue against preferred use in this setting.\n\nMetoprolol (beta-blocker) is not recommended as initial monotherapy in patients under 60 years of age for primary prevention without other compelling indications such as stable angina, heart failure, or recent MI. [doc1]",
+    "mode": "mcq",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "The answer correctly identifies C (Ramipril) as the best choice and provides clinically sound reasoning: ACE inhibitors are preferred first-line agents for hypertension in diabetic patients due to renal protection and metabolic benefits, while thiazides worsen dysglycemia and beta-blockers lack compelling indication in a young patient without CAD/HF. The clinical rationale is accurate and complete.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-13",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "I have a 12 year old child who fell down and hurt himself. he is allergic to tylenol and does not like swallowing tablets. can you suggest something that comes in a liquid or chewable tablet and an approiprite dose - you can ask any questions needed",
+    "expected": "(open-ended)",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "acute pain",
+    "is_mcq": false,
+    "mcq_answer": null,
+    "chapters": [
+      "acute_pain",
+      "multiple_sclerosis"
+    ],
+    "answer": "Before I make a recommendation, I need to clarify a couple of things:\n\n1. **What is the nature of the injury?** (e.g., sprains, bruises, minor fractures, abrasions) This will help determine pain severity.\n2. **Does the child have any other allergies or medical conditions** I should be aware of?\n\nBased on the retrieved CPS information, here's what I can offer:\n\nFor a 12-year-old with acetaminophen allergy who cannot swallow tablets, **ibuprofen liquid suspension is an appropriate first-line option** [doc1]. \n\n**Ibuprofen dosing for this age group:**\n- Children 10 mg/kg/dose every 6\u20138 hours by mouth [doc1]\n- Maximum: 40 mg/kg/day, not to exceed the adult dose [doc1]\n- Oral suspension is available [doc1]\n\nFor example, if your patient weighs ~40 kg, a single dose would be approximately 400 mg (10 mg/kg).\n\n**Onset and duration:** Ibuprofen has an onset of 0.5\u20131 hour with a duration of 4\u20136 hours [doc1].\n\n**Alternative if needed:** If ibuprofen alone is insufficient, **naproxen oral suspension is also available** [doc1]. Naproxen dosing for children is 5\u20137 mg/kg/dose every 8\u201312 hours, with a maximum of 1000 mg/day [doc1].\n\n**Important consideration:** Avoid ibuprofen if the child is dehydrated or has risk factors for renal dysfunction [doc1].\n\nOnce you provide more detail on the injury type and the child's medical history, I can refine this recommendation further.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer provides the core expected content: appropriate liquid/chewable alternatives to acetaminophen (ibuprofen suspension and naproxen suspension), weight-based dosing for a 12-year-old (10 mg/kg/dose for ibuprofen; 5\u20137 mg/kg/dose for naproxen), maximum daily doses, and practical guidance (onset/duration, dehydration caution). (b) No specific negative feedback was provided, so no violation check applies. The answer appropriately asks clarifying questions and cites sources.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-17",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "I have a patient who has tested positive for Covid-19, what should i ask before determining a treatment plan",
+    "expected": "(open-ended)",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "covid-19",
+    "is_mcq": false,
+    "mcq_answer": null,
+    "chapters": [
+      "covid19"
+    ],
+    "answer": "Based on the CPS knowledge base, here are the key clinical questions to ask before developing a COVID-19 treatment plan:\n\n## Disease Severity Assessment\n\nFirst, determine disease severity by assessing [doc1][doc2]:\n- **Respiratory status**: presence of shortness of breath, dyspnea, or breathlessness while walking or talking; SpO2 on room air (target >93%)\n- **Systemic symptoms**: fever, cough, sore throat, fatigue, headache, muscle pain, GI symptoms\n- **Red flags requiring urgent referral**: difficulty breathing, shortness of breath at rest, confusion, cold/clammy skin, blue-tinged lips, worsening respiratory symptoms [doc1]\n\n## Risk Stratification for Severe Disease\n\nIdentify if the patient has risk factors that increase likelihood of progression to critical illness [doc2]:\n- Age >60 years (greater risk with advancing age)\n- Vaccination status (unvaccinated = higher risk)\n- Pregnancy\n- Obesity (BMI \u226540 kg/m\u00b2)\n- Chronic medical conditions: cardiovascular disease, hypertension, diabetes, respiratory disease, kidney disease, liver disease, dementia, stroke\n- Immunocompromised conditions (cancer, immunosuppressive therapies)\n\n## Suitability for Community-Based Management\n\nAssess whether the patient meets criteria for safe home management [doc2]:\n- Ability to stay well hydrated\n- Ability to reliably report worsening symptoms (consider language barriers, cognitive status)\n- Can carry out usual activities of daily living\n- Has access to resources and social support for self-isolation\n- Can manage comorbidities at home\n- Has stable vitals with no signs of respiratory distress or persistent tachypnea\n\n## Special Considerations for Treatment Eligibility\n\nDetermine if the patient qualifies as \"high risk for severe disease,\" as [doc2] notes that even mildly ill patients at high risk may be eligible for specific treatment options. The CPS knowledge base indicates treatment decisions depend on risk stratification, though specific therapeutic agents are discussed in the Therapeutic Choices section.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer comprehensively addresses the expected open-ended question by covering disease severity assessment, risk stratification, suitability for community management, and treatment eligibility\u2014all clinically appropriate pre-treatment evaluation domains. (b) No negative feedback was provided, so there is no specific mistake to avoid. The answer is well-structured, cites sources appropriately, and includes safety-critical thresholds (SpO2 >93%, BMI \u226540, age >60) without invention.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-18",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "She has tested positive using a rapid test this morning. She is 72 years old and has a crcl of 42. she is symptomatic. She is taking crestor 10mg. She does not have allergies. Paxlovid is available.",
+    "expected": "(open-ended)",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "",
+    "is_mcq": false,
+    "mcq_answer": null,
+    "chapters": [
+      "covid19"
+    ],
+    "answer": "This patient meets criteria for antiviral treatment: she is elderly [doc1], symptomatic with a positive rapid test, and has moderately reduced renal function [doc1]. However, there is a critical drug interaction with her current medication.\n\n**Renal function assessment:** With a CrCl of 42 mL/min, she has moderate renal impairment. The dosing recommendation for this agent is 150/100 mg twice daily \u00d7 5 days if eGFR is \u226530 to <60 mL/min [doc1], which aligns with her renal status.\n\n**Critical drug interaction:** Rosuvastatin (Crestor) is extensively metabolized by CYP 3A [doc1]. The antiviral co-administered with low-dose ritonavir is a potent CYP 3A inhibitor that may increase plasma levels of drugs dependent on CYP 3A metabolism, including statins like simvastatin and lovastatin [doc1]. While rosuvastatin is not explicitly listed as contraindicated in the CPS source, **pharmacist consultation is important to mitigate significant drug-drug interactions** [doc1], and you should verify current drug interaction resources for the specific statin-antiviral combination before dispensing.\n\n**Recommendation:** Proceed with antiviral treatment given her age and symptom status, but conduct a thorough drug interaction review focusing on the rosuvastatin interaction, as the CPS notes that numerous potential drug interactions exist with this combination and consultation of reputable drug interaction resources or the product monograph is essential [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer correctly identifies that the patient meets criteria for antiviral treatment (elderly, symptomatic, positive test), assesses renal function appropriately (CrCl 42 = moderate impairment, dose 150/100 mg BID \u00d7 5 days for eGFR 30\u201360), and identifies the critical CYP3A interaction with rosuvastatin. (b) No specific negative feedback was provided, so there is no specific mistake to avoid. The answer appropriately hedges on rosuvastatin contraindication (not explicitly listed as contrai",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "SQ-23",
+    "source": "Sample Questions",
+    "showstopper": false,
+    "question": "select the correct answer: a,b,c",
+    "expected": "(open-ended)",
+    "positive": "",
+    "negative": "",
+    "topic_tag": "",
+    "is_mcq": false,
+    "mcq_answer": null,
+    "chapters": [],
+    "answer": "I'd be happy to help you select the correct answer, but I need you to provide:\n\n1. **The question** you're asking about\n2. **Options a, b, and c** (the actual text of each option)\n\nPlease share the full question and all available options, and I'll search the CPS knowledge base to provide a cited answer.",
+    "mode": "none",
+    "passed": true,
+    "failures": [
+      "(no criteria defined; assumed pass if no error)"
+    ],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer does not address the question as posed. The chatbot was asked to 'select the correct answer: a,b,c' but no question content or options were provided in the prompt itself. Rather than attempting to answer based on incomplete information, the chatbot appropriately requested clarification. However, since the EXPECTED RESULT field is marked '(open-ended)' and no NEGATIVE FEEDBACK was provided, the evaluation criteria are undefined. The chatbot's response is clinically sound (refusing to g",
+      "missing_expected": [
+        "No expected clinical content was specified; the question is incomplete"
+      ],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "PC-1",
+    "source": "CPS PharmaChat",
+    "showstopper": false,
+    "question": "What are the first-line treatment options for infant constipation?",
+    "expected": "Where did it come from?",
+    "positive": "",
+    "negative": "Where did it come from?",
+    "severity": "",
+    "chapters": [
+      "constipation_in_children"
+    ],
+    "answer": "For infants with constipation, first-line treatment combines nonpharmacologic interventions with pharmacologic agents tailored to age and presentation.\n\n**Nonpharmacologic Management**\n\n[Nonpharmacologic interventions should be discussed before or alongside medication] [doc1]. Key measures include [ensuring adequate fluid intake, a balanced diet with attention to fiber, and daily physical activity] [doc1]. [For infants older than 6 months, prune juice and the addition of whole grain cereal, cooked legumes, fruits and vegetables may be helpful] [doc2]. Important note: [infants who are exclusively breastfed may have longer periods (even days) between bowel movements; this should not be cause for concern or intervention if there is no distress or hard bowel movements] [doc1].\n\n**Pharmacologic Management**\n\nFor infants requiring medication, [glycerin suppositories are often used for immediate relief, particularly in infants] [doc1]. [Barley malt extract, corn syrup or sorbitol can be used as stool softeners] [doc3]. \n\nCritically, certain agents are contraindicated in this age group: [mineral oil should not be used in children <1 year of age or those at increased risk of aspiration] [doc1], and [heavy mineral oil and stimulant laxatives are not recommended for infants] [doc3].\n\n**Important Consideration**\n\n[True constipation during infancy is rare] [doc2]. If constipation presents in the first month of life with red flags (delayed meconium passage >48 hours, ribbon stools, failure to thrive), [Hirschsprung disease should be considered] [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer cannot be evaluated against the EXPECTED RESULT and NEGATIVE FEEDBACK because both fields state 'Where did it come from?' \u2014 indicating the clinical editor did not provide the required reference standards. Without a defined expected clinical content scope or a specific mistake to avoid, no meaningful pass/fail determination is possible.",
+      "missing_expected": [
+        "EXPECTED RESULT not provided by clinical editor"
+      ],
+      "violated_negative": [
+        "NEGATIVE FEEDBACK not provided by clinical editor"
+      ]
+    }
+  },
+  {
+    "id": "PC-2",
+    "source": "CPS PharmaChat",
+    "showstopper": true,
+    "question": "Which medications should I use to treat heart failure in a Black patient?",
+    "expected": "\"Using the Smart Chat feature I searched the Hypertension, Heart Failure and Post-myocardial Infarction chapter. I asked 'which medication should i use to treat heart failure in a black patient (see attached)\nThe answer seems to have been taken from the Hypertension chapter, which is inappropriate\"",
+    "positive": "",
+    "negative": "\"Using the Smart Chat feature I searched the Hypertension, Heart Failure and Post-myocardial Infarction chapter. I asked 'which medication should i use to treat heart failure in a black patient (see attached)\nThe answer seems to have been taken from the Hypertension chapter, which is inappropriate\"",
+    "severity": "High",
+    "chapters": [
+      "heart_failure",
+      "hypertension",
+      "multiple_sclerosis"
+    ],
+    "answer": "The combination of isosorbide dinitrate plus hydralazine should be considered as add-on therapy in Black patients with heart failure with reduced ejection fraction (HFrEF) [doc1].\n\nFor Black patients specifically, add-on therapy using isosorbide dinitrate and hydralazine has been tested in a randomized controlled trial in self-identified Black patients with NYHA class III\u2013IV HF [doc1]. Patients were already receiving standard therapy (ACE inhibitor, beta-blocker with or without mineralocorticoid receptor antagonist), and the addition of this combination showed a reduction in morbidity and mortality, with a 39% relative risk reduction in mortality and a number needed to treat of 25 [doc1].\n\nFor initial management of HFrEF regardless of race, guideline-directed medical therapy includes quadruple therapy: an angiotensin receptor/neprilysin inhibitor (ARNI) or ACE inhibitor/ARB, beta-blocker, mineralocorticoid receptor antagonist (MRA), and SGLT2 inhibitor [doc1]. These agents have proven mortality and morbidity benefits [doc1]. The isosorbide dinitrate/hydralazine combination is recommended as an additional consideration specifically in Black patients on this standard therapy.\n\nImportant to note: ACE inhibitors carry a higher risk of angioedema in Black patients [OR, 2.88], so vigilant monitoring is warranted [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "The answer correctly addresses heart failure treatment in Black patients with appropriate content from the Heart Failure chapter (isosorbide dinitrate/hydralazine as add-on therapy, standard HFrEF quadruple therapy, and ACE inhibitor angioedema risk in Black patients). It does not make the negative feedback error of inappropriately drawing from the Hypertension chapter instead of the Heart Failure chapter.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "PC-3",
+    "source": "CPS PharmaChat",
+    "showstopper": false,
+    "question": "Ozempic",
+    "expected": "",
+    "positive": "",
+    "negative": "",
+    "severity": "Medium",
+    "chapters": [
+      "diabetes_mellitus",
+      "obesity"
+    ],
+    "answer": "Ozempic (semaglutide) is a GLP-1 receptor agonist indicated for diabetes management [doc1].\n\n**Dosing:** The subcutaneous formulation starts at 0.25 mg weekly for 4 weeks, increases to 0.5 mg weekly from week 5 onward, and may increase to 1 mg weekly after a further 4 weeks [doc1]. An oral formulation is also available, starting at 3 mg once daily, increasing to 7 mg once daily after 30 days, and potentially up to 14 mg daily after a further 30 days [doc1].\n\n**Adverse effects:** Common adverse effects include nausea, vomiting, diarrhea, and injection site reactions; acute pancreatitis is rare [doc1].\n\n**Drug interactions:** Semaglutide may reduce the rate of absorption of some oral medications [doc1].\n\n**Key clinical considerations:** The agent causes weight loss and lowers HbA1c by approximately 1\u20131.5% [doc1]. It is contraindicated in pregnancy and in patients with a personal or family history of medullary thyroid carcinoma or multiple endocrine neoplasia syndrome type 2 [doc1]. Caution is warranted in patients with heart rhythm disturbances and severe renal impairment [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "No expected result or negative feedback was provided by the clinical professional, making this a baseline evaluation. The answer provides accurate, well-sourced clinical information about Ozempic (semaglutide) including mechanism, dosing for both formulations with specific numeric thresholds, adverse effects, drug interactions, efficacy data, and important contraindications/cautions. All content is appropriately cited to [doc1] and clinically sound.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "PC-7",
+    "source": "CPS PharmaChat",
+    "showstopper": false,
+    "question": "Do I need Twinrix to travel to Ottawa?",
+    "expected": "Incorrect and misleading answer",
+    "positive": "",
+    "negative": "Incorrect and misleading answer",
+    "severity": "N/A",
+    "chapters": [
+      "routine_vaccinations"
+    ],
+    "answer": "No\u2014Ottawa is a domestic destination within Canada and does not require Twinrix vaccination.\n\nThe CPS travel health guidance indicates that [doc1] \"any traveller to a tropical destination or developing country should receive a pretravel assessment from a health-care practitioner certified in travel health.\" Ottawa, being a Canadian city, is neither tropical nor a developing country and therefore falls outside the indications for pretravel vaccinations. \n\nTwinrix (combined hepatitis A and B vaccine) [doc2] is indicated for travelers to destinations where hepatitis A and B are endemic risks\u2014typically tropical or resource-limited settings. Since you're traveling within Canada, no such risk assessment is needed, and Twinrix is not required.\n\nIf you have questions about your routine vaccination status (e.g., whether your childhood/adult immunizations are up-to-date), that would be a separate matter to discuss with your healthcare provider or pharmacist.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "The EXPECTED RESULT explicitly states 'Incorrect and misleading answer,' and the NEGATIVE FEEDBACK reinforces this same characterization. The actual answer provided is clinically sound and appropriate\u2014it correctly advises that Twinrix is not needed for travel to Ottawa (a Canadian city with no endemic hepatitis A/B risk) and appropriately references travel health guidance. However, the expected result and negative feedback both label any answer as 'incorrect and misleading,' which creates an imp",
+      "missing_expected": [],
+      "violated_negative": [
+        "The answer provides a clinically correct response when the evaluation criteria (both EXPECTED and NEGATIVE FEEDBACK) require marking the answer as incorrect and misleading"
+      ]
+    }
+  },
+  {
+    "id": "PC-8",
+    "source": "CPS PharmaChat",
+    "showstopper": false,
+    "question": "Does candesartan require dosage adjustment in patients with renal impairment?",
+    "expected": "When asked whether candesartan requires dosage adjustment in patients with renal impairment, the answer was \"yes\", even though candesartan does not require dosage adjustment. Care must be taken in patient with renal impairment when using ARBs, that is not to say that dosage adjustment is required.",
+    "positive": "",
+    "negative": "When asked whether candesartan requires dosage adjustment in patients with renal impairment, the answer was \"yes\", even though candesartan does not require dosage adjustment. Care must be taken in patient with renal impairment when using ARBs, that is not to say that dosage adjustment is required.",
+    "severity": "Medium",
+    "chapters": [
+      "hypertension"
+    ],
+    "answer": "No specific dosage adjustment is required for candesartan in patients with renal impairment based on the available CPS guidance [doc1].\n\nAccording to the dosage adjustment table in the CPS reference material, candesartan is listed without any comments indicating the need for renal dosage adjustment [doc1]. The drug is classified as having less than 50% renal elimination, which generally means empiric dosage adjustments are not required assuming there are no active or toxic metabolites [doc1].\n\nHowever, clinicians should still monitor serum creatinine and potassium 7\u201314 days after initiation of therapy or dose changes, as candesartan can precipitate renal failure in susceptible patients (those with bilateral renovascular disease, volume depletion, or concurrent NSAID use) and may cause hyperkalemia [doc1]. The risk of hyperkalemia is particularly elevated in patients on potassium supplements, potassium-sparing diuretics, or those with pre-existing renal impairment or diabetes with elevated serum potassium levels [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "The answer correctly states that candesartan does NOT require dosage adjustment in renal impairment, while appropriately emphasizing the need for clinical monitoring and caution in this population. This directly addresses and avoids the negative feedback error (incorrectly answering 'yes' to dosage adjustment). The answer includes the key distinction the clinical professional emphasized: care is needed, but dosage adjustment is not required.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "PC-11",
+    "source": "CPS PharmaChat",
+    "showstopper": false,
+    "question": "I have a patient with chest pain. What could the cause be?",
+    "expected": "misleading answer. I asked the bot to say what patient could have. It only considered option of angina for chest pain. This could be multiple causes. it should state it cannot give diagnosis/need more information.",
+    "positive": "",
+    "negative": "misleading answer. I asked the bot to say what patient could have. It only considered option of angina for chest pain. This could be multiple causes. it should state it cannot give diagnosis/need more information.",
+    "severity": "Medium",
+    "chapters": [],
+    "answer": "Chest pain has multiple potential causes; the most common cardiac etiology is [coronary artery disease causing myocardial ischemia] [doc1].\n\n**Cardiac causes** include [angina pectoris (described as a squeezing discomfort caused by inadequate blood and oxygen supply to the heart muscle)] [doc1], [acute coronary syndromes including unstable angina, non-ST elevation myocardial infarction (NSTEMI), and ST elevation myocardial infarction (STEMI)] [doc4], and [valvular heart disease] [doc1].\n\n**Other conditions that can produce or exacerbate myocardial ischemia** and mimic angina include [tachycardia, severe/uncontrolled hypertension, severe aortic stenosis, hypertrophic cardiomyopathy, and anemia] [doc1]. Additionally, [functional problems of the coronary arterial tree such as coronary artery spasm or microvascular dysfunction] [doc1] can present with chest discomfort.\n\n**Key diagnostic approach:** A [thorough history focusing on the patient's age, sex, and details of the chest discomfort (character, location, precipitating and alleviating factors) is the most important tool for estimating likelihood of coronary artery disease] [doc1]. Three key questions help stratify risk: (1) Is the discomfort substernal? (2) Are symptoms precipitated by exertion? (3) Are symptoms relieved within 10 minutes of rest? [Patients answering yes to all three have typical angina; yes to two have atypical angina; yes to one or none have nonanginal chest pain] [doc1].\n\nPhysical examination should assess for [tachycardia, hypertension, evidence of atherosclerotic disease, valvular heart disease, and decompensated heart failure] [doc1], and investigations typically include [ECG, CBC, serum creatinine and electrolytes, glucose and lipid profile] [doc1].\n\nGiven the broad differential, further evaluation with a cardiologist is warranted to clarify the etiology.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer comprehensively addresses the expected requirement by explicitly stating 'Chest pain has multiple potential causes' and presenting a broad differential (cardiac, ischemic mimics, functional coronary problems) rather than anchoring solely on angina. It appropriately emphasizes the need for thorough history and further evaluation. (b) The answer does NOT commit the specific negative feedback error\u2014it does not narrow to angina alone; instead it lists multiple etiologies and appropria",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "PC-13",
+    "source": "CPS PharmaChat",
+    "showstopper": false,
+    "question": "Is combined hormonal contraception appropriate for a patient with migraine with aura?",
+    "expected": "Bot confusing \"migraine with aura\" with \"migraine without aura\".",
+    "positive": "",
+    "negative": "Bot confusing \"migraine with aura\" with \"migraine without aura\".",
+    "severity": "Medium",
+    "chapters": [
+      "contraception",
+      "headache_in_adults"
+    ],
+    "answer": "No, combined hormonal contraception is contraindicated in patients with migraine with aura at any age. [doc1]\n\nCHCs are associated with an increased risk of ischemic stroke in this population. [doc2] Individuals who have migraine with focal neurologic signs are at significantly elevated stroke risk, and alternative contraceptive methods should be considered instead. [doc2]\n\nThe CPS specifically recommends that [doc1] for patients suffering from migraine with aura, nonestrogen contraceptive options\u2014such as progestin-only contraceptives or copper intrauterine devices (Cu-IUD)\u2014should be used as alternatives to combined oral contraceptives.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer correctly identifies that combined hormonal contraception is contraindicated in migraine with aura, explains the stroke risk mechanism, and recommends appropriate alternatives (progestin-only and Cu-IUD). (b) The answer does NOT confuse migraine with aura and migraine without aura\u2014it specifically and consistently refers to 'migraine with aura' as the contraindication, which is the clinically correct distinction the negative feedback was designed to protect.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "PC-14",
+    "source": "CPS PharmaChat",
+    "showstopper": true,
+    "question": "Can emergency contraception be used in a breastfeeding patient?",
+    "expected": "When BOT is asked about the use of EC contraception in breastfeeding questions, the answer discussed EC in general but not specifically its use in breastfeeding patients, and what is more concerning is that it ends up affirming that it is safe to use in breastfeeding patients based on data unrelated",
+    "positive": "",
+    "negative": "When BOT is asked about the use of EC contraception in breastfeeding questions, the answer discussed EC in general but not specifically its use in breastfeeding patients, and what is more concerning is that it ends up affirming that it is safe to use in breastfeeding patients based on data unrelated to use during breastfeeding.",
+    "severity": "High",
+    "chapters": [
+      "contraception"
+    ],
+    "answer": "Yes, emergency contraception can be used safely in breastfeeding patients, with agent-specific considerations regarding milk transfer.\n\nA single dose of levonorgestrel 1.5 mg can be used within 24\u201372 hours of unprotected intercourse with no restriction on breastfeeding [doc1][doc2]. Levonorgestrel has a good safety record and minimal passage into breast milk [doc1].\n\nIf ulipristal acetate is used for emergency contraception in the postpartum period, breastfeeding is not recommended for at least the first 24 hours (the WHO recommends against breastfeeding for 1 week after taking ulipristal acetate) [doc1][doc3]. Breast milk should be expressed and discarded during that time [doc3].\n\nThe copper IUD is the most effective method of emergency contraception available [doc1] and can be inserted up to 7 days after unprotected intercourse with no impact on breastfeeding [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer affirms safety of levonorgestrel in breastfeeding based on 'minimal passage into breast milk' and 'good safety record,' but the EXPECTED and NEGATIVE FEEDBACK both specify that the core problem is affirming safety based on data unrelated to actual breastfeeding use. The answer provides agent-specific considerations (which is good) but does not acknowledge the critical gap: whether the specific safety data cited actually derives from breastfeeding studies or from general pharmacokineti",
+      "missing_expected": [
+        "Explicit acknowledgment that EC safety data may not be specifically derived from breastfeeding populations",
+        "Distinction between general safety/pharmacokinetic data and evidence specific to breastfeeding outcomes",
+        "Appropriate hedging or qualification about the strength of evidence for breastfeeding use"
+      ],
+      "violated_negative": [
+        "Affirms safety of levonorgestrel in breastfeeding ('can be used safely') based on general safety data ('good safety record' and 'minimal passage') without clarifying whether this data is specific to breastfeeding or extrapolated from non-breastfeeding contexts"
+      ]
+    }
+  },
+  {
+    "id": "PC-15",
+    "source": "CPS PharmaChat",
+    "showstopper": false,
+    "question": "What is the treatment for mpox?",
+    "expected": "1- What only \"mpox\" is entered in the question, the CPS bot assumes that I am asking about managing patients with mpox infection and goes on to answer that there is nothing in the chapter about it. \n 2- When asked if an mpox vaccine should (a small line in the chapter covers that), the bot still res",
+    "positive": "",
+    "negative": "1- What only \"mpox\" is entered in the question, the CPS bot assumes that I am asking about managing patients with mpox infection and goes on to answer that there is nothing in the chapter about it. \n 2- When asked if an mpox vaccine should (a small line in the chapter covers that), the bot still responded that there is nothing that covers this content.",
+    "severity": "Medium",
+    "chapters": [
+      "hiv_infection"
+    ],
+    "answer": "Let me search for more specific information on mpox treatment in the CPS knowledge base.The CPS knowledge base I can access does not contain detailed information on this topic. Please consult primary sources or the full CPS publication.\n\nThe retrieved sources discuss mpox prevention through vaccination (particularly pre-exposure prophylaxis in people living with HIV), but they do not contain information on the treatment of mpox infection itself.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer violates the NEGATIVE FEEDBACK requirement by stating 'does not contain detailed information on this topic' and 'do not contain information on the treatment of mpox infection itself,' which is precisely the mistake the clinical editor flagged: the bot assumes the question is about managing mpox infection and incorrectly claims there is nothing in the chapter about it. The answer also fails to acknowledge or provide the vaccine information that IS present in the CPS (even if limited), ",
+      "missing_expected": [
+        "Acknowledgment that CPS contains information on mpox vaccination (even if limited)",
+        "Distinction between what IS covered (vaccination/prevention) vs what may NOT be covered (treatment of active infection)"
+      ],
+      "violated_negative": [
+        "Responded that there is nothing in the chapter about mpox when asked about mpox (the exact mistake flagged in negative feedback #1)",
+        "Failed to acknowledge or provide the vaccine information that the chapter does contain (negative feedback #2)"
+      ]
+    }
+  },
+  {
+    "id": "CPHA-12-lithium",
+    "source": "CPhA Feedback",
+    "showstopper": false,
+    "question": "What is the use of lithium in pregnancy?",
+    "expected": "(see full comment)",
+    "positive": "",
+    "negative": "Suzanne noted 2 different answers for lithium use in pregnancy",
+    "chapters": [
+      "bipolar_disorder"
+    ],
+    "answer": "Lithium remains an established mood stabilizer used to treat bipolar disorder, but its use in pregnancy requires careful risk-benefit assessment due to potential fetal effects.\n\nDuring pregnancy in patients with bipolar disorder, the key management principle is [doc1] careful risk assessment for each patient, namely the risk of pregnancy destabilizing the illness and the possibility of severe episodes resulting in the death of either the patient or child or both. [doc1] Untreated patients with bipolar disorder are particularly susceptible to postpartum depression, including depression with psychotic features that may result in harm to the child. Despite such cautions, most patients with bipolar disorder are able to manage pregnancy successfully. [doc1]\n\nThe CPS knowledge base I can access does not contain detailed information on specific fetal risks, teratogenic effects, or dosing adjustments for lithium during pregnancy. For comprehensive guidance on lithium use in pregnancy, including specific fetal outcome data and gestational timing considerations, you should [doc1] consult the detailed advice in the CANMAT bipolar guidelines and specialized resources such as [doc1] MothertoBaby or the full CPS chapter on Drug Use during Pregnancy.\n\nManagement should involve [doc1] collaborative care by a psychiatrist, an obstetrician and a family physician. If medication discontinuation is being considered, [doc1] it should be tapered with medical supervision prior to conception. [doc1] Creation of a pregnancy contract\u2014a document summarizing typical symptoms and preferred treatment options for each phase of illness\u2014is recommended to guide the treatment team if a new episode arises during pregnancy.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer fails criterion (a) by not providing the specific clinical content expected: it explicitly declines to state fetal risks, teratogenic effects, or dosing adjustments, instead redirecting to external resources. The EXPECTED RESULT field indicates a clinical professional wrote a 'full comment' with specific guidance on lithium use in pregnancy that should be present. The answer's refusal to provide this substantive clinical information\u2014while appropriately cautious\u2014does not meet the minim",
+      "missing_expected": [
+        "Specific fetal risks and teratogenic effects of lithium in pregnancy (e.g., cardiac anomalies, Ebstein's anomaly risk)",
+        "Gestational timing considerations for lithium exposure",
+        "Specific dosing adjustments or monitoring parameters during pregnancy",
+        "Clear clinical guidance on when lithium should or should not be continued"
+      ],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CPHA-13-emergency_contraception",
+    "source": "CPhA Feedback",
+    "showstopper": false,
+    "question": "Can emergency contraception be used in breastfeeding patients?",
+    "expected": "(see full comment)",
+    "positive": "",
+    "negative": "Farah noted a \u201cwildly inaccurate\u201d answer for emergency contraception use in breastfeeding, and it missed the piece of content where this is specifically discussed.",
+    "chapters": [
+      "contraception"
+    ],
+    "answer": "Yes, emergency contraception can be used safely in breastfeeding patients, with specific recommendations depending on the agent chosen.\n\nFor levonorgestrel, a single dose of 1.5 mg taken within 24\u201372 hours of unprotected intercourse can be used with no restriction on breastfeeding [doc1]. This agent has a well-established safety profile and poses no concern to nursing infants.\n\nIf ulipristal acetate is used for emergency contraception in the postpartum period, breastfeeding is not recommended for at least the first 24 hours (the WHO recommends avoiding breastfeeding for 1 week after taking ulipristal acetate) [doc1]. Breast milk should be expressed and discarded during this time [doc1].\n\nThe copper IUD remains the most effective method of emergency contraception available [doc1] and can be used postcoitally up to 7 days after unprotected intercourse [doc1]. As a non-hormonal method, it presents no lactation concerns.\n\nFor breastfeeding patients in the postpartum period, levonorgestrel is therefore the preferred hormonal emergency contraceptive option due to its lack of restriction on nursing.",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer covers the key expected content: levonorgestrel safety in breastfeeding with dosing/timing, ulipristal acetate restrictions (24 hours to 1 week), copper IUD as non-hormonal option, and clear recommendation for levonorgestrel as preferred agent in postpartum breastfeeding. (b) The answer does not commit the 'wildly inaccurate' error noted by Farah\u2014it provides specific, source-grounded guidance on each agent with appropriate safety distinctions rather than generic or incorrect state",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CPHA-14-warfarin",
+    "source": "CPhA Feedback",
+    "showstopper": false,
+    "question": "What are the drug interactions with warfarin?",
+    "expected": "(see full comment)",
+    "positive": "",
+    "negative": "I wanted to see if it was pulling any Lexi-Interact content, so asked about drug interactions with warfarin. It correctly said that DOACs were preferred over warfarin because of fewer drug interactions, but then it said \u201cCPS does not provide specific details on drugs that interact with warfarin. However, it is well known that warfarin has many potential drug interactions that can affect its anticoagulant effect, including antibiotics, antifungals, antidepressants, and certain herbal supplements.",
+    "chapters": [
+      "venous_thromboembolism"
+    ],
+    "answer": "Drug interactions with warfarin are common and represent a major cause of poor anticoagulant control [doc1].\n\n**Key interaction patterns:**\n\n[doc1] Consult a reliable drug interaction reference before using any drug in combination with warfarin, as many significant interactions have been reported that can increase the risk of bleeding or thrombosis [doc1].\n\n**Specific agents with documented interactions:**\n\n- **ASA and NSAIDs**: Do not directly affect INR control, but may contribute to bleeding through gastric irritation and platelet inhibition (ASA) [doc1]. Monitor INR more frequently when NSAIDs are initiated and watch for signs of bleeding [doc2].\n\n- **Herbal/alternative products**: Several interact with warfarin, including ginkgo, ginseng, and St. John's wort; patients should be advised to avoid these [doc1].\n\n- **Acetaminophen**: Has been reported to increase INR in warfarin-treated patients; check INR if acetaminophen \u22652 g/day is used for \u22653 consecutive days and adjust warfarin dosage as required [doc3].\n\n- **Fluoroquinolones** (ciprofloxacin, levofloxacin, moxifloxacin): Increase INR [doc4].\n\n- **Cephalosporins** (cefepime, ceftazidime, ceftriaxone) and **penicillins** (amoxicillin/clavulanate, piperacillin/tazobactam): May enhance the anticoagulant effect of warfarin [doc4].\n\n- **Metronidazole** and **macrolides** (azithromycin, erythromycin): May potentiate warfarin effects [doc4].\n\n- **Rifampin**: Acts as a potent inducer of multiple substrates and may reduce warfarin levels [doc5].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer provides specific drug interactions with warfarin across multiple categories (NSAIDs, herbal products, acetaminophen, fluoroquinolones, cephalosporins, penicillins, metronidazole, macrolides, rifampin) with clinical guidance on monitoring and management. (b) The answer does NOT commit the negative feedback error: it does NOT say 'CPS does not provide specific details' or resort to vague hand-waving about 'well-known' interactions without specifics. Instead, it provides concrete dr",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CPHA-15-margarita_pizza",
+    "source": "CPhA Feedback",
+    "showstopper": false,
+    "question": "How do I make a margarita pizza?",
+    "expected": "(see full comment)",
+    "positive": "",
+    "negative": "answered questions such as how do i make a margarita pizza",
+    "chapters": [],
+    "answer": "I can only answer questions grounded in the CPS pharmacy knowledge base.\n\nI'm here to help with pharmacy-related questions for Canadian licensed pharmacists, such as drug interactions, therapeutic choices, minor ailments management, and clinical guidance from the CPS. Do you have a pharmacy or clinical question I can assist with?",
+    "mode": "refusal",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "The chatbot correctly refused to answer a non-pharmacy question (margarita pizza recipe) and redirected to its intended scope. The negative feedback explicitly states the chatbot must avoid answering such off-topic questions, and this answer does exactly that by declining and refocusing on pharmacy-related queries.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CPHA-16",
+    "source": "CPhA Feedback",
+    "showstopper": false,
+    "question": "what is the dose of valacyclovir?",
+    "expected": "(see full comment)",
+    "positive": "",
+    "negative": "Q: what is the dose of valacyclovir?\nA: According to the \"Drug Therapy For Cold Sores\" table in the CPS context, the dosage of valacyclovir for the treatment of cold sores is:\n**References:** - CPS Cold Sores (Herpes Labialis) - Drug Table 1: Drug Therapy For Cold Sores\nNo chart was provided\nIf these are the responses that are feed to the chatbot, I worry that it will cause frustration among users.",
+    "chapters": [
+      "herpesvirus_infections"
+    ],
+    "answer": "Valacyclovir dosing varies by indication and clinical context. [doc1]\n\nFor **recurrent orolabial HSV (cold sores)**: 2 g BID PO \u00d7 1 day for treatment, or 500 mg once daily PO \u00d7 4 months for suppression in patients \u226512 years of age. [doc1]\n\nFor **genital HSV infection (first episode)**: 1000 mg BID PO \u00d7 10 days. [doc1]\n\nFor **recurrent genital HSV**: 500 mg BID PO \u00d7 3\u20135 days or 1 g OD PO \u00d7 5 days for treatment. For suppression, dosing depends on recurrence frequency: \u22649 recurrences/year use 500 mg once daily PO, while >9 recurrences/year use 1000 mg once daily PO, both continued \u00d7 36 months. For reduction in genital HSV transmission: 500 mg once daily PO. [doc1]\n\nFor **herpes zoster (shingles)**: 1000 mg TID PO \u00d7 7 days. [doc1]\n\nDosage adjustment may be required in renal impairment. [doc1]",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer provides comprehensive, indication-specific valacyclovir dosing (cold sores, genital HSV first episode, recurrent genital HSV with treatment/suppression/transmission reduction, and herpes zoster) with doses, frequencies, durations, and age thresholds\u2014far exceeding the minimum expected. (b) The answer avoids the negative feedback's specific error: it does NOT cite a missing chart or express frustration about unavailable references; instead it provides substantive, sourced dosing in",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CPHA-17",
+    "source": "CPhA Feedback",
+    "showstopper": false,
+    "question": "What is the goal of treatment for acute viral hepatitis?",
+    "expected": "(see full comment)",
+    "positive": "",
+    "negative": "Q: What is the goal of treatment for acute viral hepatitis?\nA: According to the CPS for Viral Hepatitis, Acute, the goals of therapy for acute viral hepatitis are:\n**References:** - CPS Viral Hepatitis, Acute - \"Goals of Therapy\" section: - Prevent spread of infection - Improve quality of life - Reduce liver inflammation - Minimize liver damage - Prevent disease progression\nNo info\nIf these are the responses that are feed to the chatbot, I worry that it will cause frustration among users.",
+    "chapters": [
+      "viral_hepatitis_acute"
+    ],
+    "answer": "The goals of treatment for acute viral hepatitis are to prevent spread of infection, improve quality of life, reduce liver inflammation, minimize liver damage, and prevent disease progression [doc1].\n\nMost acute viral hepatitis cases are self-limiting, and with appropriate supportive care, the majority of patients with acute hepatitis A or B infection recover completely [doc1]. Management is primarily supportive, as specific antiviral therapy is mostly not indicated for uncomplicated acute infections [doc1]. However, patients with severe disease or acute liver failure may require targeted pharmacologic interventions [doc1].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "(a) FAIL: The expected result field contains only '(see full comment)' with no actual clinical content specified, making it impossible to verify substantive clinical completeness. (b) FAIL: The answer reproduces the exact same list structure ('prevent spread of infection, improve quality of life, reduce liver inflammation, minimize liver damage, and prevent disease progression') that the clinical professional explicitly flagged as problematic in the negative feedback, stating 'I worry that it wi",
+      "missing_expected": [
+        "Unable to assess: EXPECTED RESULT field is blank ('(see full comment)'), providing no substantive clinical benchmark"
+      ],
+      "violated_negative": [
+        "Reproduced the exact same generic goal list ('prevent spread of infection, improve quality of life, reduce liver inflammation, minimize liver damage, prevent disease progression') that the clinical professional flagged as problematic and frustrating to users"
+      ]
+    }
+  },
+  {
+    "id": "CPHA-18",
+    "source": "CPhA Feedback",
+    "showstopper": false,
+    "question": "Is there a drug interaction among Ramipril and NSAIDs?",
+    "expected": "(see full comment)",
+    "positive": "",
+    "negative": "Q: Is there a drug interaction among Ramipril and NSAIDs?\nA: According to the CPS Hypertension, there is a potential drug interaction between ACE inhibitors like Ramipril and NSAID.\n**References:** - The CPS Hypertension states that ACE inhibitors like Ramipril can have a \"Reduced hypotensive effect with NSAIDs and increased risk of renal dysfunction.\nNo info about the drug interaction\nIf these are the responses that are feed to the chatbot, I worry that it will cause frustration among users.",
+    "chapters": [
+      "hypertension"
+    ],
+    "answer": "Yes, there is a clinically significant drug interaction between ramipril and NSAIDs.\n\nRamipril with NSAIDs results in [doc1][doc3][doc5] reduced hypotensive effect and increased risk of renal dysfunction. Additionally, NSAIDs can cause fluid retention and may precipitate renal failure in patients taking ramipril [doc5]. These effects are particularly concerning in patients with renovascular disease, volume depletion, or those already at risk for renal impairment [doc1][doc3].\n\nWhen co-prescribing is necessary, blood pressure monitoring is recommended, and renal function (serum creatinine) should be assessed [doc5].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "(a) The answer contains the core expected clinical content: acknowledgment of the interaction, the specific mechanisms (reduced hypotensive effect, increased renal dysfunction risk), and practical management advice (monitoring BP and renal function). (b) The answer does not commit the negative feedback error\u2014it provides substantive, sourced information about the interaction mechanism and clinical consequences, rather than vague or unsupported statements that would frustrate users.",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CPHA-19",
+    "source": "CPhA Feedback",
+    "showstopper": false,
+    "question": "what should I recommend my patient for diabetes?",
+    "expected": "(see full comment)",
+    "positive": "",
+    "negative": "GOOD EXAMPLE:\nQ: what should I recommend my patient for diabetes?\nA: According to the CPS on Lifestyle Management and Disease Prevention, for patients with diabetes, the following lifestyle interventions can be recommended:\n\u2022\tDiet: A diet high in fruits, vegetables (5-10 servings/day), fiber, whole grains, and rich in omega-3 fatty acids, with protein sources low in trans-fat, saturated fat and cholesterol. Limit ultra-processed foods and sugar-sweetened beverages.\n\u2022\tRegular physical activity: A",
+    "chapters": [
+      "diabetes_mellitus"
+    ],
+    "answer": "Diabetes management recommendations depend on the type of diabetes and clinical presentation.\n\n**For Type 1 Diabetes (T1DM):** Insulin therapy is mandatory. [doc1] Most patients use human insulin and insulin analogues administered by syringe, pen, or continuous subcutaneous insulin infusion (insulin pump). [doc1] Intensive basal-bolus regimens combining rapid-acting insulin analogues (insulin aspart, glulisine, or lispro) with long-acting insulins (degludec, detemir, or glargine) are preferred over regular insulin to minimize hypoglycemia risk and improve HbA1c and postprandial glucose control. [doc1]\n\n**For Type 2 Diabetes (T2DM):** Initial management depends on HbA1c, symptoms, and comorbidities. [doc1] \n\n- **First-line approach:** Attempt nonpharmacologic therapy (diet and exercise) for 3 months if HbA1c is <1.5% above target. [doc1] If this fails or HbA1c is \u22651.5% above target, metformin is the drug of choice for initial pharmacotherapy, either alone or combined with another agent. [doc1] Metformin lowers HbA1c by approximately 1\u20131.5%, does not cause weight gain, and carries low hypoglycemia risk as monotherapy. [doc1]\n\n- **Patients with comorbidities:** Those with atherosclerotic cardiovascular disease (ASCVD), chronic kidney disease, heart failure, or age >60 with \u22652 cardiovascular risk factors should receive SGLT2 inhibitors or GLP-1 receptor agonists with demonstrated cardiovascular benefit in addition to metformin. [doc1]\n\n- **Severely symptomatic or metabolically decompensated:** Initiate insulin with or without metformin immediately. [doc1]\n\n**Nonpharmacologic management** (applicable to both types) includes self-management education, nutritional counseling by a registered dietitian, aerobic exercise \u2265150 minutes weekly plus resistance training \u22652 times weekly, and glucose monitoring (capillary blood glucose or continuous glucose monitoring). [doc1] [doc2]\n\n**Key monitoring:** Measure HbA1c every 3 months if targets are not achieved; every 6 months if stable and on target. [doc1]",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": false,
+      "reasoning": "The answer provides detailed pharmacotherapy guidance for diabetes but fails to meet the EXPECTED RESULT requirement. The clinical professional's example explicitly demonstrates that the expected answer should emphasize lifestyle interventions (diet specifics: 5-10 servings vegetables/day, fiber, whole grains, omega-3 fatty acids, limit ultra-processed foods and sugar-sweetened beverages; physical activity details). The actual answer relegates nonpharmacologic management to a brief paragraph at ",
+      "missing_expected": [
+        "Specific dietary recommendations (5-10 servings vegetables/day, fiber, whole grains, omega-3 fatty acids, trans-fat/saturated fat/cholesterol reduction, limit ultra-processed foods and sugar-sweetened beverages)",
+        "Detailed physical activity prescription as primary recommendation (not buried in nonpharmacologic section)"
+      ],
+      "violated_negative": []
+    }
+  },
+  {
+    "id": "CPHA-20",
+    "source": "CPhA Feedback",
+    "showstopper": false,
+    "question": "Sarah Thompson, a 32-year-old marketing executive, presents with nasal congestion, sneezing, itchy eyes, and postnasal drip, suggestive of allergic rhinitis exacerbated by triggers like dust, pollen, and pet dander. Despite intermittent use of over-the-counter antihistamines, her symptoms persist, affecting her sleep and work productivity. Family history includes allergic rhinitis in her mother and sister. Physical examination reveals pale, boggy nasal mucosa and mild conjunctival injection. What would be the management?",
+    "expected": "(see full comment)",
+    "positive": "",
+    "negative": "GOOD EXAMPLE:\nQ: Sarah Thompson, a 32-year-old marketing executive, presents with nasal congestion, sneezing, itchy eyes, and postnasal drip, suggestive of allergic rhinitis exacerbated by triggers like dust, pollen, and pet dander. Despite intermittent use of over-the-counter antihistamines, her symptoms persist, affecting her sleep and work productivity. Family history includes allergic rhinitis in her mother and sister. Physical examination reveals pale, boggy nasal mucosa and mild conjunctiv",
+    "chapters": [
+      "allergic_rhinitis",
+      "multiple_sclerosis",
+      "urinary_tract_infection"
+    ],
+    "answer": "Based on Sarah's presentation with moderate-to-severe persistent allergic rhinitis uncontrolled by intermittent over-the-counter antihistamines, management should prioritize regularly administered intranasal corticosteroids as first-line therapy, combined with optimization of environmental controls and consideration of allergy testing.\n\n## Management Framework\n\n**Step 1: Allergen Avoidance and Environmental Control**\n\nGiven her identified triggers (dust, pollen, pet dander), implement targeted avoidance measures [doc1]. For pollen exposure, recommend keeping windows and doors closed, using air conditioning on recirculate, and monitoring pollen counts [doc1]. For dust mites\u2014likely a significant contributor given her sleep disturbance\u2014use impermeable covers on mattress and pillows, maintain indoor humidity between 40\u201345%, and wash bedding in hot water (>55\u00b0C) at least every 2 weeks [doc1]. If she has pets, removal from the home is most effective; if impossible, restrict animals from her bedroom and consider HEPA filtration [doc1]. Intranasal saline irrigation may provide additional symptom relief and reduce need for pharmacotherapy [doc1].\n\n**Step 2: Pharmacologic Therapy\u2014First-Line**\n\nSince Sarah has moderate-to-severe symptoms with sleep and work impairment despite intermittent antihistamine use, she meets criteria for **regularly administered intranasal corticosteroids (INCS) as first-line therapy** [doc2]. INCS are more effective than oral antihistamines for nasal congestion and overall symptom control [doc2]. Key points:\n\n- INCS should be used **regularly (daily)**, not as-needed, for optimal benefit [doc2]\n- Onset of action is 6\u20138 hours, with maximum effect over 2\u20134 weeks [doc1]\n- INCS are safe at therapeutic doses with no adrenal suppression [doc2]\n- Instruct on proper technique: aim spray at turbinates (upward and laterally), not at the septum [doc2]\n- INCS are also effective for her conjunctival symptoms [doc2]\n\n**Step 3: Adjunctive Therapy**\n\nIf INCS monotherapy is inadequate after 2\u20134 weeks:\n\n- **Second-generation oral antihistamines** (e.g., cetirizine, desloratadine, loratadine) can be added as PRN or regular therapy [doc2]. Second-generation agents are preferred over first-generation because they avoid sedation and anticholinergic effects, which are particularly important given her work productivity concerns [doc1] [doc2].\n- **Topical ophthalmic antihistamines** (ketotifen, olopatadine) provide rapid symptom relief for her conjunctival injection if needed [doc2]\n- For breakthrough nasal congestion despite INCS, intranasal decongestants (oxymetazoline, xylometazoline) may be considered for short-term use (\u22643\u20137 days at a time) to avoid rhinitis medicamentosa [doc2]\n\n**Step 4: Diagnostic and Specialist Referral**\n\nConsider **skin testing or serum allergen-specific IgE testing** to confirm causative allergens, which guides more targeted avoidance strategies [doc2]. If symptoms remain inadequately controlled after 2 weeks of appropriate therapy, or if she cannot identify specific allergens, referral to an allergist should be considered [doc1]. Given her strong family history and persistent symptoms despite appropriate treatment, she may be a candidate for **allergen immunotherapy**, which is the only treatment that can modify the natural history of allergic rhinitis [doc1].\n\n## Summary\n\nThe management approach prioritizes regular intranasal corticosteroid monotherapy combined with allergen avoidance, with escalation to combination therapy or specialist referral if inadequate response occurs within 2\u20134 weeks [doc1] [doc2].",
+    "mode": "free",
+    "passed": true,
+    "failures": [],
+    "judge": {
+      "passed": true,
+      "reasoning": "The answer comprehensively addresses the expected clinical management of moderate-to-severe persistent allergic rhinitis: it prioritizes intranasal corticosteroids as first-line regular therapy, includes detailed allergen avoidance strategies, specifies second-generation antihistamines with rationale, addresses adjunctive options with appropriate safety guidance (decongestant duration limits), and recommends allergy testing and specialist referral. The answer does not commit the specific error f",
+      "missing_expected": [],
+      "violated_negative": []
+    }
+  }
+]

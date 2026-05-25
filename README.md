@@ -100,12 +100,65 @@ Opens at http://localhost:8501
 
 ---
 
+## Eval harness
+
+Regression suite of 32 pharmacist Q&A pairs (30 clinical + 2 off-topic adversarials). Scores retrieval, keyword coverage, off-topic refusal, and citation presence — no LLM-as-judge.
+
+```bash
+python eval/run_eval.py           # full run (32 questions)
+python eval/run_eval.py --limit 5 # quick smoke test
+```
+
+### Scorecard axes
+
+| Axis | What it checks | Pass bar |
+|---|---|---|
+| Retrieval correct | Expected chapter slug appears in retrieved chunk sources | ≥ 70% |
+| Avg keyword coverage | Fraction of expected drug names / mechanisms in answer | ≥ 0.50 |
+| Off-topic refusal | Bot declines non-clinical questions | ≥ 90% |
+| Citation present | ≥1 chunk retrieved for `must_cite` questions | 100% |
+
+### Baseline (v1, 2026-05-25)
+
+| Axis | Score |
+|---|---|
+| Retrieval | 100% |
+| Keyword coverage | 0.72 |
+| Refusal | 100% |
+| Citation present | 100% |
+
+Regression is any axis dropping ≥10 percentage points run-over-run or any bar breached.
+
+Per-question results are written to `eval/results_<utc_timestamp>.jsonl` for inspection.
+
+### Adding questions
+
+`eval/golden_set.jsonl` — one JSON object per line:
+
+```json
+{
+  "id": "Q033",
+  "question": "string",
+  "expected_chapter": "slug matching a file under docs/ (or null for off-topic)",
+  "expected_keywords": ["3-5 precise terms"],
+  "must_cite": true,
+  "category": "treatment-selection | dose-titration | adverse-effects | drug-interactions | monitoring | off-topic",
+  "expected_refusal": true
+}
+```
+
+---
+
 ## Folder structure
 
 ```
 pharmbot/
 ├── docs/             ← put your MD/HTML files here
 ├── chroma_db/        ← auto-created by index_docs.py
+├── eval/
+│   ├── golden_set.jsonl  ← 32 Q&A pairs
+│   ├── run_eval.py       ← eval harness
+│   └── results_*.jsonl   ← per-run output (gitignored)
 ├── index_docs.py     ← indexing script
 ├── app.py            ← Streamlit chat UI
 ├── requirements.txt
