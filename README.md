@@ -3,6 +3,11 @@
 A RAG chatbot for pharmacists — answers questions from your 3,000 medical documents.  
 Built with **ChromaDB** (local vector store) + **Claude** (LLM). No external vector DB needed.
 
+
+#### Small demo
+
+https://www.loom.com/share/5744bf2a60dd48babae418f6f5195cde
+
 ---
 
 ## Architecture
