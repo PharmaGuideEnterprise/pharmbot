@@ -32,7 +32,9 @@ Rules:
 - Always mention the source document name when citing specific facts.
 - Be precise: dosages, contraindications, and drug interactions must be quoted accurately.
 - Use clear headings and bullet points for readability.
-- Never guess or extrapolate drug information."""
+- Never guess or extrapolate drug information.
+
+I want you to judge with honesty and no cheating by peaking in answer, as this assistant should be evaluate fairily against those question, the answer shared are specifically to let the judge LLM would compare the answer from the assistant against the expected answer from the list"""
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
