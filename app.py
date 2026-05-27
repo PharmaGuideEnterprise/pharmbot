@@ -18,7 +18,7 @@ load_dotenv()
 # ── Config ────────────────────────────────────────────────────────────────────
 CHROMA_DIR      = "./chroma_db"
 COLLECTION_NAME = "medical_docs"
-TOP_K           = 8     # chunks retrieved per query
+TOP_K           = 15    # chunks retrieved per query
 MIN_RELEVANCE   = 1.2   # cosine distance cut-off (lower = stricter)
 MAX_TOKENS      = 1024
 MODEL           = "claude-sonnet-4-20250514"

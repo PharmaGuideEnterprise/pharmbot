@@ -1,0 +1,42 @@
+---
+title: Home Testing Products: Electronic Blood Pressure Monitors
+source: electronic_blood_pressure_monitors.html
+type: medical_documentation
+format: converted_from_html
+---
+
+## Home Testing Products: Electronic Blood Pressure Monitors
+
+|  |
+| --- |
+|  |
+|  |
+
+| Product | Manufacturer | Model No. | Userstorage capacity | Warranty | Memory | Battery | Dimensions without cuff(L × W × H) | Weight with cuff and batteries | Comments[a] |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Auto Inflation 3-Series Digital BP Monitor | Omron | BP710CANN | 1 user | 2 y | 14 results | 4 × AA | 129 × 103 × 80 mm | 250 g | 1 button operation Wide-range cuff for arms 9?17? Detects and corrects for an irregular heartbeat Displays average reading |
+| Auto Inflation 5-Series Digital BP Monitor | Omron | BP742CANN | 2 users | 2 y | 50 results per user with date and time (100 total) | 4 × AA | 141 × 123 × 85 mm | 420 g | 1 button operation Wide-range cuff for arms 9?17? Detects and corrects for an irregular heartbeat AC adapter (not included) Advanced averaging |
+| Auto Inflation 7-Series Intellisense Monitor with ComFit Cuff | Omron | BP761CAN | 2 users | 2 y | 60 results per user with date and time (120 total) | 4 × AA | 161 × 124 × 90 mm | 520 g | 1 button operation ComFit cuff for arms 9?17? Detects and corrects for an irregular heartbeat Advanced averaging Multicoloured indicator light to view at a glance if reading is normal (green) or high (orange) Compatible with Omron Wellness smartphone app |
+| Auto Inflation 10-Series Intellisense Monitor with ComFit Cuff | Omron | BP786CAN | 2 users | 2 y | 100 results per user with date and time (200 total) | 4 × AA | 161 × 124 × 90 mm | 520 g | 1 button operation ComFit cuff for arms 9?17? Detects and corrects for an irregular heartbeat AC adapter included Advanced averaging Calibration Check System: automatically double checks each reading TruRead: automatically takes 3 readings 1 min apart and displays average Multicoloured indicator light to view at a glance if reading is normal (green) or high (orange) Compatible with Omron Wellness smartphone app |
+| Automatic BP Monitor for Pregnancy | Microlife | BP 3BT0-A(2) | 1 user | 3 y | 30 results with date and time | 4 × AA | 115 × 182 × 76 mm | 460 g | Medium and large cuffs included |
+| Automatic BP Monitor with Arrythmia Detection | Microlife | BP 3AG1 | 1 user | 3 y | Saves only previous reading | 4 × AA | 140 × 120 × 70 mm | 400 g | AC adapter (not included) |
+| Automatic BP Monitor with Arrythmia Detection | Microlife | BP A100 | 1 user | 5 y | 30 results with date and time | 4 × AA | 160 × 125 × 98 mm | 610 g | Arrythmia detection Washable cuff AC adapter (not included) Large display 2 alarm times |
+| Automatic BP Monitor with Arrythmia Detection | Microlife | BP 3BT0-A | 1 user | 1 y | 99 results with date and time | 4 × AA | 115 × 182 × 76 mm | 460 g | Arrythmia detection Washable cuff AC adapter (not included) |
+| Automatic BP Monitor with Arrythmia Detection & Triple Measurement Feature | Microlife | BP A100 Plus | 1 user | 5 y | 200 results with date and time | 4 × AA | 160 × 140 × 98 mm | 735 g | Arrythmia detection Washable cuff AC adapter (not included) 2 alarm times MAM Technology: automatically takes 3 consecutive measurements and then displays average |
+| Automatic BP Monitor with Arrythmia Detection & Triple Measurement Feature with PC Download | Microlife | BP 3AC1-PC | 1 user | 3 y | 99 results with date and time | 4 × AA | 118 × 177 × 77 mm | 503 g | Arrythmia detection Washable cuff AC adapter (not included) 2 alarm times MAM Technology: automatically takes 3 consecutive measurements and then displays average Information can be downloaded to a PC using cable provided; software needed is included |
+| Automatic BP Monitor with MAM Technology and Risk Factor Classification | Microlife | BP RM 100 | 1 user | 3 y | N/A | 4 × AA | 155 × 127 × 45 mm | 600 g | Washable cuff 2 alarm times MAM Technology: automatically takes 3 consecutive measurements and then displays average Gives a risk factor based on WHO blood pressure classification |
+| Deluxe Blood Pressure Monitor | HoMedics | BPA-740?CA | 2 users | 5 y | 60 results per user with date and time (120 total) | 4 × AA | 141 × 107 × 63 mm | 430 g | 1 button operation Standard cuff included; small or large cuff available AC adapter included Detects and corrects for an irregular heartbeat AM/PM memory averaging function Gives a risk factor based on WHO blood pressure classification |
+| Easy One Step Auto Inflate | Lifesource | UA-631V | 1 user | 5 y | 60 results | 4 × AA | 130 × 144 × 55 mm | 390 g | 1 button operation Medium cuff included; small or large cuff available AC adapter included Detects and corrects for an irregular heartbeat Displays average reading |
+| EssentiA Blood Pressure Monitor | Physiologic | 106-930 | 4 users | 2 y | 30 results per user with date and time (120 total) | 4 × AA | 110 × 155 × 70 mm | 490 g | 1 button operation Medium cuff only AC adapter (not included) |
+| EZ Health Automatic BP Monitor | Tremblay Harrison | ABP-A1 | 1 user | 2 y | 36 results | 4 × AA | 118 × 119 × 62 mm | 550 g | 1 button operation Standard cuff and large cuff included AC adapter included |
+| EZ Health Platinum Automatic Deluxe BP Monitor | Tremblay Harrison | ABP-B2 | 1 user | 2 y | 80 results with date and time | 4 × AA | 115 × 125 × 50 mm | 500 g | 1 button operation Standard cuff and large cuff included AC adapter included |
+| EZ Health Platinum Automatic Talking BP Monitor | Tremblay Harrison | ABP-B1 | 1 user | 2 y | 80 results with date and time | 4 × AA | 115 × 125 × 50 mm | 500 g | 1 button operation Standard cuff and large cuff included AC adapter included Voice prompt announces blood pressure and pulse measurements in any of 4 languages: English, French, Spanish and German |
+| LuminA Blood Pressure Monitor | Physiologic | 106?934 | 2 users | 7 y | 60 results per user with date and time (120 total) | 4 × AA | 166 × 114 × 72 mm | 600 g | 1 button operation Large display AC adapter (not included) Detects and corrects for an irregular heartbeat Displays average reading |
+| One Step Advanced/Deluxe Plus Memory | LifeSource | UA-767P | 1 user | Lifetime | 90 results | 4 × AA | 110 × 147 × 64 mm | 390 g | 1 button operation Medium cuff; small or large cuff available AC adapter included Detects and corrects for an irregular heartbeat |
+| One Touch Automatic BP Monitor | LifeSource | UA-651CN | 1 user | 5 y | 30 results | 4 × AA | 130 × 96 × 68 mm | 400 g | 1 button operation Medium cuff; large cuff available |
+| Premier Talking Blood Pressure Monitor | LifeSource | UA-1030TCN | 1 user | 7 y | 90 results with date and time | 4 × AA | 105 × 140 × 60 mm | 375 g | 1 button operation SlimFit cuffs available in small, medium or large Detects and corrects for an irregular heartbeat TriCheck Measurement: automatically takes 3 consecutive measurements and then displays average Voice prompt announces blood pressure and pulse measurements in any of 3 languages: English, French and Spanish |
+| Premier/TriCheck Blood Pressure Monitor | LifeSource | UA-1020CN | 1 user | 5 y | 90 results with date and time | 4 × AA | 105 × 140 × 60 mm | 375 g | 1 button operation SlimFit cuffs available in small, medium or large Detects and corrects for an irregular heartbeat TriCheck Measurement: automatically takes 3 consecutive measurements and then displays average |
+| Premium Blood Pressure Monitor | HoMedics | BPA-750?CA | 2 users | 5 y | 120 results per user with date and time (240 total) | 4 × AA | 114 × 153 × 71 mm | 500 g | 1 button operation Standard cuff and large cuff included AC adapter included Detects and corrects for an irregular heartbeat TriCheck Measurement: automatically takes 3 consecutive measurements and then displays average |
+| Quick Response BP Monitor with Easy Fit Cuff | LifeSource | UA-787 EJCN | 1 user | Lifetime | 280 results with date and time | 4 × AA | 112 × 163 × 62 mm | 440 g | 1 button operation Semi-hard cuff AC adapter included Detects and corrects for an irregular heartbeat 3 alarm times |
+
+[a] All monitors listed in this table use the oscillometric method to measure blood pressure and are endorsed by Hypertension Canada.
