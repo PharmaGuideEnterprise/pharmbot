@@ -24,6 +24,10 @@ import json
 import time
 from collections import defaultdict
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from pharmbot_retrieval import retrieve_hybrid  # noqa: E402
 
 # ====================================================================== #
 # STEP 1 — PharmBot pipeline (ChromaDB + Claude Sonnet).                  #
@@ -43,6 +47,7 @@ ENGAGE — do not over-refuse:
 - Treat brand/generic and close product-name variants as the same item (e.g. "OneTouch Ultra2" ↔ "OneTouch Ultra"; "Atacand" ↔ "candesartan"). If a table row matches the product family, use it.
 - Only output "I couldn't find this in the provided documents." when NONE of the excerpts bear on the question.
 - A clinical-pharmacy question that names a real drug/device/condition is ALWAYS in scope. Only reply "I can only assist with clinical pharmacy questions." for genuinely non-clinical topics (travel, recipes, lifestyle). When unsure, treat it as in scope and answer.
+- Do NOT reframe a genuinely off-topic question (travel itineraries, food/restaurant recommendations, recipes, general lifestyle) into a clinical one in order to answer it. Decline cleanly with the scope line and stop — do not append clinical "however" advice.
 
 HONEST GAPS:
 - If the excerpts address the general topic but not the specific sub-scenario asked (exact dose, specific population), say what IS in the excerpts and state plainly that the specific detail is not present. Do not invent the missing value.
@@ -50,7 +55,12 @@ HONEST GAPS:
 STYLE:
 - Be precise with dosages, contraindications, interactions — quote them as written.
 - Use headings and bullets.
-- For multiple-choice, commit to the single best answer; do not hedge unless the question asks for all that apply."""
+- When asked for THE first-line therapy, commit to the single guideline-preferred agent named in the excerpts. Do not split the answer across severity tiers (e.g. mild vs moderate) unless the question itself specifies severity.
+- For multiple-choice, commit to the single best answer supported by the source; do not add defensible-but-extra options unless the question asks for all that apply.
+- If a therapy is not recommended or contraindicated for the patient's scenario, say that first and do not provide a dose as though it should be used.
+- For vague diagnostic questions, explicitly state that you cannot diagnose from the available information and that more patient-specific assessment is needed before listing possible causes.
+- For medication review in older adults, explicitly assess anticholinergic burden, sedating drugs, renal clearance, drug interactions, deprescribing opportunities, collaboration with the prescriber, and Beers Criteria when relevant.
+- For QT-prolonging medications, discuss patient risk factors, medication-risk mitigation, ECG/electrolyte monitoring, and external QT-risk resources such as CredibleMeds if supported by the excerpt."""
 
 _pharmbot_collection = None
 _pharmbot_client     = None
@@ -77,17 +87,14 @@ def _init_pharmbot():
 
 def ask(question: str) -> str:
     _init_pharmbot()
-    results = _pharmbot_collection.query(
-        query_texts=[question], n_results=_TOP_K,
-        include=["documents", "metadatas", "distances"],
+    chunks, _sources = retrieve_hybrid(
+        question,
+        _pharmbot_collection,
+        top_k=_TOP_K,
+        min_relevance=_MIN_RELEVANCE,
+        keyword_k=14,
+        final_k=35,
     )
-    chunks = [
-        {"text": d, "title": m.get("title", ""), "dist": dist}
-        for d, m, dist in zip(results["documents"][0],
-                               results["metadatas"][0],
-                               results["distances"][0])
-        if dist < _MIN_RELEVANCE
-    ]
     if not chunks:
         return "I couldn't find this in the provided documents."
     context = "\n\n---\n\n".join(
@@ -98,6 +105,7 @@ def ask(question: str) -> str:
                 f"\n\n---\n\nQuestion: {question}")
     resp = _pharmbot_client.messages.create(
         model=_MODEL, max_tokens=1024,
+        temperature=0.0,
         system=_SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_msg}],
     )
@@ -137,7 +145,15 @@ def main() -> int:
                     help="output JSON path")
     ap.add_argument("--limit", type=int, default=None,
                     help="run only the first N scoreable questions (smoke test)")
+    ap.add_argument("--ids", default=None,
+                    help="comma-separated question ids to run, e.g. CF-3,T2-08-asa-storage-counsel")
     args = ap.parse_args()
+
+    try:
+        from dotenv import load_dotenv
+        load_dotenv(HERE.parent / ".env")
+    except ImportError:
+        pass
 
     # Import the judge here so a NotImplementedError from `ask()` shows
     # cleanly without requiring ANTHROPIC_API_KEY just to read help text.
@@ -147,6 +163,9 @@ def main() -> int:
     scoreable = [it for it in items
                  if it["id"] not in na
                  and it["id"].split("-")[0] in PREFIXES]
+    if args.ids:
+        wanted = {qid.strip() for qid in args.ids.split(",") if qid.strip()}
+        scoreable = [it for it in scoreable if it["id"] in wanted]
     if args.limit:
         scoreable = scoreable[:args.limit]
 

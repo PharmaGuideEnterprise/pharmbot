@@ -12,6 +12,7 @@ import anthropic
 import chromadb
 from chromadb.utils import embedding_functions
 from dotenv import load_dotenv
+from pharmbot_retrieval import retrieve_hybrid
 
 load_dotenv()
 
@@ -36,6 +37,7 @@ ENGAGE — do not over-refuse:
 - Treat brand/generic and close product-name variants as the same item (e.g. "OneTouch Ultra2" ↔ "OneTouch Ultra"; "Atacand" ↔ "candesartan"). If a table row matches the product family, use it.
 - Only output "I couldn't find this in the provided documents." when NONE of the excerpts bear on the question.
 - A clinical-pharmacy question that names a real drug/device/condition is ALWAYS in scope. Only reply "I can only assist with clinical pharmacy questions." for genuinely non-clinical topics (travel, recipes, lifestyle). When unsure, treat it as in scope and answer.
+- Do NOT reframe a genuinely off-topic question (travel itineraries, food/restaurant recommendations, recipes, general lifestyle) into a clinical one in order to answer it. Decline cleanly with the scope line and stop — do not append clinical "however" advice.
 
 HONEST GAPS:
 - If the excerpts address the general topic but not the specific sub-scenario asked (exact dose, specific population), say what IS in the excerpts and state plainly that the specific detail is not present. Do not invent the missing value.
@@ -43,7 +45,12 @@ HONEST GAPS:
 STYLE:
 - Be precise with dosages, contraindications, interactions — quote them as written.
 - Use headings and bullets.
-- For multiple-choice, commit to the single best answer; do not hedge unless the question asks for all that apply."""
+- When asked for THE first-line therapy, commit to the single guideline-preferred agent named in the excerpts. Do not split the answer across severity tiers (e.g. mild vs moderate) unless the question itself specifies severity.
+- For multiple-choice, commit to the single best answer supported by the source; do not add defensible-but-extra options unless the question asks for all that apply.
+- If a therapy is not recommended or contraindicated for the patient's scenario, say that first and do not provide a dose as though it should be used.
+- For vague diagnostic questions, explicitly state that you cannot diagnose from the available information and that more patient-specific assessment is needed before listing possible causes.
+- For medication review in older adults, explicitly assess anticholinergic burden, sedating drugs, renal clearance, drug interactions, deprescribing opportunities, collaboration with the prescriber, and Beers Criteria when relevant.
+- For QT-prolonging medications, discuss patient risk factors, medication-risk mitigation, ECG/electrolyte monitoring, and external QT-risk resources such as CredibleMeds if supported by the excerpt."""
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -57,25 +64,14 @@ def load_collection():
 
 def retrieve(query: str, collection, top_k: int = TOP_K):
     """Return (chunks, sources) from vector DB."""
-    results = collection.query(
-        query_texts=[query],
-        n_results=top_k,
-        include=["documents", "metadatas", "distances"],
+    return retrieve_hybrid(
+        query,
+        collection,
+        top_k=top_k,
+        min_relevance=MIN_RELEVANCE,
+        keyword_k=14,
+        final_k=35,
     )
-    chunks:  list[dict] = []
-    sources: list[str]  = []
-
-    for doc, meta, dist in zip(
-        results["documents"][0],
-        results["metadatas"][0],
-        results["distances"][0],
-    ):
-        if dist < MIN_RELEVANCE:
-            chunks.append({"text": doc, "title": meta["title"], "source": meta["source"], "dist": dist})
-            if meta["title"] not in sources:
-                sources.append(meta["title"])
-
-    return chunks, sources
 
 
 def build_context(chunks: list[dict]) -> str:
@@ -101,6 +97,7 @@ def ask_claude(query: str, context: str, history: list[dict]) -> str:
     with client.messages.stream(
         model=MODEL,
         max_tokens=MAX_TOKENS,
+        temperature=0.0,
         system=SYSTEM_PROMPT,
         messages=messages,
     ) as stream:
