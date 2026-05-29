@@ -33,8 +33,8 @@ EVAL_DIR        = Path(__file__).resolve().parent
 REPO_ROOT       = EVAL_DIR.parent
 CHROMA_DIR      = str(REPO_ROOT / "chroma_db")
 COLLECTION_NAME = "medical_docs"
-TOP_K           = 15
-MIN_RELEVANCE   = 1.2
+TOP_K           = 20
+MIN_RELEVANCE   = 1.4
 MODEL           = "claude-sonnet-4-6"
 MAX_TOKENS      = 1024
 
@@ -47,7 +47,8 @@ Rules:
 - Be precise: dosages, contraindications, and drug interactions must be quoted accurately.
 - Use clear headings and bullet points for readability.
 - Never guess or extrapolate drug information.
-- For multiple-choice questions, commit to the single best answer. Do not hedge or suggest multiple options are correct unless the question explicitly asks for all that apply."""
+- For multiple-choice questions, commit to the single best answer. Do not hedge or suggest multiple options are correct unless the question explicitly asks for all that apply.
+- Refuse questions unrelated to clinical pharmacy (e.g., travel advice, food safety, recipes, general lifestyle questions). Say: "I can only assist with clinical pharmacy questions.\""""
 
 JUDGE_SYSTEM = """You are an expert clinical pharmacist evaluating an AI assistant's answer.
 

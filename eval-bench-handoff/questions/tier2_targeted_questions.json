@@ -1,0 +1,92 @@
+[
+  {
+    "id": "T2-01-allegra-dose",
+    "source": "tier2_targeted",
+    "question": "What is the typical dose of Allegra (fexofenadine) for adults and for children 6-11 years?",
+    "expected": "Per the CPS allergic rhinitis chapter (fexofenadine/Allegra row): Adults and children ≥12 years: 60 mg Q12H (12-hour formulation) or 120 mg once daily (24-hour formulation); maximum 120 mg/day. Children 6-11 years: 30 mg BID.",
+    "negative": "Should not guess the dose from general antihistamine knowledge; must derive from the Allegra IFP or monograph in the CPS corpus.",
+    "expected_source_doctype": "IFP",
+    "expected_slug_substr": "Allegra"
+  },
+  {
+    "id": "T2-02-paxlovid-interactions",
+    "source": "tier2_targeted",
+    "question": "What are the major drug interactions to check for before prescribing Paxlovid (nirmatrelvir/ritonavir)?",
+    "expected": "Paxlovid contains ritonavir which is a strong CYP3A4 inhibitor. Significant interactions include rivaroxaban/apixaban (anticoagulants), simvastatin/lovastatin (statins), amiodarone, sildenafil, and many immunosuppressants (tacrolimus, cyclosporine). The CPS Paxlovid monograph lists CYP3A4-substrate drugs that must be held or dose-adjusted for 5 days during treatment + 3 days after.",
+    "negative": "Should not provide a generic 'check for CYP3A4 interactions' answer without citing specific drug classes the source flags. Must not invent drug names not in the monograph.",
+    "expected_source_doctype": "MONOGRAPH",
+    "expected_slug_substr": "Paxlovid"
+  },
+  {
+    "id": "T2-03-comirnaty-pediatric",
+    "source": "tier2_targeted",
+    "question": "What is the approved dose of Comirnaty for children 6 months to 4 years?",
+    "expected": "Per the Comirnaty (Pfizer-BioNTech COVID-19 vaccine) monograph, children 6 months to <5 years receive a 3-dose primary series with the formulation/dose appropriate to age band (e.g., 3 mcg or 10 mcg depending on age subgroup). Specific dose per the monograph must be cited.",
+    "negative": "Must not give the adult 30 mcg dose for this age group. Must not say 'no information available' if the Comirnaty monograph contains pediatric dosing.",
+    "expected_source_doctype": "MONOGRAPH",
+    "expected_slug_substr": "Comirnaty"
+  },
+  {
+    "id": "T2-04-acet-pediatric-ifp",
+    "source": "tier2_targeted",
+    "question": "What patient counselling should I give a parent for acetaminophen (Acet) in a child?",
+    "expected": "Per the CPS Acetaminophen monograph: weight-based pediatric dosing is 10-15 mg/kg Q4-6H (oral) or 10-20 mg/kg Q4-6H (rectal), maximum 75 mg/kg/24 hours, not to exceed 4000 mg/day, do not exceed 5 doses/day. The corresponding IFP_ACET handout provides age-based suppository dosing for parents who don't weigh the child: 1-2 y: 120 mg Q4H (max 5/day); 2-4 y: 160 mg Q4H (max 6/day); 4-6 y: 325 mg Q6H (max 4/day); 6-12 y: 325 mg Q4H (max 6/day).",
+    "negative": "Giving adult dosing only. Inventing weight-based numbers not in the source (e.g., 16 mg/kg, 75 mg/kg single dose).",
+    "expected_source_doctype": "IFP",
+    "expected_slug_substr": "ACET"
+  },
+  {
+    "id": "T2-05-acamprosate-monograph",
+    "source": "tier2_targeted",
+    "question": "What is acamprosate used for and what's the typical dose?",
+    "expected": "Per the CPhA Acamprosate monograph: indicated as an alcohol abstinence aid. Adult dose: 666 mg (two 333 mg tablets) TID for a total of 1998 mg/day, initiated as soon as possible after assisted alcohol withdrawal. Continue for 1 year. Lower-weight patients (<60 kg): 666 mg morning, 333 mg midday, 333 mg evening. Moderate renal impairment (CrCl 30-50 mL/min): reduce to 333 mg TID. Contraindicated in severe renal impairment (CrCl ≤30 mL/min).",
+    "negative": "Must cite the CPhA Acamprosate monograph, not general addiction-medicine training knowledge.",
+    "expected_source_doctype": "MONOGRAPH",
+    "expected_slug_substr": "Acamprosate"
+  },
+  {
+    "id": "T2-06-keytruda-ifp",
+    "source": "tier2_targeted",
+    "question": "What should a patient on Keytruda watch out for between infusions?",
+    "expected": "Per the Keytruda IFP: immune-related side effects can affect lungs, liver, intestines, thyroid, skin, kidneys, and other organs. Watch for symptoms like new-onset fatigue, cough, shortness of breath, severe diarrhea, abdominal pain, dark urine, jaundice, severe rash, severe headache or new neurological symptoms. Patient should report these to their oncology team promptly.",
+    "negative": "Must derive from the Keytruda patient-info sheet (IFP), not from general PD-1-inhibitor training knowledge.",
+    "expected_source_doctype": "IFP",
+    "expected_slug_substr": "Keytruda"
+  },
+  {
+    "id": "T2-07-allegra-vs-claritin",
+    "source": "tier2_targeted",
+    "question": "What is the difference between Allegra and Claritin for allergic rhinitis?",
+    "expected": "Both are second-generation, less-sedating antihistamines used for allergic rhinitis. Allegra (fexofenadine) and Claritin (loratadine) differ in dosing schedules (Allegra 60 mg q12h or 120 mg daily; Claritin 10 mg once daily for adults). Both are generally well-tolerated, with low incidence of sedation compared to first-generation antihistamines. Specific dose forms, pediatric availability, and any interaction profiles should be drawn from the respective monographs/IFPs.",
+    "negative": "Must use info from the Allegra and/or Claritin monographs/IFPs in the CPS corpus, not generic antihistamine class knowledge.",
+    "expected_source_doctype": "MONOGRAPH|IFP",
+    "expected_slug_substr": "Allegra|Claritin|Loratadine"
+  },
+  {
+    "id": "T2-08-asa-storage-counsel",
+    "source": "tier2_targeted",
+    "question": "How should a patient store ASA (aspirin) tablets, per the CPS patient information?",
+    "expected": "Per the CPS ASA monograph 'Storage and Stability' section: ASA products should be stored between 15-30°C and protected from excessive moisture.",
+    "negative": "Claiming the corpus does not contain ASA storage guidance when the ASA monograph explicitly has a 'Storage and Stability' section. Inventing storage guidance not in the source.",
+    "expected_source_doctype": "MONOGRAPH|IFP",
+    "expected_slug_substr": "ASA"
+  },
+  {
+    "id": "T2-09-nasonex-pediatric",
+    "source": "tier2_targeted",
+    "question": "Can Nasonex be used in children, and from what age?",
+    "expected": "Per the Nasonex (mometasone furoate nasal spray) IFP and monograph: approved for allergic rhinitis in children between the ages of 3 and 11 years (one spray in each nostril once daily). Adults and children ≥12 years: two sprays per nostril once daily.",
+    "negative": "Refusing pediatric Nasonex use when corpus clearly supports it. Inventing an age threshold (e.g., 2 years) not in the corpus.",
+    "expected_source_doctype": "MONOGRAPH",
+    "expected_slug_substr": "Nasonex"
+  },
+  {
+    "id": "T2-10-onetouch-device",
+    "source": "tier2_targeted",
+    "question": "What is the OneTouch Ultra2 used for and what calibration is required?",
+    "expected": "Per the OneTouch Ultra 2 entry in the Medical Devices and Point-of-Care Testing / blood glucose meters index: it is a blood glucose meter (Lifescan) for self-monitoring of capillary blood glucose. Calibration: lot-specific program strip with each new vial of test strips. 5-second reading time, 1 µL blood sample, range 1.1-33.3 mmol/L, stores 500 results.",
+    "negative": "Refusing the question as 'outside CPS scope' when the device IS in the corpus. Stating no calibration when corpus says lot-specific program strip is required.",
+    "expected_source_doctype": "MONOGRAPH",
+    "expected_slug_substr": "OneTouch"
+  }
+]

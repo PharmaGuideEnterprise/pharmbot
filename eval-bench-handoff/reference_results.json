@@ -1,0 +1,97 @@
+{
+  "headline": {
+    "strategy": "S8 (vision-LLM image corpus)",
+    "total": 75,
+    "denominator": 85,
+    "pct": 88.2
+  },
+  "S8 (vision corpus, current)": {
+    "per_prefix": {
+      "CF": "16/16",
+      "CPHA": "5/6",
+      "NQ": "24/30",
+      "PC": "7/8",
+      "SQ": "14/15",
+      "T2": "9/10"
+    },
+    "total": 75,
+    "denominator": 85,
+    "pct": 88.2,
+    "basis": "3-trial majority",
+    "commit": "d40ac88"
+  },
+  "S7 (dosing-fidelity few-shot)": {
+    "per_prefix": {
+      "CF": "16/16",
+      "CPHA": "6/6",
+      "NQ": "24/30",
+      "PC": "6/8",
+      "SQ": "12/15",
+      "T2": "8/10"
+    },
+    "total": 72,
+    "denominator": 85,
+    "pct": 84.7,
+    "basis": "3-trial majority",
+    "commit": "dc109a5"
+  },
+  "S6 Final (combinatorial + split judge)": {
+    "per_prefix": {
+      "CF": "13/16",
+      "CPHA": "4/6",
+      "NQ": "24/30",
+      "PC": "5/8",
+      "SQ": "14/15",
+      "T2": "6/10"
+    },
+    "total": 66,
+    "denominator": 85,
+    "pct": 77.6,
+    "basis": "3-trial majority",
+    "commit": "2919d3e"
+  },
+  "S5 R5 RERUN": {
+    "per_prefix": {
+      "CF": "13/16",
+      "CPHA": "3/6",
+      "NQ": "23/30",
+      "PC": "5/8",
+      "SQ": "14/15",
+      "T2": "6/10"
+    },
+    "total": 64,
+    "denominator": 85,
+    "pct": 75.3,
+    "basis": "3-trial majority",
+    "commit": "e4649f0"
+  },
+  "S1 (original agentic-v3)": {
+    "per_prefix": {
+      "CF": "15/16",
+      "CPHA": "6/6",
+      "NQ": "24/30",
+      "PC": "8/8",
+      "SQ": "14/15",
+      "T2": "7/10"
+    },
+    "total": 74,
+    "denominator": 85,
+    "pct": 87.1,
+    "basis": "1-shot (re-judged under current judge)",
+    "commit": "609778c"
+  },
+  "Perfect (nail every Q)": {
+    "per_prefix": {
+      "CF": "16/16",
+      "CPHA": "6/6",
+      "NQ": "30/30",
+      "PC": "8/8",
+      "SQ": "15/15",
+      "T2": "10/10"
+    },
+    "total": 85,
+    "denominator": 85,
+    "pct": 100.0
+  },
+  "_note": "S1 is re-judged single-verdict (1 answer per Q); S5+ are 3-trial majority. Reproducible band ~72-76/85 due to LLM judge + generation variance."
+}

@@ -1,0 +1,24 @@
+{
+  "pre_na": {
+    "PC-4": "UX feedback",
+    "PC-5": "UX feedback (print option)",
+    "PC-6": "UX feedback (chat history retention)",
+    "PC-9": "incomplete feedback row",
+    "PC-10": "UX feedback (weather query)",
+    "PC-12": "UX feedback (chapter selection)",
+    "PC-16": "search-function feedback",
+    "SQ-5": "needs prior-turn patient context",
+    "SQ-14": "conversational follow-up",
+    "SQ-15": "conversational follow-up",
+    "SQ-16": "conversational follow-up"
+  },
+  "reclassify_na": {
+    "CPHA-17": "placeholder expected \u2014 no clinical criteria",
+    "CPHA-19": "placeholder expected",
+    "CF-16": "editor's 'Y' tag; MS chapter has zero probiotic mentions",
+    "CF-17": "editor's 'Y'; MS chapter says only Siponimod for SPMS",
+    "CPHA-12-lithium": "bipolar chapter doesn't address lithium-in-pregnancy specifically",
+    "PC-3": "question is bare 'Ozempic' with no context"
+  },
+  "rule": "17 questions excluded \u2192 85 scoreable. Pre-NA = UX/follow-up. Reclassify-NA = eval-data quality issues (placeholder expecteds or source-grep-confirmed absent content)."
+}

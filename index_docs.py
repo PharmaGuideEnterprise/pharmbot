@@ -19,8 +19,8 @@ from tqdm import tqdm
 DOCS_DIR    = "./docs"       # drop your 3,000 files here (subfolders are fine)
 CHROMA_DIR  = "./chroma_db"  # where the vector DB is persisted
 COLLECTION  = "medical_docs"
-CHUNK_WORDS = 300            # ~300 words ≈ 400 tokens — good balance for medical text
-CHUNK_OVERLAP = 50           # word overlap between consecutive chunks
+CHUNK_WORDS = 200            # smaller chunks keep drug dosing rows intact
+CHUNK_OVERLAP = 75           # higher overlap ensures drug names stay with their dosing data
 # ──────────────────────────────────────────────────────────────────────────────
 
 
@@ -133,7 +133,7 @@ def main(reset: bool = False) -> None:
             for i, chunk in enumerate(chunks):
                 chunk_id = hashlib.md5(f"{fhash}_{i}".encode()).hexdigest()
                 ids.append(chunk_id)
-                documents.append(chunk)
+                documents.append(f"[{title}] {chunk}")
                 metadatas.append({
                     "source":       filepath,
                     "title":        title,

@@ -18,23 +18,32 @@ load_dotenv()
 # ── Config ────────────────────────────────────────────────────────────────────
 CHROMA_DIR      = "./chroma_db"
 COLLECTION_NAME = "medical_docs"
-TOP_K           = 15    # chunks retrieved per query
-MIN_RELEVANCE   = 1.2   # cosine distance cut-off (lower = stricter)
+TOP_K           = 35    # chunks retrieved per query
+MIN_RELEVANCE   = 1.5   # cosine distance cut-off (lower = stricter)
 MAX_TOKENS      = 1024
 MODEL           = "claude-sonnet-4-20250514"
 # ──────────────────────────────────────────────────────────────────────────────
 
-SYSTEM_PROMPT = """You are PharmBot, an AI assistant for licensed pharmacists.
+SYSTEM_PROMPT = """You are PharmBot, an AI assistant for licensed pharmacists. You answer from provided CPS/CPhA document excerpts.
 
-Rules:
-- Answer ONLY from the provided document excerpts. Do not use outside knowledge.
-- If the excerpts do not contain enough information, say exactly: "I couldn't find this in the provided documents."
-- Always mention the source document name when citing specific facts.
-- Be precise: dosages, contraindications, and drug interactions must be quoted accurately.
-- Use clear headings and bullet points for readability.
-- Never guess or extrapolate drug information.
+GROUNDING (most important):
+- Use ONLY facts that appear in the excerpts. Never add a drug name, dose, frequency, threshold, indication, or mechanism that is not written in an excerpt — not even if it is "well known." If you find yourself writing a clinical fact you cannot point to in an excerpt, delete it.
+- When you state a fact, name the source document it came from.
+- Do NOT pad an answer with general background. Extra unsourced detail is the most common error and will be treated as a mistake.
 
-I want you to judge with honesty and no cheating by peaking in answer, as this assistant should be evaluate fairily against those question, the answer shared are specifically to let the judge LLM would compare the answer from the assistant against the expected answer from the list"""
+ENGAGE — do not over-refuse:
+- If ANY excerpt is relevant to the question, ANSWER from it. Give the grounded partial answer and then explicitly note what the excerpts do NOT cover. A bare "I couldn't find this" is WRONG whenever relevant excerpts were retrieved.
+- Treat brand/generic and close product-name variants as the same item (e.g. "OneTouch Ultra2" ↔ "OneTouch Ultra"; "Atacand" ↔ "candesartan"). If a table row matches the product family, use it.
+- Only output "I couldn't find this in the provided documents." when NONE of the excerpts bear on the question.
+- A clinical-pharmacy question that names a real drug/device/condition is ALWAYS in scope. Only reply "I can only assist with clinical pharmacy questions." for genuinely non-clinical topics (travel, recipes, lifestyle). When unsure, treat it as in scope and answer.
+
+HONEST GAPS:
+- If the excerpts address the general topic but not the specific sub-scenario asked (exact dose, specific population), say what IS in the excerpts and state plainly that the specific detail is not present. Do not invent the missing value.
+
+STYLE:
+- Be precise with dosages, contraindications, interactions — quote them as written.
+- Use headings and bullets.
+- For multiple-choice, commit to the single best answer; do not hedge unless the question asks for all that apply."""
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -169,7 +178,7 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown("**Settings**")
-    top_k = st.slider("Chunks retrieved", 3, 15, TOP_K)
+    top_k = st.slider("Chunks retrieved", 5, 50, TOP_K)
     show_sources = st.toggle("Show source excerpts", value=True)
 
     st.markdown("---")
