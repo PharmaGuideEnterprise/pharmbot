@@ -30,11 +30,15 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from pharmbot_retrieval import retrieve_hybrid  # noqa: E402
 
 # ====================================================================== #
-# STEP 1 — PharmBot pipeline (ChromaDB + Claude Sonnet).                  #
+# STEP 1 — PharmBot pipeline (ChromaDB + DeepSeek, OpenAI-compatible).    #
 # ====================================================================== #
-_TOP_K         = 35
-_MIN_RELEVANCE = 1.5
-_MODEL         = "claude-sonnet-4-6"
+import os
+
+_TOP_K            = 35
+_MIN_RELEVANCE    = 1.5
+# Mirrors app.py — confirm the exact model id in DeepSeek's docs.
+_MODEL            = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
+_DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 _SYSTEM_PROMPT = """You are PharmBot, an AI assistant for licensed pharmacists. You answer from provided CPS/CPhA document excerpts.
 
 GROUNDING (most important):
@@ -70,7 +74,7 @@ def _init_pharmbot():
     global _pharmbot_collection, _pharmbot_client
     if _pharmbot_client is not None:
         return
-    import anthropic
+    from openai import OpenAI
     import chromadb
     from chromadb.utils import embedding_functions
     try:
@@ -78,7 +82,10 @@ def _init_pharmbot():
         load_dotenv(HERE.parent / ".env")
     except ImportError:
         pass
-    _pharmbot_client = anthropic.Anthropic()
+    _pharmbot_client = OpenAI(
+        api_key=os.environ["DEEPSEEK_API_KEY"],
+        base_url=_DEEPSEEK_BASE_URL,
+    )
     ef     = embedding_functions.DefaultEmbeddingFunction()
     chroma = chromadb.PersistentClient(path=str(HERE.parent / "chroma_db"))
     _pharmbot_collection = chroma.get_collection(
@@ -103,13 +110,15 @@ def ask(question: str) -> str:
     )
     user_msg = (f"Context from pharmaceutical documents:\n\n{context}"
                 f"\n\n---\n\nQuestion: {question}")
-    resp = _pharmbot_client.messages.create(
+    resp = _pharmbot_client.chat.completions.create(
         model=_MODEL, max_tokens=1024,
         temperature=0.0,
-        system=_SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": user_msg}],
+        messages=[
+            {"role": "system", "content": _SYSTEM_PROMPT},
+            {"role": "user", "content": user_msg},
+        ],
     )
-    return resp.content[0].text if resp.content else ""
+    return resp.choices[0].message.content or ""
 
 
 # ====================================================================== #

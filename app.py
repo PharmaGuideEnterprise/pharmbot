@@ -8,7 +8,7 @@ import time
 from pathlib import Path
 
 import streamlit as st
-import anthropic
+from openai import OpenAI
 import chromadb
 from chromadb.utils import embedding_functions
 from dotenv import load_dotenv
@@ -22,7 +22,10 @@ COLLECTION_NAME = "medical_docs"
 TOP_K           = 35    # chunks retrieved per query
 MIN_RELEVANCE   = 1.5   # cosine distance cut-off (lower = stricter)
 MAX_TOKENS      = 1024
-MODEL           = "claude-sonnet-4-20250514"
+# DeepSeek is OpenAI-API-compatible. Confirm the exact model identifier in
+# DeepSeek's docs (https://api-docs.deepseek.com) — set it here or via DEEPSEEK_MODEL.
+MODEL           = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
+DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 # ──────────────────────────────────────────────────────────────────────────────
 
 SYSTEM_PROMPT = """You are PharmBot, an AI assistant for licensed pharmacists. You answer from provided CPS/CPhA document excerpts.
@@ -81,12 +84,15 @@ def build_context(chunks: list[dict]) -> str:
     return "\n\n---\n\n".join(parts)
 
 
-def ask_claude(query: str, context: str, history: list[dict]) -> str:
-    """Stream answer from Claude."""
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+def ask_llm(query: str, context: str, history: list[dict]) -> str:
+    """Stream answer from DeepSeek (OpenAI-compatible API)."""
+    client = OpenAI(
+        api_key=os.environ["DEEPSEEK_API_KEY"],
+        base_url=DEEPSEEK_BASE_URL,
+    )
 
-    # Build message list (multi-turn)
-    messages = []
+    # Build message list (multi-turn). OpenAI-style: system prompt is a message.
+    messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     for turn in history[-6:]:   # last 3 turns = 6 messages (keep context window sane)
         messages.append({"role": turn["role"], "content": turn["content"]})
 
@@ -94,14 +100,16 @@ def ask_claude(query: str, context: str, history: list[dict]) -> str:
     messages.append({"role": "user", "content": user_msg})
 
     full_response = ""
-    with client.messages.stream(
+    stream = client.chat.completions.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
         temperature=0.0,
-        system=SYSTEM_PROMPT,
         messages=messages,
-    ) as stream:
-        for text in stream.text_stream:
+        stream=True,
+    )
+    for chunk in stream:
+        text = chunk.choices[0].delta.content or ""
+        if text:
             full_response += text
             yield text
 
@@ -157,10 +165,10 @@ with st.sidebar:
     st.markdown("---")
 
     # API key input if not in env
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        key = st.text_input("Anthropic API key", type="password", placeholder="sk-ant-…")
+    if not os.environ.get("DEEPSEEK_API_KEY"):
+        key = st.text_input("DeepSeek API key", type="password", placeholder="sk-…")
         if key:
-            os.environ["ANTHROPIC_API_KEY"] = key
+            os.environ["DEEPSEEK_API_KEY"] = key
         else:
             st.warning("Enter your API key to start.")
 
@@ -184,7 +192,7 @@ with st.sidebar:
         st.rerun()
 
     st.markdown("---")
-    st.caption("POC · Built with ChromaDB + Claude")
+    st.caption("POC · Built with ChromaDB + DeepSeek")
 
 
 # ── Main chat area ────────────────────────────────────────────────────────────
@@ -232,8 +240,8 @@ for msg in st.session_state.messages:
 query = st.session_state.pop("pending_query", None) or st.chat_input("Ask about medications, dosages, interactions…")
 
 if query:
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        st.error("Please enter your Anthropic API key in the sidebar.")
+    if not os.environ.get("DEEPSEEK_API_KEY"):
+        st.error("Please enter your DeepSeek API key in the sidebar.")
         st.stop()
 
     # Show user message
@@ -258,7 +266,7 @@ if query:
         with st.chat_message("assistant"):
             placeholder = st.empty()
             full_text   = ""
-            for token in ask_claude(query, context, st.session_state.messages[:-1]):
+            for token in ask_llm(query, context, st.session_state.messages[:-1]):
                 full_text += token
                 placeholder.markdown(full_text + "▌")
             placeholder.markdown(full_text)
